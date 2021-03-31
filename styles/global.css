@@ -1,0 +1,113 @@
+body {
+    background-color: #3a434d;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin: 3% auto 0 auto;
+    padding: 2%;
+    min-width: 320px;
+    max-width:960px;
+    
+}
+
+h1 {
+    
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: #6fbf78;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+header {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#links {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+    list-style-type: none;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+#links li {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+
+
+
+
+#portfolio {
+    margin: 0px;
+    padding: 0px;
+    align-content: flex-start;
+    width: 100%;
+}
+
+#portfolio ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+.project{
+    list-style-type: none;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #2b3438;
+    position: relative;
+    display:flex;
+}
+
+.project img {
+    width:30%;
+    float: left;
+    margin: 1em;
+    vertical-align:middle;
+}
+
+.info {
+    margin:1em;
+    width:100%;
+    position:relative;
+}
+
+.link {
+    float:right;
+}
+
+.credits {
+    float:left;
+}
+
+.bottom {
+    width:100%;
+    align-items:center;
+}
