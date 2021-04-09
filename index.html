@@ -1,24 +1,137 @@
  <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/global.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-
-    <header>
-        <h1><a href="index.html">finneganeganegan</a></h1>
-        <ul id="links">
-            <li><a href="works.html">Works</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+    <header id="header">
+        <div id="header-inner">
+            <div id="header-left">
+                <h1><a href="index.html">Finneganeganegan</a></h1>
+            </div>
+            <div id="header-right">
+                <a href="https://www.instagram.com/finneganeganeganegan/" class="fa fa-instagram"></a>
+                <a href="https://twitter.com/thefinneganegan" class="fa fa-twitter"></a>
+                <a href="https://www.youtube.com/channel/UCFNnYPo6cD2c7CT74b1eQmA" class="fa fa-youtube-play"></a>
+            </div>
+        </div>
     </header>
     
-    <p>Hi, I'm Finn and I am a big dumb idiot with a Postgraduate Diploma in Composition from Victoria University of Wellington.</p>
+    <div id="main">
+        <div id="bio">
+            <img id="bio-portrait" src="images/portrait.jpg">
+            <div id="bio-text">
+                <p>Hi, I'm Finn and I am a big dumb idiot with a Postgraduate Diploma in Composition from Victoria University of Wellington. Hi, I'm Finn and I am a big dumb idiot with a Postgraduate Diploma in Composition from Victoria University of Wellington. Hi, I'm Finn and I am a big dumb idiot with a Postgraduate Diploma in Composition from Victoria University of Wellington. Hi, I'm Finn and I am a big dumb idiot with a Postgraduate Diploma in Composition from Victoria University of Wellington. Hi, I'm Finn and I am a big dumb idiot with a Postgraduate Diploma in Composition from Victoria University of Wellington.</p>
+                <a class="biglink" href=showreel.html>Showreel</a>
+            </div>
+        </div>
 
-    <div class="video-container">
-        <iframe class="video" src="https://www.youtube.com/embed/JHamHok0yw0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div id="portfolio">
+            <div class="portfolio-item" id="glibglobson">
+                <a href='works/glibglobson.html'>
+                    <img src="images/glibglobson.jpg">
+                    <div class="overlay">
+                        <div class="overlay-text">
+                            <div class="overlay-title">The Otherworldly Adventures of Glib Globson</div>
+                            <div class="overlay-description">Electronic Concept Album</div>
+                            <div class="overlay-credits">Credits: Producer</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="portfolio-item" id="planetoftheandrogynites">
+                <a href='works/planetoftheandrogynites.html'>
+                    <img src="images/planetoftheandrogynites.jpg">
+                    <div class="overlay">
+                        <div class="overlay-text">
+                            <div class="overlay-title">Bad Hagrid and the Planet of the Androgynites</div>
+                            <div class="overlay-description">Psychedelic Rock Album</div>
+                            <div class="overlay-credits">Credits: Keys, Songwriting</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="portfolio-item" id="polyphonicpolygonatron">
+                <a href='works/polyphonicpolygonatron.html'>
+                    <img src="images/polyphonicpolygonatron.png">
+                    <div class="overlay">
+                        <div class="overlay-text">
+                            <div class="overlay-title">Polyphonic Polygonatron</div>
+                            <div class="overlay-description">Music Visualiser</div>
+                            <div class="overlay-credits">Credits: Music, Programming</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="portfolio-item" id="reorientationweek">
+                <a href='works/reorientationweek.html'>
+                    <img src="images/reorientationweek.png">
+                    <div class="overlay">
+                        <div class="overlay-text">
+                            <div class="overlay-title">Reorientation Week</div>
+                            <div class="overlay-description">3D Puzzle Platformer</div>
+                            <div class="overlay-credits">Credits: Music, Sound Design, Audio Programming</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="portfolio-item" id="triggerwitch">
+                <a href='works/triggerwitch.html'>
+                <img src="images/triggerwitch.jpg">
+                    <div class="overlay">
+                        <div class="overlay-text">
+                            <div class="overlay-title">Trigger Witch</div>
+                            <div class="overlay-description">2D Open World Shooter</div>
+                            <div class="overlay-credits">Credits: Music</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="portfolio-item" id="angrypeaches">
+                <a href='works/angrypeaches.html'>
+                <img src="images/angrypeaches.png">
+                    <div class="overlay">
+                        <div class="overlay-text">
+                            <div class="overlay-title">Angry Peaches</div>
+                            <div class="overlay-description">Arcade Brawler</div>
+                            <div class="overlay-credits">Credits: Music, Audio Programming</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="portfolio-item" id="stranded">
+                <a href='works/stranded.html'>
+                <img src="images/stranded.png">
+                    <div class="overlay">
+                        <div class="overlay-text">
+                            <div class="overlay-title">Stranded</div>
+                            <div class="overlay-description">Atmospheric Survival Game</div>
+                            <div class="overlay-credits">Credits: Music, Sound Design, Audio Programming</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="portfolio-item" id="drip">
+                <a href='works/drip.html'>
+                <img src="images/drip.png">
+                <div class="overlay">
+                    <div class="overlay-text">
+                        <div class="overlay-title">Drip</div>
+                        <div class="overlay-description">Online Music Toy</div>
+                        <div class="overlay-credits">Credits: Programmer</div>
+                    </div>
+                </div>
+                </a>
+            </div>
+        </div>
+        
+        
     </div>
+    
+    
 
 </body>
 </html> 
