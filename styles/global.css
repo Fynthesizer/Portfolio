@@ -44,7 +44,7 @@ p {
 }
 
 #header-right a {
-    padding-left: 15px;
+    padding: 7.5px;
 }
 
 .fa {
@@ -103,7 +103,7 @@ p {
 
 #portfolio{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
     grid-gap: 0px;
     list-style-type: none;
     margin-top:20px;
