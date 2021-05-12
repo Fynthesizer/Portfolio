@@ -6,35 +6,29 @@
     <link rel="stylesheet" href="/styles/global.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-    <header id="header">
-        <div id="header-inner">
-            <div id="header-left">
-                <h1><a href="/index.html">Finneganeganegan</a></h1>
-            </div>
-            <div id="header-right">
-                <a href="https://www.instagram.com/finneganeganeganegan/" class="fa fa-instagram"></a>
-                <a href="https://twitter.com/thefinneganegan" class="fa fa-twitter"></a>
-                <a href="https://www.youtube.com/channel/UCFNnYPo6cD2c7CT74b1eQmA" class="fa fa-youtube-play"></a>
-            </div>
-        </div>
-    </header>
+    <div id="header"></div>
     
     <div id="main">
         <h1 id="project-title">Drip</h1>
-        <h2 id="project-subtitle">Online Music Toy</h2>
+        <h2 id="project-subtitle">Experimental Music Sequencer</h2>
         <div id="project-content">
-            <div id="project-left">
-                <p>
-                Drip drip drip.
-                </p>
+            <div id="project-description">
+                <p>Drip is a physics based music sequencer programmed with Javascript and p5.js.</p>
+                <p>The user is able to place taps and bars by clicking on the screen. Taps produce drips at regular intervals. The user is able to alter the interval at which each tap produces drips by turning its handle. The drips fall down the screen and will bounce off bars, causing the bar to produce a tone when they do so. The frequency and timbre of bars are adjustable by changing their length and width. Making slight changes to the environment can result in completely new musical sequences being generated.</p>
+
                 <div id="project-links">
                     <a href="https://fynthesizer.github.io/Drip/" target="_blank">Play</a>
                 </div>
             </div>
         </div>
+        <div class="game-container">
+            <iframe class="game" frameborder="0" src="https://fynthesizer.github.io/Drip/" title="Drip"></iframe>
+        </div>
     </div>
 
+    <script> $("#header").load("/header.html");</script>
 </body>
 </html> 

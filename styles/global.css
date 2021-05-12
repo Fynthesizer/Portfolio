@@ -2,6 +2,12 @@
     --background: #3a434d;
     --header: #2a363e;
     --link: #6fbf78;
+    --linkInactive: #82c98a;
+    --green: #6fbf78;
+    --red: #ce3939;
+    --blue: #61a3c6;
+    --purple: #de73ad;
+    --yellow: #ebd142;;
 }
 
 body {
@@ -15,6 +21,10 @@ body {
 
 p {
     margin-top:0;
+}
+
+p a{
+    color: var(--link);
 }
 
 #header {
@@ -55,15 +65,19 @@ p {
 }
 
 .fa-youtube-play:hover{
-    color:#ce3939;
+    color:var(--red);
 }
 
 .fa-twitter:hover{
-    color:#61a3c6;
+    color:var(--blue);
 }
 
 .fa-instagram:hover{
-    color:#de73ad;
+    color:var(--purple);
+}
+
+.fa-envelope-o:hover{
+    color:var(--yellow);
 }
 
 #main{
@@ -74,15 +88,15 @@ p {
 }
 
 #bio{
-    display:flex;
-    margin-bottom:30px;
+    display:inline-block;
     align-items:center;
 }
 
 #bio-portrait{
     width:25%;
     height:25%;
-    margin-right:15px;
+    float: left;
+    margin-right:20px;
     border-radius:50%;
     transition: transform .5s ease;
 }
@@ -93,12 +107,54 @@ p {
 */
 
 #bio-text{
-    margin-top:0;
-    width:66.66666667%;
+    margin:auto;
 }
 
 .biglink{
     font-size: 1.5em;
+    float: right;
+}
+
+.portfolioFilter{
+    padding-top:30px;
+    padding-bottom:30px;
+    display: inline-flex;
+    justify-content: space-between;
+    width:100%;
+    margin:0;
+    height: 3em;
+}
+
+.portfolioFilter ul {
+    width:100%;
+    display: inline-flex;
+    justify-content: space-between;
+    margin:0;
+    padding:0;
+    height:2em;
+}
+
+.filterBtn{
+    font-family: 'Roboto', sans-serif;
+    color:white;
+    border: none;
+    outline: none;
+    width:100%;
+    text-align:center;
+    margin: auto;
+    transition: background .2s, color .2s;
+    background: none;
+    height:100%;
+}
+
+.filterBtn:hover{
+    background:var(--green);
+    color:var(--background);
+}
+
+.filterBtn.active{
+    background:white;
+    color:var(--background);
 }
 
 #portfolio{
@@ -106,27 +162,51 @@ p {
     grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
     grid-gap: 0px;
     list-style-type: none;
-    margin-top:20px;
 }
 
 .portfolio-item{
-    
     position:relative;
+    opacity: 0.1;
     width:100%;
     overflow:hidden;
+    transition: .2s;
+}
+
+.portfolio-item a{
+    cursor: default;
+}
+
+.portfolio-item.show a{
+    cursor: pointer;
+}
+
+.show {
+    width:100%;
+    opacity: 1;
+    cursor: pointer;
 }
 
 .portfolio-item img{
     display:block;
     width:100%;
     max-width:100%;
+    height: 100%;
     overflow:hidden;
     margin:0px;
-    transition: .5s ease;
+    transition: .4s ease;
+    object-fit: cover;
 }
 
-.portfolio-item:hover img{
+.portfolio-item.show:hover img{
     transform: scale(1.1);
+}
+
+.portfolio-item.show:hover .overlay {
+    opacity:1;
+}
+
+.portfolio-item a:hover{
+    color:white;
 }
 
 .overlay{
@@ -139,7 +219,7 @@ p {
     left:0;
     right:0;
     width:100%;
-    transition:.5s ease;
+    transition:.4s ease;
     opacity:0;
     background-color:rgba(0, 0, 0, 0.6);
 }
@@ -167,42 +247,34 @@ p {
     bottom:0;
 }
 
-
-
-.portfolio-item:hover .overlay {
-    opacity:1;
-}
-
-.portfolio-item a:hover{
-    color:white;
-}
-
 #project-title{
+    text-align:center;
     font-size:3em;
     margin-bottom:0px;
 }
 
 #project-subtitle{
+    text-align:center;
     font-size:1.7em;
     margin-top:0px;
+    margin-bottom: 30px;
     font-weight:normal;
 }
 
 #project-content {
     display:flex;
+    width:100%;
 }
 
-#project-left {
-    width:66.666666%;
-}
-
-#project-left p{
+#project-description{
     margin-top:0px;
+    width:100%;
 }
 
 #project-links {
     display:flex;
     font-size: 1.5em;
+    margin-bottom: 15px;
 }
 
 #project-links a{
@@ -211,7 +283,9 @@ p {
 
 #player {
     width:33.33333%;
+    height:auto;
     padding-left:15px;
+    margin-left:auto;
 }
 
 h1 {
@@ -231,9 +305,11 @@ a:hover {
 .video-container {
     position: relative;
     width: 100%;
+    height: 0;
     padding-bottom: 56.25%;
-    margin-top:15px;
-    margin-bottom:15px;
+    margin: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .video {
@@ -244,14 +320,31 @@ a:hover {
     height: 100%;
 }
 
+.game-container {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    margin:0px;
+    text-align: left;
+    margin-top:15px;
+    margin-bottom:15px;
+}
+
+.game {
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    overflow:visible;
+    margin: 0px;
+    padding: 0px;
+}
+
 header {
     display: flex;
     position: relative;
     justify-content: space-between;
     align-items: center;
 }
-
-
 
 .info {
     margin:1em;

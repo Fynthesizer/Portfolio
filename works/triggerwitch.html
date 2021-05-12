@@ -6,40 +6,32 @@
     <link rel="stylesheet" href="/styles/global.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-    <header id="header">
-        <div id="header-inner">
-            <div id="header-left">
-                <h1><a href="/index.html">Finneganeganegan</a></h1>
-            </div>
-            <div id="header-right">
-                <a href="https://www.instagram.com/finneganeganeganegan/" class="fa fa-instagram"></a>
-                <a href="https://twitter.com/thefinneganegan" class="fa fa-twitter"></a>
-                <a href="https://www.youtube.com/channel/UCFNnYPo6cD2c7CT74b1eQmA" class="fa fa-youtube-play"></a>
-            </div>
-        </div>
-    </header>
+    <div id="header"></div>
     
     <div id="main">
         <h1 id="project-title">Trigger Witch</h1>
         <h2 id="project-subtitle">2D Open World Shooter</h2>
         <div id="project-content">
-            <div id="project-left">
-                <p>
-                You are stranded.
-                </p>
+            <div id="project-description">
+                <i><p>
+                    Trigger Witch is a 2D, twin-stick, action/adventure game set in an odd open world where magic is mundane, but firearms are the new unknown! You are Colette, and as you graduate from the Stock, a curious man invades your world… Welcome to the world of Witchcraft and Triggery!
+                </p></i>
+                <p>The soundtrack to Trigger Witch is reactive to the gameplay. Most of the tracks I composed for Trigger Witch have two versions: a 'light' version, composed with Super Nintendo RPG inspired instrumentation; and a 'heavy' version, which is a synth-metal arrangement of the light version. The light version plays while the player is exploring an area. When the player runs into enemies, however, the music crossfades into the heavy track.</p>
+                <p>Writing the music for Trigger Witch was an intense but fun challenge - trying to write music which would work in two contrasting styles, while maintaining the same melody, harmony, and BPM.</p>
                 <div id="project-links">
-                    <a target="_blank">Download</a>
+                    <a href="https://rainbite.net/triggerwitch" target="_blank">Website</a>
                     <a href=https://fynth.bandcamp.com/album/stranded-ost target="_blank">Bandcamp</a>
                 </div>
+                <div class="video-container">
+                    <iframe class="video" src="https://www.youtube.com/embed/2gvJjhuhstQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
             </div>
-            <iframe id="player" style="border: 0; width: 350px; height: 555px;" src="https://bandcamp.com/EmbeddedPlayer/album=1773575513/size=large/bgcol=333333/linkcol=ffffff/transparent=true/" seamless><a href="https://fynth.bandcamp.com/album/stranded-ost">Stranded OST by finneganeganegan</a></iframe>
+            <iframe id="player" style="border: 0; width: 350px; height: 555px;" src="" seamless><a href="https://fynth.bandcamp.com/album/stranded-ost">Stranded OST by finneganeganegan</a></iframe>
         </div>
-        <div class="video-container">
-            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/iFw5j7WSmUs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-    </div>
-
+</div>
+    <script> $("#header").load("/header.html");</script>
 </body>
 </html> 

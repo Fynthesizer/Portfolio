@@ -6,40 +6,30 @@
     <link rel="stylesheet" href="/styles/global.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-    <header id="header">
-        <div id="header-inner">
-            <div id="header-left">
-                <h1><a href="/index.html">Finneganeganegan</a></h1>
-            </div>
-            <div id="header-right">
-                <a href="https://www.instagram.com/finneganeganeganegan/" class="fa fa-instagram"></a>
-                <a href="https://twitter.com/thefinneganegan" class="fa fa-twitter"></a>
-                <a href="https://www.youtube.com/channel/UCFNnYPo6cD2c7CT74b1eQmA" class="fa fa-youtube-play"></a>
-            </div>
-        </div>
-    </header>
+    <div id="header"></div>
     
     <div id="main">
         <h1 id="project-title">Stranded</h1>
         <h2 id="project-subtitle">Atmospheric Survival Game</h2>
         <div id="project-content">
-            <div id="project-left">
-                <p>
-                You are stranded.
-                </p>
-                <div class="video-container">
-                    <iframe class="video" height="315" src="https://www.youtube.com/embed/iFw5j7WSmUs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
+            <div id="project-description">
+                <p>Stranded is an atmospheric 2D top-down game incorporating survival and puzzle elements. The story follows an amnesiac protagonist's journey upon waking up on a strange island. The player must use their surroundings and the game's crafting mechanics to survive and ultimately escape the island.</p>
+                <p>For the music, I was heavily inspired by the sparse, ambient soundtracks of games like <a href="https://www.minecraft.net/en-us">Minecraft</a> and <a href="https://www.nintendo.com/games/detail/the-legend-of-zelda-breath-of-the-wild-switch/">The Legend of Zelda: Breath of the Wild</a>. The game features three tracks which play at random, often with extended periods of silence inbetween. Each of the tracks features the same minimalist instrumentation of piano and synth lead, drenched in reverb. I wanted to evoke a sense of dreaminess to compliment the game's visual style and mysterious narrative.</p>
                 <div id="project-links">
                     <a target="_blank">Download</a>
                     <a href=https://fynth.bandcamp.com/album/stranded-ost target="_blank">Bandcamp</a>
+                </div>
+                <div class="video-container">
+                    <iframe class="video" height="315" src="https://www.youtube.com/embed/iFw5j7WSmUs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
             <iframe id="player" style="border: 0; height: 555px;" src="https://bandcamp.com/EmbeddedPlayer/album=1773575513/size=large/bgcol=333333/linkcol=ffffff/transparent=true/" seamless><a href="https://fynth.bandcamp.com/album/stranded-ost">Stranded OST by finneganeganegan</a></iframe>
         </div>
     </div>
 
+    <script> $("#header").load("/header.html");</script>
 </body>
 </html> 

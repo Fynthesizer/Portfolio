@@ -6,21 +6,11 @@
     <link rel="stylesheet" href="/styles/global.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-    <header id="header">
-        <div id="header-inner">
-            <div id="header-left">
-                <h1><a href="/index.html">Finneganeganegan</a></h1>
-            </div>
-            <div id="header-right">
-                <a href="https://www.instagram.com/finneganeganeganegan/" class="fa fa-instagram"></a>
-                <a href="https://twitter.com/thefinneganegan" class="fa fa-twitter"></a>
-                <a href="https://www.youtube.com/channel/UCFNnYPo6cD2c7CT74b1eQmA" class="fa fa-youtube-play"></a>
-            </div>
-        </div>
-    </header>
-    
+    <div id="header"></div>
+
     <div id="main">
         <div id="bio">
             <img id="bio-portrait" src="images/portrait.jpg">
@@ -29,21 +19,29 @@
                 <a class="biglink" href=showreel.html>Showreel</a>
             </div>
         </div>
-
+        <div id = "filterContainer" class="portfolioFilter">
+                <button class="filterBtn active" onclick="filterSelection('all')">All</button>
+                <!-- <button class="filterBtn" onclick="filterSelection('music')">Music</button> -->
+                <button class="filterBtn" onclick="filterSelection('electronic')">Electronic</button>
+                <button class="filterBtn" onclick="filterSelection('rock')">Rock</button>
+                <button class="filterBtn" onclick="filterSelection('ambient')">Ambient</button>
+                <button class="filterBtn" onclick="filterSelection('soundtrack')">Soundtracks</button>
+                <button class="filterBtn" onclick="filterSelection('badhagrid')">Bad Hagrid</button>
+                <button class="filterBtn" onclick="filterSelection('audiovisual')">Audiovisual</button>
+        </div>
         <div id="portfolio">
-            <div class="portfolio-item" id="glibglobson">
-                <a href='works/glibglobson.html'>
-                    <img src="images/glibglobson.jpg">
+            <div class="portfolio-item audiovisual" id="ballpit">
+                <a href='works/ballpit.html'>
+                    <img src="images/ballpit.png">
                     <div class="overlay">
                         <div class="overlay-text">
-                            <div class="overlay-title">The Otherworldly Adventures of Glib Globson</div>
-                            <div class="overlay-description">Electronic Concept Album</div>
-                            <div class="overlay-credits">Credits: Producer</div>
+                            <div class="overlay-title">Ball Pit</div>
+                            <div class="overlay-description">Binaural Synaesthesia Toy</div>
                         </div>
                     </div>
                 </a>
             </div>
-            <div class="portfolio-item" id="planetoftheandrogynites">
+            <div class="portfolio-item badhagrid music rock" id="planetoftheandrogynites">
                 <a href='works/planetoftheandrogynites.html'>
                     <img src="images/planetoftheandrogynites.jpg">
                     <div class="overlay">
@@ -55,19 +53,18 @@
                     </div>
                 </a>
             </div>
-            <div class="portfolio-item" id="polyphonicpolygonatron">
-                <a href='works/polyphonicpolygonatron.html'>
-                    <img src="images/polyphonicpolygonatron.png">
+            <div class="portfolio-item music electronic" id="glibglobson">
+                <a href='works/glibglobson.html'>
+                    <img src="images/glibglobson.jpg">
                     <div class="overlay">
                         <div class="overlay-text">
-                            <div class="overlay-title">Polyphonic Polygonatron</div>
-                            <div class="overlay-description">Music Visualiser</div>
-                            <div class="overlay-credits">Credits: Music, Programming</div>
+                            <div class="overlay-title">The Otherworldly Adventures of Glib Globson</div>
+                            <div class="overlay-description">Electronic Concept Album</div>
                         </div>
                     </div>
                 </a>
             </div>
-            <div class="portfolio-item" id="reorientationweek">
+            <div class="portfolio-item soundtrack electronic" id="reorientationweek">
                 <a href='works/reorientationweek.html'>
                     <img src="images/reorientationweek.png">
                     <div class="overlay">
@@ -79,7 +76,7 @@
                     </div>
                 </a>
             </div>
-            <div class="portfolio-item" id="triggerwitch">
+            <div class="portfolio-item soundtrack rock" id="triggerwitch">
                 <a href='works/triggerwitch.html'>
                 <img src="images/triggerwitch.jpg">
                     <div class="overlay">
@@ -91,7 +88,18 @@
                     </div>
                 </a>
             </div>
-            <div class="portfolio-item" id="angrypeaches">
+            <div class="portfolio-item audiovisual" id="polyphonicpolygonatron">
+                <a href='works/polyphonicpolygonatron.html'>
+                    <img src="images/polyphonicpolygonatron.png">
+                    <div class="overlay">
+                        <div class="overlay-text">
+                            <div class="overlay-title">Polyphonic Polygonatron</div>
+                            <div class="overlay-description">Music Visualiser</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="portfolio-item soundtrack rock electronic" id="angrypeaches">
                 <a href='works/angrypeaches.html'>
                 <img src="images/angrypeaches.png">
                     <div class="overlay">
@@ -103,7 +111,18 @@
                     </div>
                 </a>
             </div>
-            <div class="portfolio-item" id="stranded">
+            <div class="portfolio-item audiovisual" id="drip">
+                <a href='works/drip.html'>
+                <img src="images/drip.png">
+                <div class="overlay">
+                    <div class="overlay-text">
+                        <div class="overlay-title">Drip</div>
+                        <div class="overlay-description">Experimental Music Sequencer</div>
+                    </div>
+                </div>
+                </a>
+            </div>
+            <div class="portfolio-item soundtrack ambient" id="stranded">
                 <a href='works/stranded.html'>
                 <img src="images/stranded.png">
                     <div class="overlay">
@@ -115,24 +134,12 @@
                     </div>
                 </a>
             </div>
-            <div class="portfolio-item" id="drip">
-                <a href='works/drip.html'>
-                <img src="images/drip.png">
-                <div class="overlay">
-                    <div class="overlay-text">
-                        <div class="overlay-title">Drip</div>
-                        <div class="overlay-description">Online Music Toy</div>
-                        <div class="overlay-credits">Credits: Programmer</div>
-                    </div>
-                </div>
-                </a>
-            </div>
         </div>
         
         
     </div>
     
-    
-
+    <script src="scripts/filter.js"></script>
+    <script> $("#header").load("/header.html");</script>
 </body>
 </html> 
