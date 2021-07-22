@@ -286,12 +286,12 @@ button{
 #project-title{
     text-align:center;
     font-size:3em;
-    margin-bottom:0px;
+    margin-bottom:7.5px;
 }
 
 #project-subtitle{
     text-align:center;
-    font-size:1.7em;
+    font-size:1.5em;
     margin-top:0px;
     margin-bottom: 30px;
     font-weight:normal;
