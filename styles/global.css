@@ -12,6 +12,8 @@
     --yellow: #ebd142;;
 }
 
+
+
 body {
     background-color: var(--background);
     color: white;
@@ -63,6 +65,16 @@ p a:hover{
     padding: 7.5px;
 }
 
+#footer {
+    margin-top:30px;
+    text-align:center;
+    
+}
+
+#footer a{
+    padding: 7.5px;
+}
+
 .fa {
     font-size: 30px;
     width: 20px;
@@ -108,9 +120,9 @@ p a:hover{
 }
 
 #bio-portrait{
-    width:25%;
-    height:25%;
-    float: left;
+    display:block;
+    width:250px;
+    height:100%;
     margin-right:30px;
     border-radius:50%;
     transition: transform .5s ease;
@@ -126,6 +138,10 @@ p a:hover{
     justify-content: center;
 }
 
+#bio h3{
+    text-align:center;
+}
+
 .biglink{
     font-size: 1.5em;
     float: right;
@@ -136,21 +152,13 @@ p a:hover{
     padding-top:30px;
     padding-bottom:30px;
     display: inline-flex;
+    flex-wrap:wrap;
     justify-content: space-between;
     width:100%;
+    max-width:100%;
+    overflow:hidden;
     margin:0;
-    height: 3em;
 }
-
-.portfolioFilter ul {
-    width:100%;
-    display: inline-flex;
-    justify-content: space-between;
-    margin:0;
-    padding:0;
-    height:2em;
-}
-
 button{
     font-family: 'Roboto', sans-serif;
     
@@ -160,12 +168,13 @@ button{
     color:white;
     border: none;
     outline: none;
-    width:100%;
     text-align:center;
     margin: auto;
+    min-width:5em;
+    flex-grow:1;
     transition: background .2s, color .2s;
     background: none;
-    height:100%;
+    height:3em;
 }
 
 .filterBtn:hover{
@@ -299,6 +308,7 @@ button{
 
 #project-description{
     margin-top:0px;
+    margin-right:15px;
     width:100%;
 }
 
@@ -315,7 +325,6 @@ button{
 #player {
     width:33.33333%;
     height:auto;
-    padding-left:15px;
     margin-left:auto;
 }
 
@@ -394,4 +403,24 @@ header {
 .bottom {
     width:100%;
     align-items:center;
+}
+
+@media screen and (max-width: 512px) {
+    #header-right {
+        display: none !important;
+    }
+    #bio{
+        display:block;
+    }
+    #bio-portrait{
+        width:50%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    #project-content{
+        display:block;
+    }
+    #player{
+        width:100%;
+    }
 }
