@@ -311,11 +311,15 @@ button{
 #project-links {
     display:flex;
     font-size: 1.5em;
+    justify-content: flex-start;
+    align-content:space-between;
+    flex-flow:wrap;
     margin-bottom: 15px;
+    width:100%;
 }
 
 #project-links a{
-    margin-right: 30px;
+    padding-right:15px;
 }
 
 #player {
@@ -421,6 +425,12 @@ header {
     }
     #project-content{
         display:block;
+    }
+    #project-links{
+        justify-content: space-around;
+    }
+    #project-links a{
+        text-align:center;
     }
     #player{
         width:100%;
