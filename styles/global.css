@@ -431,8 +431,14 @@ header {
     }
     #project-links a{
         text-align:center;
+        padding-right:0;
     }
     #player{
+        width:100%;
+    }
+    #header-left {
+        display:block;
+        text-align: center;
         width:100%;
     }
 }
