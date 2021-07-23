@@ -30,138 +30,142 @@
             </div>
         </div>
         
-        <h2>Showreel</h2>
-        <div class="video-container">
-            <iframe class="video" src="https://www.youtube.com/embed/JHamHok0yw0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div id="showreel">
+            <h2>Showreel</h2>
+            <div class="video-container">
+                <iframe class="video" src="https://www.youtube.com/embed/JHamHok0yw0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </div>
-        
-        <h2>Portfolio</h2>
-        <div id = "filterContainer" class="portfolioFilter">
-                <button class="filterBtn active" onclick="filterSelection('all')">All</button>
-                <!-- <button class="filterBtn" onclick="filterSelection('music')">Music</button> -->
-                <button class="filterBtn" onclick="filterSelection('electronic')">Electronic</button>
-                <button class="filterBtn" onclick="filterSelection('rock')">Rock</button>
-                <button class="filterBtn" onclick="filterSelection('ambient')">Ambient</button>
-                <button class="filterBtn" onclick="filterSelection('soundtrack')">Soundtracks</button>
-                <button class="filterBtn" onclick="filterSelection('badhagrid')">Bad Hagrid</button>
-                <button class="filterBtn" onclick="filterSelection('audiovisual')">Audiovisual</button>
-        </div>
+
         <div id="portfolio">
-            <div class="portfolio-item badhagrid music rock" id="herecomeshaggy">
-                <a href='works/herecomeshaggy.html'>
-                    <img src="/images/herecomeshaggy.jpg">
-                    <div class="overlay">
-                        <div class="overlay-text">
-                            <div class="overlay-title">Here Comes Haggy</div>
-                            <div class="overlay-description">Bad Hagrid Single</div>
-                            <div class="overlay-credits">Credits: Keys, Vocals, Songwriting</div>
-                        </div>
-                    </div>
-                </a>
+            <h2>Portfolio</h2>
+            <div id = "filterContainer" class="portfolioFilter">
+                    <button class="filterBtn active" onclick="filterSelection('all')">All</button>
+                    <!-- <button class="filterBtn" onclick="filterSelection('music')">Music</button> -->
+                    <button class="filterBtn" onclick="filterSelection('electronic')">Electronic</button>
+                    <button class="filterBtn" onclick="filterSelection('rock')">Rock</button>
+                    <button class="filterBtn" onclick="filterSelection('ambient')">Ambient</button>
+                    <button class="filterBtn" onclick="filterSelection('soundtrack')">Soundtracks</button>
+                    <button class="filterBtn" onclick="filterSelection('badhagrid')">Bad Hagrid</button>
+                    <button class="filterBtn" onclick="filterSelection('audiovisual')">Audiovisual</button>
             </div>
-            <div class="portfolio-item audiovisual" id="ballpit">
-                <a href='works/ballpit.html'>
-                    <img src="/images/ballpit.png">
-                    <div class="overlay">
-                        <div class="overlay-text">
-                            <div class="overlay-title">Ball Pit</div>
-                            <div class="overlay-description">Binaural Synaesthesia Toy</div>
+            <div id="portfolio-grid">
+                <div class="portfolio-item badhagrid music rock" id="herecomeshaggy">
+                    <a href='works/herecomeshaggy.html'>
+                        <img src="/images/herecomeshaggy.jpg">
+                        <div class="overlay">
+                            <div class="overlay-text">
+                                <div class="overlay-title">Here Comes Haggy</div>
+                                <div class="overlay-description">Bad Hagrid Single</div>
+                                <div class="overlay-credits">Credits: Keys, Vocals, Songwriting</div>
+                            </div>
                         </div>
-                    </div>
-                </a>
-            </div>
-            <div class="portfolio-item soundtrack rock" id="triggerwitch">
-                <a href='works/triggerwitch.html'>
-                <img src="/images/triggerwitch2.png">
-                    <div class="overlay">
-                        <div class="overlay-text">
-                            <div class="overlay-title">Trigger Witch</div>
-                            <div class="overlay-description">2D Open World Shooter</div>
-                            <div class="overlay-credits">Credits: Music</div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="portfolio-item soundtrack electronic" id="reorientationweek">
-                <a href='works/reorientationweek.html'>
-                    <img src="/images/reorientationweek.png">
-                    <div class="overlay">
-                        <div class="overlay-text">
-                            <div class="overlay-title">Reorientation Week</div>
-                            <div class="overlay-description">3D Puzzle Platformer</div>
-                            <div class="overlay-credits">Credits: Music, Sound Design, Audio Programming</div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="portfolio-item badhagrid music rock" id="planetoftheandrogynites">
-                <a href='works/planetoftheandrogynites.html'>
-                    <img src="/images/planetoftheandrogynites.jpg">
-                    <div class="overlay">
-                        <div class="overlay-text">
-                            <div class="overlay-title">Bad Hagrid and the Planet of the Androgynites</div>
-                            <div class="overlay-description">Psychedelic Rock Album</div>
-                            <div class="overlay-credits">Credits: Keys, Songwriting</div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="portfolio-item music electronic" id="glibglobson">
-                <a href='works/glibglobson.html'>
-                    <img src="/images/glibglobson.jpg">
-                    <div class="overlay">
-                        <div class="overlay-text">
-                            <div class="overlay-title">The Otherworldly Adventures of Glib Globson</div>
-                            <div class="overlay-description">Electronic Concept Album</div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="portfolio-item soundtrack rock electronic" id="angrypeaches">
-                <a href='works/angrypeaches.html'>
-                <img src="/images/angrypeaches.png">
-                    <div class="overlay">
-                        <div class="overlay-text">
-                            <div class="overlay-title">Angry Peaches</div>
-                            <div class="overlay-description">Arcade Brawler</div>
-                            <div class="overlay-credits">Credits: Music, Audio Programming</div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="portfolio-item soundtrack ambient" id="stranded">
-                <a href='works/stranded.html'>
-                <img src="/images/stranded.png">
-                    <div class="overlay">
-                        <div class="overlay-text">
-                            <div class="overlay-title">Stranded</div>
-                            <div class="overlay-description">Atmospheric Survival Game</div>
-                            <div class="overlay-credits">Credits: Music, Sound Design, Audio Programming</div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="portfolio-item audiovisual" id="polyphonicpolygonatron">
-                <a href='works/polyphonicpolygonatron.html'>
-                    <img src="/images/polyphonicpolygonatron.png">
-                    <div class="overlay">
-                        <div class="overlay-text">
-                            <div class="overlay-title">Polyphonic Polygonatron</div>
-                            <div class="overlay-description">Music Visualiser</div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="portfolio-item audiovisual" id="drip">
-                <a href='works/drip.html'>
-                <img src="/images/drip.png">
-                <div class="overlay">
-                    <div class="overlay-text">
-                        <div class="overlay-title">Drip</div>
-                        <div class="overlay-description">Experimental Music Sequencer</div>
-                    </div>
+                    </a>
                 </div>
-                </a>
+                <div class="portfolio-item audiovisual" id="ballpit">
+                    <a href='works/ballpit.html'>
+                        <img src="/images/ballpit.png">
+                        <div class="overlay">
+                            <div class="overlay-text">
+                                <div class="overlay-title">Ball Pit</div>
+                                <div class="overlay-description">Binaural Synaesthesia Toy</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="portfolio-item soundtrack rock" id="triggerwitch">
+                    <a href='works/triggerwitch.html'>
+                    <img src="/images/triggerwitch2.png">
+                        <div class="overlay">
+                            <div class="overlay-text">
+                                <div class="overlay-title">Trigger Witch</div>
+                                <div class="overlay-description">2D Open World Shooter</div>
+                                <div class="overlay-credits">Credits: Music</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="portfolio-item soundtrack electronic" id="reorientationweek">
+                    <a href='works/reorientationweek.html'>
+                        <img src="/images/reorientationweek.png">
+                        <div class="overlay">
+                            <div class="overlay-text">
+                                <div class="overlay-title">Reorientation Week</div>
+                                <div class="overlay-description">3D Puzzle Platformer</div>
+                                <div class="overlay-credits">Credits: Music, Sound Design, Audio Programming</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="portfolio-item badhagrid music rock" id="planetoftheandrogynites">
+                    <a href='works/planetoftheandrogynites.html'>
+                        <img src="/images/planetoftheandrogynites.jpg">
+                        <div class="overlay">
+                            <div class="overlay-text">
+                                <div class="overlay-title">Bad Hagrid and the Planet of the Androgynites</div>
+                                <div class="overlay-description">Psychedelic Rock Album</div>
+                                <div class="overlay-credits">Credits: Keys, Songwriting</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="portfolio-item music electronic" id="glibglobson">
+                    <a href='works/glibglobson.html'>
+                        <img src="/images/glibglobson.jpg">
+                        <div class="overlay">
+                            <div class="overlay-text">
+                                <div class="overlay-title">The Otherworldly Adventures of Glib Globson</div>
+                                <div class="overlay-description">Electronic Concept Album</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="portfolio-item soundtrack rock electronic" id="angrypeaches">
+                    <a href='works/angrypeaches.html'>
+                    <img src="/images/angrypeaches.png">
+                        <div class="overlay">
+                            <div class="overlay-text">
+                                <div class="overlay-title">Angry Peaches</div>
+                                <div class="overlay-description">Arcade Brawler</div>
+                                <div class="overlay-credits">Credits: Music, Audio Programming</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="portfolio-item soundtrack ambient" id="stranded">
+                    <a href='works/stranded.html'>
+                    <img src="/images/stranded.png">
+                        <div class="overlay">
+                            <div class="overlay-text">
+                                <div class="overlay-title">Stranded</div>
+                                <div class="overlay-description">Atmospheric Survival Game</div>
+                                <div class="overlay-credits">Credits: Music, Sound Design, Audio Programming</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="portfolio-item audiovisual" id="polyphonicpolygonatron">
+                    <a href='works/polyphonicpolygonatron.html'>
+                        <img src="/images/polyphonicpolygonatron.png">
+                        <div class="overlay">
+                            <div class="overlay-text">
+                                <div class="overlay-title">Polyphonic Polygonatron</div>
+                                <div class="overlay-description">Music Visualiser</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="portfolio-item audiovisual" id="drip">
+                    <a href='works/drip.html'>
+                    <img src="/images/drip.png">
+                    <div class="overlay">
+                        <div class="overlay-text">
+                            <div class="overlay-title">Drip</div>
+                            <div class="overlay-description">Experimental Music Sequencer</div>
+                        </div>
+                    </div>
+                    </a>
+                </div>
             </div>
         </div>
         <div id="footer"></div>
