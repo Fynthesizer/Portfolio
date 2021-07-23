@@ -1,5 +1,5 @@
 :root {
-    --background: #3a434d;
+    --background: #36414e;
     --header: #2a363e;
     --link: #6fbf78;
     --linkInactive: #5da265;
@@ -145,7 +145,6 @@ p a:hover{
 }
 
 .portfolioFilter{
-    padding-top:30px;
     padding-bottom:30px;
     display: inline-flex;
     flex-wrap:wrap;
@@ -328,9 +327,15 @@ button{
     margin-left:auto;
 }
 
-h1 {
+#header h1 {
     font-size:2em;
     margin:0;
+}
+
+h2 {
+    font-size:2em;
+    text-align:center;
+    margin-top:60px;
 }
 
 a{
