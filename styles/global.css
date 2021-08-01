@@ -120,7 +120,7 @@ h2 {
 #main{
     max-width:1024px;
     margin:auto;
-    margin-top:100px;
+    margin-top:90px;
     padding:30px;
 }
 
@@ -334,10 +334,19 @@ button{
     width:50%;
 }
 
+#project-links {
+    display:flex;
+    justify-content: space-around;
+}
+
 #project-links a{
-    padding-right:15px;
     font-size: 1.5em;
-    margin-bottom:15px;
+    text-align: center;
+    text-justify: center;
+}
+
+span{
+    padding-right:0.5em;
 }
 
 #player {
