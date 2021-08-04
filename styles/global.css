@@ -336,13 +336,14 @@ button{
 
 #project-links {
     display:flex;
-    justify-content: space-around;
+    justify-content: flex-start;
 }
 
 #project-links a{
     font-size: 1.5em;
     text-align: center;
     text-justify: center;
+    margin-right: 1.5em;
 }
 
 span{
@@ -455,6 +456,7 @@ header {
     #project-links a{
         text-align:center;
         padding-right:0;
+        margin-right:0;
     }
     #project-players{
         width:100%;
