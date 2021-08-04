@@ -1,0 +1,38 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="New Zealand music composer and producer for games and media.">
+    <title>Finneganeganegan</title>
+    <link rel="stylesheet" href="/styles/global.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/games/angrypeaches/TemplateData/UnityProgress.js"></script>
+    <script src="/games/angrypeaches/UnityLoader.js"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate("unityContainer", "/games/angrypeaches/webgl.json", {onProgress: UnityProgress});
+    </script>
+</head>
+<body>
+    <div id="header"></div>
+    
+    <div id="main">
+        <h1 id="project-title">Angry Peaches</h1>
+        <h2 id="project-subtitle">Arcade Brawler</h2>
+        <div id="project-content">
+        <div class="game-container">
+        <div id="unityContainer"></div>
+            <div class="footer">
+                <div class="webgl-logo"></div>
+                <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+            </div>
+        </div>
+        </div>
+        <div id="footer"></div>
+        
+    </div>
+    <script> $("#header").load("/header.html");</script>
+    <script> $("#footer").load("/footer.html");</script>
+</body>
+</html> 
