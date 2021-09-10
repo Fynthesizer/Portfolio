@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Sora:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Nunito:wght@200&family=Sora:wght@200&display=swap');
+
 :root {
     --background: #2c3640;
     --header: hsl(204, 15%, 16%);
@@ -14,12 +18,10 @@
     --maxW: 1100px;
 }
 
-
-
 body {
     background-color: var(--background);
     color: white;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Nunito', sans-serif;
     overflow-y: scroll;
     margin:0;
     padding:0;
@@ -37,6 +39,21 @@ p a:hover{
     color: var(--link);
 }
 
+.wavey {
+    background-image: linear-gradient(90deg, var(--background) 0%, transparent 33%, transparent 66%, var(--background) 100%), url(/images/sine.png);
+    background-repeat: repeat-x;
+    animation: wave 10s linear infinite;
+}
+
+@keyframes wave {
+    from {
+        background-position: 0px 0px, 0px 0px;
+    }
+    to {
+        background-position: 0px 0px, 100px 0px;
+    }
+}
+
 h1 {
     margin-top:0px;
 }
@@ -44,13 +61,17 @@ h1 {
 h2 {
     font-size:2.5em;
     text-align:center;
-    padding-bottom: 15px;
     margin-top:0px;
-    margin-bottom: 30px;
+    margin-bottom: 45px;
     border-color:white;
-    border-bottom-style: solid;
+    /*border-bottom-style: solid;*/
     border-width: 1px;
-    
+}
+
+h2 span {
+    background-color: var(--background);
+    padding-right: 30px;
+    padding-left: 30px;
 }
 
 h3 {
