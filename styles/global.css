@@ -157,13 +157,14 @@ h3 {
 #main{
     max-width: var(--maxW);
     margin:auto;
-    margin-top:165px;
-    padding:30px;
+    margin-top:173px;
+    padding:30px 30px 30px 30px;
 }
 
 #bio{
     display: flex;
     align-items: center;
+    
 }
 
 #bio ul{
@@ -185,7 +186,6 @@ h3 {
     position: relative;
     display: inline;
     margin-right:30px;
-    margin-bottom:30px;
 }
 
 #portrait img{
@@ -500,6 +500,7 @@ header {
         height:300px;
         margin-left:auto;
         margin-right:auto;
+        margin-bottom:60px;
     }
     #portrait img{
         width:100%;
