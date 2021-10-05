@@ -167,7 +167,6 @@ h3 {
 #bio{
     display: flex;
     align-items: center;
-    
 }
 
 #bio ul{
@@ -263,19 +262,15 @@ button{
 }
 
 #portfolio-grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    grid-gap: 0px;
-    list-style-type: none;
+
 }
 
 .portfolio-item{
     position:relative;
     opacity: 0.1;
     overflow: hidden;
-    width:100%;
+    width:33.33%;
     display: block;
-    transition: .2s;
 }
 
 .portfolio-item a{
@@ -287,7 +282,7 @@ button{
 }
 
 .show {
-    width:100%;
+    
     opacity: 1;
     display: block;
     cursor: pointer;
@@ -306,11 +301,11 @@ button{
 }
 
 .portfolio-item.show img{
-    /*filter: blur(0px);*/
+    
 }
 
 .portfolio-item.show:hover img{
-    /*transform: scale(1.1);*/
+    transform: scale(1.1);
 }
 
 .portfolio-item.show:hover .overlay {
@@ -491,6 +486,12 @@ header {
     align-items:center;
 }
 
+@media screen and (max-width: 1200px) {
+    .portfolio-item{
+        width: 50%;
+    }
+}
+
 @media screen and (max-width: 600px) {
     #header-right {
         display: none !important;
@@ -546,9 +547,6 @@ header {
         height:800px;
     }
     .portfolio-item{
-        display: none;
-    }
-    .show{
-        display: block;
+        width: 100%;
     }
 }

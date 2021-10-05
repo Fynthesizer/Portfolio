@@ -51,15 +51,24 @@
         <div id="portfolio">
             <h2 class="wavey"><span>Portfolio</span></h2>
             <div id = "filterContainer" class="portfolioFilter">
-                    <button class="filterBtn active" onclick="filterSelection('all')">All</button>
-                    <!-- <button class="filterBtn" onclick="filterSelection('music')">Music</button> -->
+                    <!--<button class="filterBtn active" onclick="filterSelection('all')">All</button>
+                     <button class="filterBtn" onclick="filterSelection('music')">Music</button> 
                     <button class="filterBtn" onclick="filterSelection('electronic')">Electronic</button>
                     <button class="filterBtn" onclick="filterSelection('rock')">Rock</button>
                     <button class="filterBtn" onclick="filterSelection('ambient')">Ambient</button>
                     <button class="filterBtn" onclick="filterSelection('orchestral')">Orchestral</button>
                     <button class="filterBtn" onclick="filterSelection('soundtrack')">Soundtracks</button>
                     <button class="filterBtn" onclick="filterSelection('badhagrid')">Bad Hagrid</button>
-                    <button class="filterBtn" onclick="filterSelection('audiovisual')">Novelties</button>
+                    <button class="filterBtn" onclick="filterSelection('audiovisual')">Novelties</button>-->
+                
+                    <button class="filterBtn active" onclick="$('#portfolio-grid').isotope({ filter: '*' });">All</button>
+                    <button class="filterBtn" onclick="$('#portfolio-grid').isotope({ filter: '.electronic' });">Electronic</button>
+                    <button class="filterBtn" onclick="$('#portfolio-grid').isotope({ filter: '.rock' });">Rock</button>
+                    <button class="filterBtn" onclick="$('#portfolio-grid').isotope({ filter: '.ambient' });">Ambient</button>
+                    <button class="filterBtn" onclick="$('#portfolio-grid').isotope({ filter: '.orchestral' });">Orchestral</button>
+                    <button class="filterBtn" onclick="$('#portfolio-grid').isotope({ filter: '.soundtrack' });">Soundtracks</button>
+                    <button class="filterBtn" onclick="$('#portfolio-grid').isotope({ filter: '.badhagrid' });">Bad Hagrid</button>
+                    <button class="filterBtn" onclick="$('#portfolio-grid').isotope({ filter: '.audiovisual' });">Novelties</button>
             </div>
             <div id="portfolio-grid">
                 <div class="portfolio-item audiovisual" id="visualiser">
@@ -197,5 +206,21 @@
     <script src="scripts/filter.js"></script>
     <script> $("#header").load("/header.html");</script>
     <script> $("#footer").load("/footer.html");</script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script>
+        $('#portfolio-grid').isotope({
+            percentPosition: true,
+            itemSelector: '.portfolio-item',
+            layoutMode: 'fitRows',
+            stagger: 50,
+            transitionDuration: '0.5s',
+            hiddenStyle: {
+                opacity: 0
+            },
+            visibleStyle: {
+                opacity: 1
+            }
+        });
+    </script>
 </body>
 </html> 
