@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/amplitudejs@5.3.2/dist/amplitude.js"></script>
 </head>
 <body>
     <div id="header"></div>
@@ -20,9 +21,6 @@
                     <img src="images/self%20portrait_underlay.png">
                 </div>
             </div>
-            <!--<img id="bio-portrait" src="images/portrait_3.png">-->
-            
-            
             <div id="bio-text">
                 <p>Hey, I'm Finn! I like making music and other things on computers. I am a:</p>
                 <ul>
@@ -45,22 +43,11 @@
             <div class="video-container">
                 <iframe class="video" src="https://www.youtube.com/embed/JHamHok0yw0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <!-- <iframe width="100%" height="400" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1306921804&color=%236fbf78&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"></div> -->
         </div>
 
         <div id="portfolio">
             <h2 class="wavey"><span>Portfolio</span></h2>
-            <div id = "filterContainer" class="portfolioFilter">
-                    <!--<button class="filterBtn active" onclick="filterSelection('all')">All</button>
-                     <button class="filterBtn" onclick="filterSelection('music')">Music</button> 
-                    <button class="filterBtn" onclick="filterSelection('electronic')">Electronic</button>
-                    <button class="filterBtn" onclick="filterSelection('rock')">Rock</button>
-                    <button class="filterBtn" onclick="filterSelection('ambient')">Ambient</button>
-                    <button class="filterBtn" onclick="filterSelection('orchestral')">Orchestral</button>
-                    <button class="filterBtn" onclick="filterSelection('soundtrack')">Soundtracks</button>
-                    <button class="filterBtn" onclick="filterSelection('badhagrid')">Bad Hagrid</button>
-                    <button class="filterBtn" onclick="filterSelection('audiovisual')">Novelties</button>-->
-                
+            <div id = "filterContainer" class="portfolioFilter"> 
                     <button class="filterBtn active" onclick="$('#portfolio-grid').isotope({ filter: '*' });">All</button>
                     <button class="filterBtn" onclick="$('#portfolio-grid').isotope({ filter: '.electronic' });">Electronic</button>
                     <button class="filterBtn" onclick="$('#portfolio-grid').isotope({ filter: '.rock' });">Rock</button>
@@ -203,24 +190,10 @@
         <div id="footer"></div>
     </div>
     
-    <script src="scripts/filter.js"></script>
+    
     <script> $("#header").load("/header.html");</script>
     <script> $("#footer").load("/footer.html");</script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-    <script>
-        $('#portfolio-grid').isotope({
-            percentPosition: true,
-            itemSelector: '.portfolio-item',
-            layoutMode: 'fitRows',
-            stagger: 50,
-            transitionDuration: '0.5s',
-            hiddenStyle: {
-                opacity: 0
-            },
-            visibleStyle: {
-                opacity: 1
-            }
-        });
-    </script>
+    <script src="scripts/filter.js"></script>
 </body>
 </html> 

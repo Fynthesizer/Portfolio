@@ -51,3 +51,19 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+window.addEventListener('load', (event) => {
+    $('#portfolio-grid').isotope({
+    percentPosition: true,
+    itemSelector: '.portfolio-item',
+    layoutMode: 'fitRows',
+    stagger: 50,
+    transitionDuration: '0.5s',
+    hiddenStyle: {
+        opacity: 0
+    },
+    visibleStyle: {
+        opacity: 1
+    }
+});
+});
+
