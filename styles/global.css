@@ -21,8 +21,8 @@
 
 body {
     background-color: var(--background);
-    background-image: url(/images/background.png);
-    background-size: 650px 650px;
+    background-image: url(/images/background_2.png);
+    background-size: 600px 600px;
     color: white;
     font-family: 'Nunito', sans-serif;
     overflow-y: scroll;
