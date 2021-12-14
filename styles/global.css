@@ -23,6 +23,7 @@ body {
     background-color: var(--background);
     background-image: url(/images/background_2.png);
     background-size: 600px 600px;
+    background-attachment: fixed;
     color: white;
     font-family: 'Nunito', sans-serif;
     overflow-y: scroll;
@@ -56,6 +57,7 @@ p a:hover{
         background-position: 0px 0px, 100px 0px;
     }
 }
+
 
 h1 {
     margin-top:0px;
@@ -162,6 +164,7 @@ h3 {
     margin:auto;
     padding: 223px 30px 30px 30px;
     background-color: var(--main);
+    perspective: 100px;
 }
 
 #bio{
@@ -387,6 +390,12 @@ button{
     display: block;
     font-size: 1.5em;
     width: 50%;
+}
+
+#project-img {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
 }
 
 #project-links {
