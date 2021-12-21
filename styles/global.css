@@ -303,7 +303,8 @@ button{
 }
 
 .portfolio-item.show:hover img{
-    transform: scale(1.1);
+
+    transform: scale(1.15);
 }
 
 .portfolio-item.show:hover .overlay {
