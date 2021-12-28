@@ -281,6 +281,7 @@ button{
     width:33.33%;
     display: block;
     user-select: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .portfolio-item a{
@@ -307,6 +308,7 @@ button{
     transition: .4s ease;
     object-fit: cover;
     user-select: none;
+     -webkit-tap-highlight-color: transparent;
 }
 
 .portfolio-item.show:hover img{
