@@ -19,6 +19,11 @@
     --maxW: 1200px;
 }
 
+::selection {
+  color: white;
+  background: var(--green);
+}
+
 body {
     background-color: var(--background);
     background-image: url(/images/background_2.png);
@@ -44,17 +49,17 @@ p a:hover{
 }
 
 .wavey {
-    background-image: linear-gradient(90deg, var(--main) 0%, transparent 33%, transparent 66%, var(--main) 100%), url(/images/sine.png);
+    background-image: url(/images/sine.png);
     background-repeat: repeat-x;
     animation: wave 10s linear infinite;
 }
 
 @keyframes wave {
     from {
-        background-position: 0px 0px, 0px 0px;
+        background-position: 0px 0px;
     }
     to {
-        background-position: 0px 0px, 100px 0px;
+        background-position: 100px 0px;
     }
 }
 
@@ -275,6 +280,7 @@ button{
     overflow: hidden;
     width:33.33%;
     display: block;
+    user-select: none;
 }
 
 .portfolio-item a{
@@ -300,6 +306,7 @@ button{
     /*filter: blur(10px);*/
     transition: .4s ease;
     object-fit: cover;
+    user-select: none;
 }
 
 .portfolio-item.show:hover img{
@@ -330,6 +337,7 @@ button{
     transition:.4s ease;
     opacity:0;
     background-color:rgba(0, 0, 0, 0.5);
+    user-select: none;
 }
 
 .overlay .overlay-text{
