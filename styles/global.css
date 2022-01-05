@@ -17,7 +17,7 @@
     --yellow: #ebd142;
     ;
 
-    --maxW: 1200px;
+    --maxW: 1150px;
 }
 
 ::selection {
@@ -68,6 +68,12 @@ p a:hover {
 
 h1 {
     margin-top: 0px;
+}
+
+h1 img {
+    width: 40px;
+    margin-right: 15px;
+    vertical-align: middle;
 }
 
 h2 {
@@ -182,7 +188,12 @@ h3 {
 
 #bio ul {
     columns: 3;
-    column-width: 100px;
+    column-width: 150px;
+    padding-left: 35px;
+}
+
+#bio li {
+    margin-right: 15px;
 }
 
 #bio-text {
@@ -525,6 +536,15 @@ header {
 }
 
 @media screen and (max-width: 600px) {
+    p, h1, h2, h3 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    #main {
+        padding: 223px 0px 30px 0px;
+    }
+    
     #header-right {
         display: none !important;
     }
