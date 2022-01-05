@@ -151,7 +151,7 @@ h3 {
     color: var(--orange);
 }
 
-#header .fa-youtube-play:hover, #footer .fa-youtube-play:hover{
+#header .fa-youtube:hover, #footer .fa-youtube:hover{
     color: var(--red);
 }
 
@@ -163,7 +163,7 @@ h3 {
     color: var(--purple);
 }
 
-#header .fa-envelope-o:hover, #footer .fa-envelope-o:hover {
+#header .fa-envelope:hover, #footer .fa-envelope:hover {
     color: var(--yellow);
 }
 
@@ -429,7 +429,7 @@ button {
     margin-right: 1.5em;
 }
 
-#project-links .fa {
+#project-links .fas, #project-links .fab {
     width:auto;
     margin-right: 0.25em;
 }
@@ -480,6 +480,7 @@ a:hover {
     text-align: left;
     margin-top: 15px;
     margin-bottom: 15px;
+    touch-action: none;
 }
 
 .game {
