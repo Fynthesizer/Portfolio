@@ -298,8 +298,7 @@ input[type="range"]:hover::-moz-range-thumb {
 #music-player {
     background-color: #1e252c;
     display: flex;
-    //align-items: flex-start;
-    align-items: stretch;
+    align-items: flex-start;
 }
 
 #mp-art{
