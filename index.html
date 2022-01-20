@@ -73,8 +73,10 @@
                      </div>
                     <div id="mp-controls">
                         <button onclick="play_aud()" id="mp-play" class="fas fa-play"></button>
-                        <span class="fas fa-volume-up"></span>
-                        <input type="range" id="mp-vol" oninput="change_vol()" step="any" min="0" max="1" value="1">
+                        <div id="mp-vol">
+                            <span class="fas fa-volume-up"></span>
+                            <input type="range" id="mp-volslider" oninput="change_vol()" step="any" min="0" max="1" value="1">
+                        </div>
                     </div>
                     <ul id="mp-tracklist">
                     </ul>

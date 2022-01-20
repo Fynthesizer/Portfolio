@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() { startplayer(); }, false);
+var currentTrack = 0;
 var player;
 var tracklist;
 var art;
@@ -8,7 +9,7 @@ var canvas, ctx, audioCtx, analyser, source, data;
 var tracks = [
     {
         "title": "Enchanted Forest",
-        "audio": "/audio/enchantedforest.wav",
+        "audio": "/audio/enchantedforest.mp3",
         "art": null,
         "genre": "Orchestral"
     },
@@ -20,61 +21,61 @@ var tracks = [
     },
     {
         "title": "Equine - Main Theme",
-        "audio": "/audio/equine.wav",
+        "audio": "/audio/equine.mp3",
         "art": "/images/equine.png",
         "genre": "Orchestral"
     },
     {
         "title": "Crime of Slashin'",
-        "audio": "/audio/crimeofslashin.wav",
+        "audio": "/audio/crimeofslashin.mp3",
         "art": null,
         "genre": "Darksynth"
     },
     {
         "title": "Trigger Witch - The Good, the Bad",
-        "audio": "/audio/thegoodthebad.wav",
+        "audio": "/audio/thegoodthebad.mp3",
         "art": "/images/triggerwitch.png",
         "genre": "16-Bit Western"
     },
     {
         "title": "Trigger Witch - The Ugly",
-        "audio": "/audio/theugly.wav",
+        "audio": "/audio/theugly.mp3",
         "art": "/images/triggerwitch.png",
         "genre": "Western Metal"
     },
     {
         "title": "Showdown",
-        "audio": "/audio/showdown.wav",
+        "audio": "/audio/showdown.mp3",
         "art": null,
         "genre": "Synthwave"
     },
     {
         "title": "Space Orgy",
-        "audio": "/audio/spaceorgy.wav",
+        "audio": "/audio/spaceorgy.mp3",
         "art": null,
         "genre": "Funky House"
     },
     {
         "title": "Stranded - Figment",
-        "audio": "/audio/figment.wav",
+        "audio": "/audio/figment.mp3",
         "art": "/images/stranded.png",
         "genre": "Ambient"
     },
     {
         "title": "Reoriention Week - RE4",
-        "audio": "/audio/reo.wav",
+        "audio": "/audio/reo.mp3",
         "art": "/images/reorientationweek.png",
         "genre": "Synthwave"
     },
     {
         "title": "Ancient Mystery",
-        "audio": "/audio/ancientmystery.wav",
+        "audio": "/audio/ancientmystery.mp3",
         "art": null,
         "genre": "Hybrid Orchestral"
     },
     {
         "title": "Equine - Anara",
-        "audio": "/audio/anara.wav",
+        "audio": "/audio/anara.mp3",
         "art": "/images/equine.png",
         "genre": "Orchestral"
     }
@@ -88,6 +89,7 @@ function startplayer()
     player.controls = false;
     player.addEventListener("timeupdate",updateUI);
     player.addEventListener("canplaythrough",updateUI);
+    player.addEventListener("canplaythrough", trackLoaded);
 }
 
 function play_aud() 
@@ -116,7 +118,7 @@ function stop_aud()
 
 function change_vol()
 {
- player.volume=document.getElementById("mp-vol").value;
+ player.volume=document.getElementById("mp-volslider").value;
 }
 
 function change_pos()
@@ -127,10 +129,20 @@ function change_pos()
 function updateUI(){
     document.getElementById("mp-seekbar").value = player.currentTime / player.duration;
     document.getElementById("mp-currenttime").innerHTML = fmtMSS(Math.round(player.currentTime));
-    document.getElementById("mp-length").innerHTML = fmtMSS(Math.round(player.duration));
+    //document.getElementById("mp-length").innerHTML = fmtMSS(Math.round(player.duration));
     let btn = document.getElementById('mp-play');
     if(player.paused) btn.classList.replace('fa-pause', 'fa-play');
     else btn.classList.replace('fa-play', 'fa-pause');
+}
+
+function trackLoaded(){
+    document.getElementById("mp-seekbar").value = player.currentTime / player.duration;
+    document.getElementById("mp-currenttime").innerHTML = fmtMSS(Math.round(player.currentTime));
+    document.getElementById("mp-length").innerHTML = fmtMSS(Math.round(player.duration));
+    if(tracks[currentTrack].art != null) art.src = tracks[currentTrack].art;
+    else art.src = defaultArt;
+    title.innerHTML = tracks[currentTrack].title;
+    //player.currentTime = 0;
 }
 
 function populateTracklist(){
@@ -139,9 +151,7 @@ function populateTracklist(){
         track.innerHTML = tracks[i].title;
         track.addEventListener("click", function(){
             changeTrack(i);
-            //var current = tracklist.getElementsByClassName("active");
-            //if(current != undefined) current.className.replace(" active", "");
-            //this.className += "active";
+            player.play();
         })
         var trackGenre = document.createElement('span');
         trackGenre.innerHTML = tracks[i].genre;
@@ -154,15 +164,11 @@ function populateTracklist(){
 }
 
 function changeTrack(trackNum){
-    if(tracks[trackNum].art != null) art.src = tracks[trackNum].art;
-    else art.src = defaultArt;
-    title.innerHTML = tracks[trackNum].title;
+    currentTrack = trackNum;
     player.src = tracks[trackNum].audio;
-    player.currentTime = 0;
     let tracklistItem = tracklist.children[trackNum];
     var current = tracklist.getElementsByClassName("active");
     if(current.length > 0) current[0].className = "";
-    console.log(current);
     tracklistItem.className += "active";
 }
 
