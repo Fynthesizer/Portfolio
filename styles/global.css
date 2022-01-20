@@ -79,8 +79,8 @@ h1 img {
 h2 {
     font-size: 2.5em;
     text-align: center;
-    margin-top: 0px;
-    margin-bottom: 45px;
+    margin-top: 60px;
+    margin-bottom: 30px;
     border-color: white;
     /*border-bottom-style: solid;*/
     border-width: 1px;
@@ -94,6 +94,56 @@ h2 span {
 
 h3 {
     margin-top: 0px;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    background: var(--background);
+    opacity: 1;
+    height: 10px;
+    -webkit-transition: .2s;
+    transition: .2s;
+    margin: 15px 0px;
+    overflow: hidden;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 10px;
+    background: var(--green);
+    -webkit-transition: .2s;
+    transition: .2s;
+    box-shadow: -500px 0 0 500px var(--green);
+}
+
+input[type="range"]::-moz-range-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 10px;
+    background: var(--green);
+    outline: none;
+    border: none;
+    -webkit-transition: .2s;
+    transition: .2s;
+    border-radius: 0%;
+}
+
+input[type="range"]::-moz-range-progress {
+    background-color: var(--green);
+    height: 10px;
+}
+
+input[type="range"]:hover::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: white;
+}
+
+input[type="range"]:hover::-moz-range-thumb {
+    -webkit-appearance: none;
+    background: white;
 }
 
 #header {
@@ -187,9 +237,13 @@ h3 {
 }
 
 #bio ul {
+    padding-left: 35px;
+}
+
+#skills {
     columns: 3;
     column-width: 150px;
-    padding-left: 35px;
+    
 }
 
 #bio li {
@@ -239,6 +293,128 @@ h3 {
 
 #showreel {
     margin-top: 60px;
+}
+
+#music-player {
+    background-color: #1e252c;
+    display: flex;
+    //align-items: flex-start;
+    align-items: stretch;
+}
+
+#mp-art{
+    width: 100%;
+    height: auto;
+    float: left;
+}
+
+#mp-left{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 33.33%;
+    height: 100%;
+}
+
+#mp-right{
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+}
+
+#mp-title{
+    font-size: 2em;
+}
+
+#mp-visualiser{
+    width: 100%;
+    height: 100%;
+}
+
+#mp-seek{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#mp-seekbar{
+    flex-grow: 10;
+}
+
+#mp-currenttime{
+    flex-basis: 30px;
+    padding-right: 15px;
+    text-align: left;
+}
+
+#mp-length{
+    flex-basis: 30px;
+    padding-left: 15px;
+    text-align: right;
+}
+
+#mp-controls{
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+#mp-controls .fas{
+    vertical-align: middle;
+}
+
+#mp-controls button{
+    width: 30px;
+}
+
+#mp-tracklist{
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0px;
+}
+
+
+#mp-tracklist li{
+    list-style: none;
+    padding-left: 5px;
+    transition: .2s;
+    cursor: default;
+    overflow: hidden;
+    padding: 5px;
+}
+
+#mp-tracklist li:hover{
+    background: var(--main);
+    color: var(--green);
+}
+
+#mp-tracklist li.active{
+    background: white;
+    color: var(--background);
+}
+
+#mp-tracklist li.active .track-genre{
+    color: var(--background);
+}
+
+#mp-tracklist li .track-genre{
+    float: right;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#music-player button{
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+    font-size: 1em;
+    vertical-align: middle;
+}
+
+#music-player button:hover{
+    color: var(--green);
 }
 
 #portfolio {
@@ -623,5 +799,29 @@ header {
 
     .portfolio-item {
         width: 100%;
+    }
+    
+    #music-player{
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    #mp-right{
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 0px;
+        width: auto;
+        flex-grow: 1;
+    }
+    
+    #mp-left{
+        padding-left: 15px;
+        padding-right: 15px;
+        width: auto;
+        flex-grow: 1;
+    }
+    
+    #mp-art{
+        
     }
 }

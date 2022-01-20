@@ -46,7 +46,7 @@ var btnContainer = document.getElementById("filterContainer");
 var btns = btnContainer.getElementsByClassName("filterBtn");
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
+    var current = btnContainer.getElementsByClassName("active");
     current[0].className = current[0].className.replace(" active", "");
     this.className += " active";
   });
