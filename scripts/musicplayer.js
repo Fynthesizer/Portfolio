@@ -50,7 +50,7 @@ var tracks = [
         "genre": "Synthwave"
     },
     {
-        "title": "Space Orgy",
+        "title": "Space Pingaz",
         "audio": "/audio/spaceorgy.mp3",
         "art": null,
         "genre": "Funky House"
