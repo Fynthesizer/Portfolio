@@ -313,7 +313,7 @@ input[type="range"]:hover::-moz-range-thumb {
     padding-right: 30px;
     padding-top: 30px;
     padding-bottom: 30px;
-    width: 50%;
+    width: 500px;
     height: 100%;
 }
 
@@ -361,7 +361,7 @@ input[type="range"]:hover::-moz-range-thumb {
     padding-bottom: 10px;
     justify-content: space-between;
     width: 100%;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 #mp-nav{
