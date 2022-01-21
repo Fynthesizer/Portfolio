@@ -366,11 +366,13 @@ input[type="range"]:hover::-moz-range-thumb {
 
 #mp-nav{
     overflow: hidden;
+    display: flex;
+    height: 100%;
 }
 
 #mp-controls .fas{
     vertical-align: middle;
-    padding-right: 15px;
+    
 }
 
 #mp-controls button{
@@ -379,10 +381,18 @@ input[type="range"]:hover::-moz-range-thumb {
     display: block;
     padding-top: auto;
     padding-left: 0px;
+    padding-right: 15px;
+}
+
+#mp-controls span{
+    vertical-align: middle;
+    height: 100%;
 }
 
 #mp-vol{
-    float: right;
+    display: flex;
+    height: 100%;
+    align-items: center;
 }
 
 #mp-tracklist{
