@@ -1,4 +1,6 @@
-document.addEventListener("DOMContentLoaded", function() { startplayer(); }, false);
+document.addEventListener("DOMContentLoaded", function () {
+    startplayer();
+}, false);
 var currentTrack = 0;
 var player;
 var tracklist;
@@ -14,12 +16,6 @@ var tracks = [
         "genre": "Orchestral"
     },
     {
-        "title": "Angry Peaches",
-        "audio": "/audio/angrypeaches.mp3",
-        "art": "/images/angrypeaches.png",
-        "genre": "Chiptune-Metal"
-    },
-    {
         "title": "Equine - Main Theme",
         "audio": "/audio/equine.mp3",
         "art": "/images/equine.png",
@@ -30,6 +26,12 @@ var tracks = [
         "audio": "/audio/crimeofslashin.mp3",
         "art": null,
         "genre": "Darksynth"
+    },
+    {
+        "title": "Angry Peaches",
+        "audio": "/audio/angrypeaches.mp3",
+        "art": "/images/angrypeaches.png",
+        "genre": "Chiptune-Metal"
     },
     {
         "title": "Trigger Witch - The Good, the Bad",
@@ -62,6 +64,12 @@ var tracks = [
         "genre": "Ambient"
     },
     {
+        "title": "Equine - Main Menu",
+        "audio": "/audio/equinemenu.mp3",
+        "art": "/images/equine.png",
+        "genre": "Orchestral"
+    },
+    {
         "title": "Reoriention Week - RE4",
         "audio": "/audio/reo.mp3",
         "art": "/images/reorientationweek.png",
@@ -78,78 +86,91 @@ var tracks = [
         "audio": "/audio/anara.mp3",
         "art": "/images/equine.png",
         "genre": "Orchestral"
+    },
+    {
+        "title": "Trigger Witch - Poltergeist Prince",
+        "audio": "/audio/poltergeistprince.mp3",
+        "art": "/images/triggerwitch.png",
+        "genre": "Synth Metal"
     }
 ]
 
 var defaultArt = "/images/self portrait_underlay.png";
 
-function startplayer() 
-{
+function startplayer() {
     player = document.getElementById('mp-audio');
     player.controls = false;
-    player.addEventListener("timeupdate",updateUI);
-    player.addEventListener("canplaythrough",updateUI);
+    player.addEventListener("timeupdate", updateUI);
+    player.addEventListener("canplaythrough", updateUI);
     player.addEventListener("canplaythrough", trackLoaded);
+    player.addEventListener("ended", next);
 }
 
-function play_aud() 
-{
+function play_aud() {
     let btn = document.getElementById('mp-play');
-    if(player.paused) {
+    if (player.paused) {
         player.play();
         btn.classList.replace('fa-play', 'fa-pause');
-    }
-    else {
+    } else {
         player.pause();
         btn.classList.replace('fa-pause', 'fa-play');
     }
-} 
-
-function pause_aud() 
-{
- player.pause();
 }
 
-function stop_aud() 
-{
- player.pause();
- player.currentTime = 0;
+function pause_aud() {
+    player.pause();
 }
 
-function change_vol()
-{
- player.volume=document.getElementById("mp-volslider").value;
+function stop_aud() {
+    player.pause();
+    player.currentTime = 0;
 }
 
-function change_pos()
-{
- player.currentTime = player.duration * document.getElementById("mp-seekbar").value;
+function next() {
+    if(currentTrack < tracks.length - 1) changeTrack(currentTrack+1);
+    else changeTrack(0);
+    player.play();
 }
 
-function updateUI(){
-    document.getElementById("mp-seekbar").value = player.currentTime / player.duration;
+function previous() {
+    if(currentTrack > 0) changeTrack(currentTrack-1);
+    else changeTrack(tracks.length - 1);
+    player.play();
+}
+
+
+function change_vol() {
+    player.volume = document.getElementById("mp-volslider").value;
+}
+
+function change_pos() {
+    player.currentTime = player.duration * document.getElementById("mp-seekbar").value;
+}
+
+function updateUI() {
+    if(player.readyState > 1) document.getElementById("mp-seekbar").value = player.currentTime / player.duration;
     document.getElementById("mp-currenttime").innerHTML = fmtMSS(Math.round(player.currentTime));
     //document.getElementById("mp-length").innerHTML = fmtMSS(Math.round(player.duration));
     let btn = document.getElementById('mp-play');
-    if(player.paused) btn.classList.replace('fa-pause', 'fa-play');
+    if (player.paused) btn.classList.replace('fa-pause', 'fa-play');
     else btn.classList.replace('fa-play', 'fa-pause');
 }
 
-function trackLoaded(){
+function trackLoaded() {
     document.getElementById("mp-seekbar").value = player.currentTime / player.duration;
     document.getElementById("mp-currenttime").innerHTML = fmtMSS(Math.round(player.currentTime));
     document.getElementById("mp-length").innerHTML = fmtMSS(Math.round(player.duration));
-    if(tracks[currentTrack].art != null) art.src = tracks[currentTrack].art;
+    if (tracks[currentTrack].art != null) art.src = tracks[currentTrack].art;
     else art.src = defaultArt;
     title.innerHTML = tracks[currentTrack].title;
     //player.currentTime = 0;
 }
 
-function populateTracklist(){
+function populateTracklist() {
     for (let i = 0; i < tracks.length; i++) {
         var track = document.createElement('li');
         track.innerHTML = tracks[i].title;
-        track.addEventListener("click", function(){
+        track.addEventListener("click", function () {
             changeTrack(i);
             player.play();
         })
@@ -163,24 +184,27 @@ function populateTracklist(){
     }
 }
 
-function changeTrack(trackNum){
+function changeTrack(trackNum) {
     currentTrack = trackNum;
+    document.getElementById("mp-seekbar").value = 0;
     player.src = tracks[trackNum].audio;
     let tracklistItem = tracklist.children[trackNum];
     var current = tracklist.getElementsByClassName("active");
-    if(current.length > 0) current[0].className = "";
+    if (current.length > 0) current[0].className = "";
     tracklistItem.className += "active";
 }
 
-function fmtMSS(s){return(s-(s%=60))/60+(9<s?':':':0')+s};
+function fmtMSS(s) {
+    return (s - (s %= 60)) / 60 + (9 < s ? ':' : ':0') + s
+};
 
-$(document).ready(function() {
+$(document).ready(function () {
     tracklist = document.getElementById('mp-tracklist');
     art = document.getElementById('mp-art');
     title = document.getElementById('mp-title');
-    
+
     canvas = document.getElementById('mp-visualiser');
-    if(canvas != undefined){
+    if (canvas != undefined) {
         ctx = canvas.getContext("2d");
         ctx.canvas.width = canvas.width;
         ctx.canvas.height = canvas.height;
@@ -197,39 +221,39 @@ $(document).ready(function() {
 
         window.addEventListener('resize', resizeCanvas, false);
     }
-    
+
     populateTracklist();
     changeTrack(0);
 });
 
-function loopingFunction(){
+function loopingFunction() {
     requestAnimationFrame(loopingFunction);
     analyser.getByteFrequencyData(data);
     draw(data);
 }
 
-function draw(){
-    ctx.clearRect(0,0,canvas.width,canvas.height);
+function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
     let space = canvas.width / data.length;
     var x = 0;
     var bufferLength = analyser.frequencyBinCount;
-    
+
     var barWidth = (canvas.width / bufferLength) * 2;
     for (var i = 0; i < bufferLength; i++) {
-        var barHeight = data[i]/2;
+        var barHeight = data[i] / 2;
         //ctx.strokeStyle = "#ffffff";
         //ctx.beginPath();
         //ctx.moveTo(space * i, canvas.height); //x,y
         //ctx.lineTo(space * i, canvas.height - value); //x,y
         //ctx.stroke();
-        
+
         ctx.fillStyle = "white";
         ctx.fillRect(x, canvas.height - barHeight, barWidth, barHeight);
         x += barWidth;
     }
 }
 
-function resizeCanvas(){
+function resizeCanvas() {
     ctx.canvas.width = canvas.clientWidth;
     ctx.canvas.height = canvas.clientHeight;
 }

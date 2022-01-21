@@ -17,10 +17,13 @@
      <div id="main">
          <div id="bio">
              <div id="portrait">
+                 <!--
                  <img id="portrait-underlay" src="images/self%20portrait_bgonly.png">
                  <div id="portrait-overlay">
                      <img src="images/self%20portrait_underlay.png">
                  </div>
+                -->
+                 <img src="images/portrait_2.jpg">
              </div>
              <div id="bio-text">
                  <h3>Hey, I'm Finn!</h3>
@@ -72,7 +75,11 @@
                         <div id="mp-length">10:00</div>
                      </div>
                     <div id="mp-controls">
-                        <button onclick="play_aud()" id="mp-play" class="fas fa-play"></button>
+                        <div id="mp-nav">
+                            <button onclick="previous()" id="mp-prev" class="fas fa-backward"></button>
+                            <button onclick="play_aud()" id="mp-play" class="fas fa-play"></button>
+                            <button onclick="next()" id="mp-next" class="fas fa-forward"></button>
+                        </div>
                         <div id="mp-vol">
                             <span class="fas fa-volume-up"></span>
                             <input type="range" id="mp-volslider" oninput="change_vol()" step="any" min="0" max="1" value="1">
