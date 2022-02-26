@@ -95,14 +95,14 @@
          <div id="portfolio">
              <h2 class="wavey"><span>Projects</span></h2>
              <div id="filterContainer" class="portfolioFilter">
-                 <button class="filterBtn active" onclick="$('#portfolio-grid').isotope({ filter: '*' });">All</button>
-                 <button class="filterBtn" onclick="$('#portfolio-grid').isotope({ filter: '.soundtrack' });">Soundtracks</button>
-                 <button class="filterBtn" onclick="$('#portfolio-grid').isotope({ filter: '.electronic' });">Electronic</button>
-                 <button class="filterBtn" onclick="$('#portfolio-grid').isotope({ filter: '.rock' });">Rock</button>
-                 <button class="filterBtn" onclick="$('#portfolio-grid').isotope({ filter: '.ambient' });">Ambient</button>
-                 <button class="filterBtn" onclick="$('#portfolio-grid').isotope({ filter: '.orchestral' });">Orchestral</button>
+                 <button class="filterBtn active" id="filterAll" onclick="$('#portfolio-grid').isotope({ filter: '*' });">All</button>
+                 <button class="filterBtn" id="filterSoundtracks" onclick="$('#portfolio-grid').isotope({ filter: '.soundtrack' });">Soundtracks</button>
+                 <button class="filterBtn" id="filterElectronic" onclick="$('#portfolio-grid').isotope({ filter: '.electronic' });">Electronic</button>
+                 <button class="filterBtn" id="filterRock" onclick="$('#portfolio-grid').isotope({ filter: '.rock' });">Rock</button>
+                 <button class="filterBtn" id="filterAmbient" onclick="$('#portfolio-grid').isotope({ filter: '.ambient' });">Ambient</button>
+                 <button class="filterBtn" id="filterOrchestral" onclick="$('#portfolio-grid').isotope({ filter: '.orchestral' });">Orchestral</button>
                  <!--<button class="filterBtn" onclick="$('#portfolio-grid').isotope({ filter: '.badhagrid' });">Bad Hagrid</button>-->
-                 <button class="filterBtn" onclick="$('#portfolio-grid').isotope({ filter: '.audiovisual' });">Novelties</button>
+                 <button class="filterBtn" id="filterNovelties" onclick="$('#portfolio-grid').isotope({ filter: '.audiovisual' });">Novelties</button>
              </div>
              <div id="portfolio-grid">
 

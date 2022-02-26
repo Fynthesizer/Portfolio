@@ -3,9 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Nunito:wght@200&family=Sora:wght@200&display=swap');
 
 :root {
-    --background: #2c3640;
-    --header: #232a2f;
-    --main: #27303a;
+    --background: #1f252c;
+    --header: #18191c;
+    --main: #252d37;
     --link: #6fbf78;
     --linkInactive: #5da265;
     --green: #6fbf78;

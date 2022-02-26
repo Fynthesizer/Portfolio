@@ -10,7 +10,7 @@ var canvas, ctx, audioCtx, analyser, source, data;
 
 var tracks = [
     {
-        "title": "Enchanted Forest",
+        "title": "The Enchanted Forest",
         "audio": "/audio/enchantedforest.mp3",
         "art": null,
         "genre": "Orchestral"
@@ -50,6 +50,12 @@ var tracks = [
         "audio": "/audio/showdown.mp3",
         "art": null,
         "genre": "Synthwave"
+    },
+    {
+        "title": "The Sleepy Swamp",
+        "audio": "/audio/grottygrotto.mp3",
+        "art": null,
+        "genre": "Orchestral"
     },
     {
         "title": "Space Pingaz",
