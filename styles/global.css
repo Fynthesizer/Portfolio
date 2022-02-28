@@ -98,7 +98,7 @@ h3 {
 
 input[type="range"] {
     -webkit-appearance: none;
-    background: var(--background);
+    background: var(--main);
     opacity: 1;
     height: 10px;
     -webkit-transition: .2s;
