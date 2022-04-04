@@ -25,34 +25,27 @@
     <div id="main">
       <div id="bio">
         <div id="portrait">
-          <!--
-                 <img id="portrait-underlay" src="images/self%20portrait_bgonly.png">
-                 <div id="portrait-overlay">
-                     <img src="images/self%20portrait_underlay.png">
-                 </div>
-                -->
           <img src="images/portrait_2.jpg" />
         </div>
         <div id="bio-text">
-          <h3>Hey, I'm Finn!</h3>
+          <h3>Hey, I'm Finn! I make things on computers.</h3>
           <p>
-            I make things on computers. Oftentimes the thing I make is music,
-            but sometimes it is something else! The words which I most often use
-            to describe myself are as follows:
+            Curiosity has led me down many different pathways - including music,
+            programming, interactive design, and visual design. The words which
+            I most often use to describe myself are as follows:
           </p>
           <ul id="skills">
             <li>Composer / Producer</li>
+            <li>Programmer</li>
             <li>Sound designer</li>
             <li>Multi-Instrumentalist</li>
-            <li>Programmer</li>
             <li>Graphic designer</li>
             <li>Pretty chill guy</li>
           </ul>
-          <p>I reside in the magical city of Wellington, New Zealand.</p>
           <p>
-            Qualifications are pretty meaningless. That being said, here are my
-            qualifications, bestowed upon me by Victoria University of
-            Wellington:
+            I reside in the magical city of Wellington, New Zealand. Here I
+            studied at Victoria Univeristy, and attained the following
+            qualifications:
           </p>
           <ul id="qualifications">
             <li>Bachelor's Degree in Media Design</li>
@@ -68,24 +61,11 @@
             years. Please enjoy your stay. :-)
           </p>
           <p>
-            <b>Email: </b
+            <i class="far fa-envelope"></i><b> Email: </b
             ><a href="mailto:finn.mitchellanyon@gmail.com"
               >finn.mitchellanyon@gmail.com</a
             >
           </p>
-        </div>
-      </div>
-
-      <div id="showreel">
-        <h2 class="wavey"><span>Showreel</span></h2>
-        <div class="video-container" id="showreel-video">
-          <iframe
-            class="video"
-            src="https://www.youtube.com/embed/JHamHok0yw0"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
         </div>
       </div>
 
@@ -104,6 +84,7 @@
             id="filterSoundtracks"
             onclick="$('#portfolio-grid').isotope({ filter: '.soundtrack' });"
           >
+            <!--<i class="fa-solid fa-compact-disc"></i>-->
             Soundtracks
           </button>
           <button
@@ -111,6 +92,7 @@
             id="filterElectronic"
             onclick="$('#portfolio-grid').isotope({ filter: '.electronic' });"
           >
+            <!--<i class="fa-solid fa-robot"></i>-->
             Electronic
           </button>
           <button
@@ -118,6 +100,7 @@
             id="filterRock"
             onclick="$('#portfolio-grid').isotope({ filter: '.rock' });"
           >
+            <!--<i class="fa-solid fa-bolt"></i>-->
             Rock
           </button>
           <button
@@ -125,6 +108,7 @@
             id="filterAmbient"
             onclick="$('#portfolio-grid').isotope({ filter: '.ambient' });"
           >
+            <!--<i class="fa-solid fa-leaf"></i>-->
             Ambient
           </button>
           <button
@@ -140,6 +124,7 @@
             id="filterNovelties"
             onclick="$('#portfolio-grid').isotope({ filter: '.audiovisual' });"
           >
+            <!--<i class="fa-solid fa-code"></i>-->
             Novelties
           </button>
         </div>
@@ -415,6 +400,19 @@
             </div>
             <ul id="mp-tracklist"></ul>
           </div>
+        </div>
+      </div>
+
+      <div id="showreel">
+        <h2 class="wavey"><span>Showreel</span></h2>
+        <div class="video-container" id="showreel-video">
+          <iframe
+            class="video"
+            src="https://www.youtube.com/embed/JHamHok0yw0"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
         </div>
       </div>
 
