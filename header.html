@@ -61,18 +61,18 @@
 
     function nextLetter() {
       if (hovering) {
-        let headerHTML = "";
+        let headerHTML = headerString;
 
-        for (let i = 0; i < headerString.length; i++) {
-          if (letterIndex != i) headerHTML += headerString[i];
-          else
-            headerHTML +=
-              "<span id='highlighted'>" + headerString[i] + "</span>";
-        }
+        headerHTML =
+          headerString.slice(0, letterIndex) +
+          "<span id='highlighted'>" +
+          headerString[letterIndex] +
+          "</span>" +
+          headerString.slice(letterIndex + 1, letterIndex.length);
 
         headerText.innerHTML = headerHTML;
 
-        if (letterIndex < headerString.length) letterIndex++;
+        if (letterIndex < headerString.length - 1) letterIndex++;
         else letterIndex = 0;
       }
     }
