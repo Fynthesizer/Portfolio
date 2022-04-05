@@ -61,8 +61,6 @@
 
     function nextLetter() {
       if (hovering) {
-        if (letterIndex < headerString.length) letterIndex++;
-        else letterIndex = 0;
         let headerHTML = "";
 
         for (let i = 0; i < headerString.length; i++) {
@@ -73,6 +71,9 @@
         }
 
         headerText.innerHTML = headerHTML;
+
+        if (letterIndex < headerString.length) letterIndex++;
+        else letterIndex = 0;
       }
     }
   </script>
