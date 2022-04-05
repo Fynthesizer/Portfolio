@@ -1,29 +1,78 @@
- <!DOCTYPE html>
-    <header>
-        <div id="header-inner">
-            <div id="header-left">
-                <h1><a href="/">Finneganeganegan</a></h1>
-            </div>
-            <div id="header-right">
-                <a href="https://fynth.bandcamp.com/" class="fab fa-bandcamp"></a>
-                <a href="https://soundcloud.com/finn-mitchell-anyon" class="fab fa-soundcloud"></a>
-                <a href="https://www.instagram.com/finneganeganeganeganegan/" class="fab fa-instagram"></a>
-                <a href="https://twitter.com/theFinneganegan" class="fab fa-twitter"></a>
-                <a href="https://www.youtube.com/channel/UCFNnYPo6cD2c7CT74b1eQmA" class="fab fa-youtube"></a>
-                <a href="mailto:finn.mitchellanyon@gmail.com" class="far fa-envelope"></a>
-            </div>
-        </div>
-        
-        <script>
-            window.onscroll = function() {resizeHeader()};
-            window.onload = function() {resizeHeader()};
+<!DOCTYPE html>
+<header>
+  <div id="header-inner">
+    <div id="header-left">
+      <h1 onmouseenter="setHover(true)" onmouseleave="setHover(false)">
+        <a id="headerText" href="/">Finneganeganegan</a>
+      </h1>
+    </div>
+    <div id="header-right">
+      <a href="https://fynth.bandcamp.com/" class="fab fa-bandcamp"></a>
+      <a
+        href="https://soundcloud.com/finn-mitchell-anyon"
+        class="fab fa-soundcloud"
+      ></a>
+      <a
+        href="https://www.instagram.com/finneganeganeganeganegan/"
+        class="fab fa-instagram"
+      ></a>
+      <a href="https://twitter.com/theFinneganegan" class="fab fa-twitter"></a>
+      <a
+        href="https://www.youtube.com/channel/UCFNnYPo6cD2c7CT74b1eQmA"
+        class="fab fa-youtube"
+      ></a>
+      <a href="mailto:finn.mitchellanyon@gmail.com" class="far fa-envelope"></a>
+    </div>
+  </div>
 
-            function resizeHeader() {
-              if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
-                document.getElementById("header-inner").style.padding = "30px";
-              } else {
-                document.getElementById("header-inner").style.padding = "60px 30px 60px 30px";
-              }
-            }
-        </script>
-    </header>
+  <script>
+    let hovering = false;
+    let letterIndex = 0;
+    let nextLetterInterval = setInterval(nextLetter, 100);
+    let headerText = document.getElementById("headerText");
+    let headerString = headerText.innerHTML;
+
+    window.onscroll = function () {
+      resizeHeader();
+    };
+    window.onload = function () {
+      resizeHeader();
+    };
+
+    function resizeHeader() {
+      if (
+        document.body.scrollTop > 30 ||
+        document.documentElement.scrollTop > 30
+      ) {
+        document.getElementById("header-inner").style.padding = "30px";
+      } else {
+        document.getElementById("header-inner").style.padding =
+          "60px 30px 60px 30px";
+      }
+    }
+
+    function setHover(state) {
+      hovering = state;
+      if (!state) {
+        letterIndex = 0;
+      }
+    }
+
+    function nextLetter() {
+      if (hovering) {
+        if (letterIndex < headerString.length) letterIndex++;
+        else letterIndex = 0;
+        let headerHTML = "";
+
+        for (let i = 0; i < headerString.length; i++) {
+          if (letterIndex != i) headerHTML += headerString[i];
+          else
+            headerHTML +=
+              "<span id='highlighted'>" + headerString[i] + "</span>";
+        }
+
+        headerText.innerHTML = headerHTML;
+      } else headerText.innerHTML = headerString;
+    }
+  </script>
+</header>

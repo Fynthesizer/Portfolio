@@ -156,6 +156,11 @@ input[type="range"]:hover::-moz-range-thumb {
   margin: 0;
 }
 
+#highlighted {
+  color: white;
+  padding: 0px;
+}
+
 #header-inner {
   display: flex;
   align-items: center;
