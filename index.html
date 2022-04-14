@@ -60,12 +60,29 @@
             of the various things which I have made and contributed to over the
             years. Please enjoy your stay. :-)
           </p>
-          <p>
-            <i class="far fa-envelope"></i><b> Email: </b
-            ><a href="mailto:finn.mitchellanyon@gmail.com"
-              >finn.mitchellanyon@gmail.com</a
-            >
-          </p>
+          <div id="socials">
+            <a href="https://fynth.bandcamp.com/" class="fab fa-bandcamp"></a>
+            <a
+              href="https://soundcloud.com/finn-mitchell-anyon"
+              class="fab fa-soundcloud"
+            ></a>
+            <a
+              href="https://www.instagram.com/finneganeganeganeganegan/"
+              class="fab fa-instagram"
+            ></a>
+            <a
+              href="https://twitter.com/theFinneganegan"
+              class="fab fa-twitter"
+            ></a>
+            <a
+              href="https://www.youtube.com/channel/UCFNnYPo6cD2c7CT74b1eQmA"
+              class="fab fa-youtube"
+            ></a>
+            <a
+              href="mailto:finn.mitchellanyon@gmail.com"
+              class="far fa-envelope"
+            ></a>
+          </div>
         </div>
       </div>
 
@@ -81,6 +98,14 @@
           </button>
           <button
             class="filterBtn"
+            id="filterMusic"
+            onclick="$('#portfolio-grid').isotope({ filter: '.music' });"
+          >
+            <!--<i class="fa-solid fa-compact-disc"></i>-->
+            Music
+          </button>
+          <button
+            class="filterBtn"
             id="filterSoundtracks"
             onclick="$('#portfolio-grid').isotope({ filter: '.soundtrack' });"
           >
@@ -89,10 +114,27 @@
           </button>
           <button
             class="filterBtn"
+            id="filterProgramming"
+            onclick="$('#portfolio-grid').isotope({ filter: '.programming' });"
+          >
+            <!--<i class="fa-solid fa-code"></i>-->
+            Programming
+          </button>
+
+          <button
+            class="filterBtn"
+            id="filterDesign"
+            onclick="$('#portfolio-grid').isotope({ filter: '.design' });"
+          >
+            <!--<i class="fa-solid fa-code"></i>-->
+            Design
+          </button>
+          <!--
+            <button
+            class="filterBtn"
             id="filterElectronic"
             onclick="$('#portfolio-grid').isotope({ filter: '.electronic' });"
           >
-            <!--<i class="fa-solid fa-robot"></i>-->
             Electronic
           </button>
           <button
@@ -100,7 +142,6 @@
             id="filterRock"
             onclick="$('#portfolio-grid').isotope({ filter: '.rock' });"
           >
-            <!--<i class="fa-solid fa-bolt"></i>-->
             Rock
           </button>
           <button
@@ -108,7 +149,6 @@
             id="filterAmbient"
             onclick="$('#portfolio-grid').isotope({ filter: '.ambient' });"
           >
-            <!--<i class="fa-solid fa-leaf"></i>-->
             Ambient
           </button>
           <button
@@ -118,27 +158,19 @@
           >
             Orchestral
           </button>
-          <!--<button class="filterBtn" onclick="$('#portfolio-grid').isotope({ filter: '.badhagrid' });">Bad Hagrid</button>-->
+          
           <button
             class="filterBtn"
             id="filterNovelties"
             onclick="$('#portfolio-grid').isotope({ filter: '.audiovisual' });"
           >
-            <!--<i class="fa-solid fa-code"></i>-->
             Novelties
           </button>
-          <button
-            class="filterBtn"
-            id="filterNovelties"
-            onclick="$('#portfolio-grid').isotope({ filter: '.programming' });"
-          >
-            <!--<i class="fa-solid fa-code"></i>-->
-            Programming
-          </button>
+          -->
         </div>
         <div id="portfolio-grid">
           <div
-            class="portfolio-item audiovisual wip programming"
+            class="portfolio-item audiovisual design wip programming"
             id="marchingcubes"
           >
             <a>
@@ -159,7 +191,7 @@
               </div>
             </a>
           </div>
-          <div class="portfolio-item orchestral soundtrack" id="equine">
+          <div class="portfolio-item orchestral music soundtrack" id="equine">
             <a href="works/equine.html">
               <img src="/images/equine.png" />
               <div class="overlay">
@@ -188,7 +220,10 @@
                 </div>
 
                 -->
-          <div class="portfolio-item audiovisual programming" id="visualiser">
+          <div
+            class="portfolio-item audiovisual design programming"
+            id="visualiser"
+          >
             <a href="works/visualiser.html">
               <img src="/images/visualiser.png" />
               <div class="overlay">
@@ -212,7 +247,10 @@
               </div>
             </a>
           </div>
-          <div class="portfolio-item audiovisual programming" id="ballpit">
+          <div
+            class="portfolio-item audiovisual design programming"
+            id="ballpit"
+          >
             <a href="works/ballpit.html">
               <img src="/images/ballpit.png" />
               <div class="overlay">
@@ -226,7 +264,7 @@
               </div>
             </a>
           </div>
-          <div class="portfolio-item soundtrack rock" id="triggerwitch">
+          <div class="portfolio-item soundtrack music rock" id="triggerwitch">
             <a href="works/triggerwitch.html">
               <img src="/images/triggerwitch.png" />
               <div class="overlay">
@@ -239,7 +277,7 @@
             </a>
           </div>
           <div
-            class="portfolio-item soundtrack electronic programming"
+            class="portfolio-item soundtrack music electronic programming"
             id="reorientationweek"
           >
             <a href="works/reorientationweek.html">
@@ -273,7 +311,7 @@
             </a>
           </div>
           <div
-            class="portfolio-item audiovisual programming"
+            class="portfolio-item audiovisual design music programming"
             id="polyphonicpolygonatron"
           >
             <a href="works/polyphonicpolygonatron.html">
@@ -306,7 +344,7 @@
             </a>
           </div>
           <div
-            class="portfolio-item soundtrack rock electronic programming"
+            class="portfolio-item soundtrack music rock electronic programming"
             id="angrypeaches"
           >
             <a href="works/angrypeaches.html">
@@ -316,14 +354,14 @@
                   <div class="overlay-title">Angry Peaches</div>
                   <div class="overlay-description">Arcade Brawler</div>
                   <div class="overlay-credits">
-                    Music, Sound Design, Audio Programming
+                    Music, Sound Design, Programming
                   </div>
                 </div>
               </div>
             </a>
           </div>
           <div
-            class="portfolio-item soundtrack ambient programming"
+            class="portfolio-item soundtrack music ambient programming"
             id="stranded"
           >
             <a href="works/stranded.html">
@@ -341,7 +379,7 @@
               </div>
             </a>
           </div>
-          <div class="portfolio-item audiovisual programming" id="drip">
+          <div class="portfolio-item audiovisual design programming" id="drip">
             <a href="works/drip.html">
               <img src="/images/drip.png" />
               <div class="overlay">

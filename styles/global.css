@@ -2,6 +2,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Sora:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Nunito:wght@200&family=Sora:wght@200&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
+
+#bio::before,
+#portfolio::before,
+#demos::before {
+  content: "";
+  display: block;
+  height: 75px;
+  margin-top: -75px;
+  visibility: hidden;
+}
+
 :root {
   --background: #1f252c;
   --header: #1b1c21;
@@ -200,33 +214,49 @@ input[type="range"]:hover::-moz-range-thumb {
 }
 
 #header .fa-bandcamp:hover,
-#footer .fa-bandcamp:hover {
+#footer .fa-bandcamp:hover,
+#socials .fa-bandcamp:hover {
   color: var(--teal);
 }
 
 #header .fa-soundcloud:hover,
-#footer .fa-soundcloud:hover {
+#footer .fa-soundcloud:hover,
+#socials .fa-soundcloud:hover {
   color: var(--orange);
 }
 
 #header .fa-youtube:hover,
-#footer .fa-youtube:hover {
+#footer .fa-youtube:hover,
+#socials .fa-youtube:hover {
   color: var(--red);
 }
 
 #header .fa-twitter:hover,
-#footer .fa-twitter:hover {
+#footer .fa-twitter:hover,
+#socials .fa-twitter:hover {
   color: var(--blue);
 }
 
 #header .fa-instagram:hover,
-#footer .fa-instagram:hover {
+#footer .fa-instagram:hover,
+#socials .fa-instagram:hover {
   color: var(--purple);
 }
 
 #header .fa-envelope:hover,
-#footer .fa-envelope:hover {
+#footer .fa-envelope:hover,
+#socials .fa-envelope:hover {
   color: var(--yellow);
+}
+
+#socials {
+  margin-top: 1.5em;
+  font-size: 1.2em;
+  width: 100%;
+}
+
+#socials a {
+  padding-right: 10px;
 }
 
 #main {
@@ -258,6 +288,7 @@ input[type="range"]:hover::-moz-range-thumb {
 
 #bio-text {
   float: right;
+  height: 100%;
 }
 
 #bio-link {
