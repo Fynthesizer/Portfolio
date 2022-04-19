@@ -87,7 +87,7 @@ function onHashchange() {
   }
   isIsotopeInit = true;
   // filter isotope
-  $("#portfolio").get(0).scrollIntoView();
+  //if (hashFilter != null) $("#portfolio").get(0).scrollIntoView();
   $grid.isotope({
     itemSelector: ".portfolio-item",
     layoutMode: "fitRows",
