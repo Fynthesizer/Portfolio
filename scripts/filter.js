@@ -17,9 +17,13 @@ function filterSelection(c) {
 
 function getHashFilter() {
   var hash = location.hash;
+  const queryString = window.location.search;
+  var urlParams = new URLSearchParams(queryString);
+  var hashFilter = urlParams.get("filter");
+  console.log(hashFilter);
   // get filter=filterName
-  var matches = location.hash.match(/filter=([^&]+)/i);
-  var hashFilter = matches && matches[1];
+  //var matches = location.hash.match(/filter=([^&]+)/i);
+  //var hashFilter = matches && matches[1];
   return hashFilter && decodeURIComponent(hashFilter);
 }
 
@@ -57,8 +61,16 @@ var btns = btnContainer.getElementsByClassName("filterBtn");
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function () {
     var filterAttr = $(this).attr("data-filter");
-    // set filter in hash
-    location.hash = "filter=" + encodeURIComponent(filterAttr);
+    // set filter params
+    var searchParams = new URLSearchParams(window.location.search);
+    searchParams.set("filter", encodeURIComponent(filterAttr));
+    var newRelativePathQuery =
+      window.location.pathname +
+      "?" +
+      searchParams.toString() +
+      window.location.hash;
+    history.pushState(null, "", newRelativePathQuery);
+    filterChange();
   });
 }
 
@@ -80,14 +92,14 @@ window.addEventListener("load", (event) => {
   });
 });
 
-function onHashchange() {
+function filterChange() {
   var hashFilter = getHashFilter();
   if (!hashFilter && isIsotopeInit) {
     return;
   }
   isIsotopeInit = true;
   // filter isotope
-  $("#portfolio").get(0).scrollIntoView();
+  //$("#portfolio").get(0).scrollIntoView();
   $grid.isotope({
     itemSelector: ".portfolio-item",
     layoutMode: "fitRows",
@@ -103,7 +115,5 @@ function onHashchange() {
   }
 }
 
-$(window).on("hashchange", onHashchange);
-
 // trigger event handler to init Isotope
-onHashchange();
+filterChange();
