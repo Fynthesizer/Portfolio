@@ -92,25 +92,17 @@
       <div id="portfolio">
         <h2 class="wavey"><span>Projects</span></h2>
         <div id="filterContainer" class="portfolioFilter">
-          <button
-            class="filterBtn active"
-            id="filterAll"
-            onclick="$('#portfolio-grid').isotope({ filter: '*' });"
-          >
+          <button class="filterBtn active" id="filterAll" data-filter="*">
             All
           </button>
-          <button
-            class="filterBtn"
-            id="filterMusic"
-            onclick="$('#portfolio-grid').isotope({ filter: '.music' });"
-          >
+          <button class="filterBtn" id="filterMusic" data-filter=".music">
             <!--<i class="fa-solid fa-compact-disc"></i>-->
             Music
           </button>
           <button
             class="filterBtn"
             id="filterSoundtracks"
-            onclick="$('#portfolio-grid').isotope({ filter: '.soundtrack' });"
+            data-filter=".soundtrack"
           >
             <!--<i class="fa-solid fa-compact-disc"></i>-->
             Soundtracks
@@ -118,25 +110,17 @@
           <button
             class="filterBtn"
             id="filterProgramming"
-            onclick="$('#portfolio-grid').isotope({ filter: '.programming' });"
+            data-filter=".programming"
           >
             <!--<i class="fa-solid fa-code"></i>-->
             Programming
           </button>
 
-          <button
-            class="filterBtn"
-            id="filterDesign"
-            onclick="$('#portfolio-grid').isotope({ filter: '.design' });"
-          >
+          <button class="filterBtn" id="filterDesign" data-filter=".design">
             <!--<i class="fa-solid fa-code"></i>-->
             Design
           </button>
-          <button
-            class="filterBtn"
-            id="filterGames"
-            onclick="$('#portfolio-grid').isotope({ filter: '.games' });"
-          >
+          <button class="filterBtn" id="filterGames" data-filter=".games">
             <!--<i class="fa-solid fa-code"></i>-->
             Games
           </button>

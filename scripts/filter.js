@@ -1,6 +1,6 @@
 /*eslint-env browser*/
 
-filterSelection("all")
+filterSelection("all");
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("portfolio-item");
@@ -8,13 +8,22 @@ function filterSelection(c) {
   // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
   for (i = 0; i < x.length; i++) {
     w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) 
-    {
-        w3AddClass(x[i], "show");
-        //$("#portfolio-grid").prepend(x[i]);
+    if (x[i].className.indexOf(c) > -1) {
+      w3AddClass(x[i], "show");
+      //$("#portfolio-grid").prepend(x[i]);
     }
   }
 }
+
+function getHashFilter() {
+  var hash = location.hash;
+  // get filter=filterName
+  var matches = location.hash.match(/filter=([^&]+)/i);
+  var hashFilter = matches && matches[1];
+  return hashFilter && decodeURIComponent(hashFilter);
+}
+
+var $grid = $("#portfolio-grid");
 
 // Show filtered elements
 function w3AddClass(element, name) {
@@ -42,28 +51,59 @@ function w3RemoveClass(element, name) {
 }
 
 // Add active class to the current control button (highlight it)
+var $filterButtonGroup = $("#filterContainer");
 var btnContainer = document.getElementById("filterContainer");
 var btns = btnContainer.getElementsByClassName("filterBtn");
 for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-    var current = btnContainer.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
+  btns[i].addEventListener("click", function () {
+    var filterAttr = $(this).attr("data-filter");
+    // set filter in hash
+    location.hash = "filter=" + encodeURIComponent(filterAttr);
   });
 }
-window.addEventListener('load', (event) => {
-    $('#portfolio-grid').isotope({
+
+var isIsotopeInit = false;
+
+window.addEventListener("load", (event) => {
+  $("#portfolio-grid").isotope({
     percentPosition: true,
-    itemSelector: '.portfolio-item',
-    layoutMode: 'fitRows',
+    itemSelector: ".portfolio-item",
+    layoutMode: "fitRows",
     stagger: 50,
-    transitionDuration: '0.5s',
+    transitionDuration: "0.5s",
     hiddenStyle: {
-        opacity: 0
+      opacity: 0,
     },
     visibleStyle: {
-        opacity: 1
-    }
-});
+      opacity: 1,
+    },
+  });
 });
 
+function onHashchange() {
+  var hashFilter = getHashFilter();
+  if (!hashFilter && isIsotopeInit) {
+    return;
+  }
+  isIsotopeInit = true;
+  // filter isotope
+  $("#portfolio").get(0).scrollIntoView();
+  $grid.isotope({
+    itemSelector: ".portfolio-item",
+    layoutMode: "fitRows",
+    // use filterFns
+    filter: hashFilter,
+  });
+  // set selected class on button
+  if (hashFilter) {
+    $filterButtonGroup.find(".active").removeClass("active");
+    $filterButtonGroup
+      .find('[data-filter="' + hashFilter + '"]')
+      .addClass("active");
+  }
+}
+
+$(window).on("hashchange", onHashchange);
+
+// trigger event handler to init Isotope
+onHashchange();
