@@ -530,7 +530,6 @@ button {
 
 .portfolio-item {
   position: relative;
-  opacity: 0.1;
   overflow: hidden;
   width: 33.33%;
   display: block;
@@ -539,19 +538,11 @@ button {
 }
 
 .portfolio-item a {
-  cursor: default;
-}
-
-.portfolio-item.show a {
   cursor: pointer;
 }
 
 .portfolio-item.wip a {
   cursor: default;
-}
-
-.show {
-  opacity: 1;
 }
 
 .portfolio-item img {
@@ -568,12 +559,12 @@ button {
   -webkit-tap-highlight-color: transparent;
 }
 
-.portfolio-item.show:hover img {
+.portfolio-item:hover img {
   transform: scale(1.1);
 }
 
-.portfolio-item.show:hover .overlay,
-.portfolio-item.show:active .overlay {
+.portfolio-item:hover .overlay,
+.portfolio-item:active .overlay {
   opacity: 1;
   /*transform:translateY(0px);*/
 }
@@ -712,7 +703,8 @@ img.floatleft {
 }
 
 #project-links .fas,
-#project-links .fab {
+#project-links .fab,
+#project-links .fa-brands {
   width: auto;
   margin-right: 0.25em;
 }
