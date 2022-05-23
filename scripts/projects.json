@@ -1,0 +1,129 @@
+[
+  {
+    "title": "Forest",
+    "description": "Spooky Musical Trees",
+    "credits": "Programming, Visual Design, Sound Design",
+    "thumbnail": "/images/forest.png",
+    "id": "forest",
+    "categories": ["audiovisual", "design", "programming"]
+  },
+  {
+    "title": "Untitled Marching Cubes Project",
+    "description": "Procedurally Generated Sandbox",
+    "credits": "Programming, Visual Design, Sound Design",
+    "thumbnail": "/images/marchingcubes_1.png",
+    "id": "marchingcubes",
+    "categories": ["audiovisual", "design", "programming", "games"]
+  },
+  {
+    "title": "Equine",
+    "description": "NFT Racehorse Management Game",
+    "credits": "Music",
+    "thumbnail": "/images/equine.png",
+    "id": "equine",
+    "categories": ["orchestral", "music", "soundtrack", "games"]
+  },
+  {
+    "title": "Whirlpool",
+    "description": "Music Visualiser",
+    "credits": "Programming, Visual Design",
+    "thumbnail": "/images/visualiser.png",
+    "id": "visualiser",
+    "categories": ["audiovisual", "design", "programming"]
+  },
+  {
+    "title": "Here Comes Haggy",
+    "description": "Bad Hagrid Single",
+    "credits": "Keys, Vocals, Songwriting",
+    "thumbnail": "/images/herecomeshaggy.jpg",
+    "id": "herecomeshaggy",
+    "categories": ["badhagrid", "music", "rock"]
+  },
+  {
+    "title": "Ball Pit",
+    "description": "Binaural Synaesthesia Toy",
+    "credits": "Programming, Visual Design, Sound Design",
+    "thumbnail": "/images/ballpit.png",
+    "id": "ballpit",
+    "categories": ["audiovisual", "design", "programming"]
+  },
+  {
+    "title": "Trigger Witch",
+    "description": "2D Open World Shooter",
+    "credits": "Music",
+    "thumbnail": "/images/triggerwitch.png",
+    "id": "triggerwitch",
+    "categories": ["soundtrack", "music", "rock", "games"]
+  },
+  {
+    "title": "Reorientation Week",
+    "description": "3D Puzzle Platformer",
+    "credits": "Music, Sound Design, Game Design, Programming",
+    "thumbnail": "/images/reorientationweek.png",
+    "id": "reorientationweek",
+    "categories": ["soundtrack", "music", "electronic", "programming", "games"]
+  },
+  {
+    "title": "Bad Hagrid and the Planet of the Androgynites",
+    "description": "Psychedelic Rock Album",
+    "credits": "Keys, Songwriting",
+    "thumbnail": "/images/planetoftheandrogynites.jpg",
+    "id": "planetoftheandrogynites",
+    "categories": ["badhagrid", "music", "rock"]
+  },
+  {
+    "title": "Polyphonic Polygonatron",
+    "description": "Music Visualiser",
+    "credits": "Programming, Music, Visual Design",
+    "thumbnail": "/images/polyphonicpolygonatron.png",
+    "id": "polyphonicpolygonatron",
+    "categories": ["audiovisual", "design", "music", "programming"]
+  },
+  {
+    "title": "Flutterby",
+    "description": "Game Jam Entry",
+    "credits": "Music, Sound Design",
+    "thumbnail": "/images/flutterby.png",
+    "id": "flutterby",
+    "categories": ["music", "soundtrack", "orchestral", "games"]
+  },
+  {
+    "title": "The Otherworldly Adventures of Glib Globson",
+    "description": "Electronic Concept Album",
+    "credits": "Music",
+    "thumbnail": "/images/glibglobson.png",
+    "id": "glibglobson",
+    "categories": ["music", "electronic"]
+  },
+  {
+    "title": "Angry Peaches",
+    "description": "Arcade Brawler",
+    "credits": "Music, Sound Design, Programming",
+    "thumbnail": "/images/angrypeaches.png",
+    "id": "angrypeaches",
+    "categories": [
+      "soundtrack",
+      "music",
+      "rock",
+      "electronic",
+      "programming",
+      "games"
+    ]
+  },
+  {
+    "title": "Stranded",
+    "description": "Atmospheric Survival Game",
+    "credits": "Music, Sound Design, Game Design, Programming",
+    "thumbnail": "/images/stranded.png",
+    "id": "stranded",
+    "categories": ["soundtrack", "music", "ambient", "programming", "games"]
+  },
+  {
+    "title": "Drip",
+    "description": "Experimental Music Sequencer",
+    "credits": "Programming, Sound Design, Visual Design",
+    "thumbnail": "/images/drip.png",
+    "id": "drip",
+    "categories": ["audiovisual", "design", "programming"]
+  }
+]
