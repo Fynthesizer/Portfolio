@@ -634,19 +634,17 @@ button {
 
 #project-header {
   margin-bottom: 50px;
-  text-align: center;
 }
 
 #project-title {
-  text-align: center;
+  text-align: left;
   font-size: 2.5em;
   margin-bottom: 7.5px;
-  margin-top: 60px;
   margin-top: 60px;
 }
 
 #project-subtitle {
-  text-align: center;
+  text-align: left;
   font-size: 1.5em;
   margin-top: 0px;
   margin-bottom: 60px;
@@ -692,6 +690,7 @@ img.floatleft {
   display: flex;
   justify-content: flex-start;
   margin-bottom: 15px;
+  margin-top: 30px;
 }
 
 #project-links a {
@@ -852,6 +851,11 @@ header {
     height: 100%;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  #project-title,
+  #project-subtitle {
+    text-align: center;
   }
 
   #bio-text {

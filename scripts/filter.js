@@ -52,7 +52,6 @@ onHashchange();
 
 document.addEventListener("projectsLoaded", (event) => {
   const elements = document.getElementsByClassName("portfolio-item");
-  console.log(elements.length);
   $grid.isotope("appended", elements);
   let grid = $grid.isotope({
     percentPosition: true,
