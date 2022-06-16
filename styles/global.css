@@ -29,7 +29,7 @@ html {
   --orange: #e09b2e;
   --purple: #de73ad;
   --yellow: #ebd142;
-  --maxW: 1150px;
+  --maxW: 1100px;
 }
 
 ::selection {
@@ -268,9 +268,8 @@ input[type="range"]:hover::-moz-range-thumb {
 #main {
   max-width: var(--maxW);
   margin: auto;
-  padding: 163px 30px 30px 30px;
+  padding: 163px 60px 30px 60px;
   background-color: var(--main);
-  perspective: 100px;
 }
 
 #bio {
