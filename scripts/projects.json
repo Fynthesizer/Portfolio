@@ -8,6 +8,14 @@
     "categories": ["audiovisual", "design", "programming"]
   },
   {
+    "title": "Kaitiaki Harvest",
+    "description": "Regenerative Foraging Simulator",
+    "credits": "Music, Sound Design, Programming",
+    "thumbnail": "/images/kaitiakiharvest.png",
+    "id": "kaitiakiharvest",
+    "categories": ["games", "soundtrack", "music", "programming", "gamejam"]
+  },
+  {
     "title": "Untitled Marching Cubes Project",
     "description": "Procedurally Generated Sandbox",
     "credits": "Programming, Visual Design, Sound Design",
@@ -81,11 +89,11 @@
   },
   {
     "title": "Flutterby",
-    "description": "Game Jam Entry",
+    "description": "Physics-Based Platformer",
     "credits": "Music, Sound Design",
     "thumbnail": "/images/flutterby.png",
     "id": "flutterby",
-    "categories": ["music", "soundtrack", "orchestral", "games"]
+    "categories": ["music", "soundtrack", "orchestral", "games", "gamejam"]
   },
   {
     "title": "The Otherworldly Adventures of Glib Globson",

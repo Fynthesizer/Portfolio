@@ -26,6 +26,12 @@ var tracks = [
     genre: "Orchestral",
   },
   {
+    title: "Kaitiaki Harvest",
+    audio: "/audio/kaitiakiharvest.mp3",
+    art: "/images/kaitiakiharvest.png",
+    genre: "16-Bit Ambient",
+  },
+  {
     title: "Equine - Main Theme",
     audio: "/audio/equine.mp3",
     art: "/images/equine.png",
