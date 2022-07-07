@@ -14,15 +14,21 @@ var canvas, ctx, audioCtx, analyser, source, data;
 
 var tracks = [
   {
+    title: "Lifeforms",
+    audio: "/audio/lifeforms.mp3",
+    art: "/images/trackart/lifeforms.jpg",
+    genre: "Electronic",
+  },
+  {
     title: "The Beginning of a Grand Adventure",
     audio: "/audio/grandadventure.mp3",
-    art: "/images/magicalfantasyforest.jpg",
+    art: "/images/trackart/enchantedforest.png",
     genre: "Orchestral",
   },
   {
     title: "Enchanted Forest",
     audio: "/audio/enchantedforest.mp3",
-    art: "/images/magicalfantasyforest.jpg",
+    art: "/images/trackart/enchantedforest.png",
     genre: "Orchestral",
   },
   {
@@ -70,14 +76,14 @@ var tracks = [
   {
     title: "The Sleepy Swamp",
     audio: "/audio/grottygrotto.mp3",
-    art: "/images/magicalfantasyforest.jpg",
+    art: "/images/trackart/enchantedforest.png",
     genre: "Orchestral",
   },
   {
     title: "Space Pingaz",
     audio: "/audio/spaceorgy.mp3",
     art: null,
-    genre: "Funky House",
+    genre: "Electronic",
   },
   {
     title: "Stranded - Figment",
