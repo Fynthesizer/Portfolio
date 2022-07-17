@@ -14,28 +14,84 @@ var canvas, ctx, audioCtx, analyser, source, data;
 
 var tracks = [
   {
-    title: "Lifeforms",
-    audio: "/audio/lifeforms.mp3",
-    art: "/images/trackart/lifeforms.jpg",
-    genre: "Electronic",
-  },
-  {
     title: "The Beginning of a Grand Adventure",
     audio: "/audio/grandadventure.mp3",
     art: "/images/trackart/enchantedforest.png",
     genre: "Orchestral",
   },
   {
-    title: "Enchanted Forest",
+    title: "Forest Sprites",
     audio: "/audio/enchantedforest.mp3",
     art: "/images/trackart/enchantedforest.png",
     genre: "Orchestral",
   },
   {
+    title: "The Slumberous Swamp",
+    audio: "/audio/grottygrotto.mp3",
+    art: "/images/trackart/enchantedforest.png",
+    genre: "Orchestral",
+  },
+  {
+    title: "Trigger Witch - The Good, the Bad",
+    audio: "/audio/thegoodthebad.mp3",
+    art: "/images/triggerwitch.png",
+    genre: "16-Bit Orchestral",
+  },
+  {
+    title: "Trigger Witch - The Ugly",
+    audio: "/audio/theugly.mp3",
+    art: "/images/triggerwitch.png",
+    genre: "Synth Metal",
+  },
+  {
+    title: "Trigger Witch - Floating in the Clouds",
+    audio: "/audio/skypavillion_light.mp3",
+    art: "/images/triggerwitch.png",
+    genre: "16-Bit Orchestral",
+  },
+  {
+    title: "Trigger Witch - Soaring Through the Sky",
+    audio: "/audio/skypavillion_heavy.mp3",
+    art: "/images/triggerwitch.png",
+    genre: "Synth Metal",
+  },
+  {
+    title: "Trigger Witch - Poltergeist Prince",
+    audio: "/audio/poltergeistprince.mp3",
+    art: "/images/triggerwitch.png",
+    genre: "Synth Metal",
+  },
+  /*
+  {
     title: "Kaitiaki Harvest",
     audio: "/audio/kaitiakiharvest.mp3",
     art: "/images/kaitiakiharvest.png",
     genre: "16-Bit Ambient",
+  },
+  */
+  {
+    title: "Showdown",
+    audio: "/audio/showdown.mp3",
+    art: "/images/trackart/synthwave.png",
+    genre: "Synthwave",
+  },
+  {
+    title: "Leaving the City",
+    audio: "/audio/leavingthecity.mp3",
+    art: "/images/trackart/synthwave.png",
+    genre: "Synthwave",
+  },
+  {
+    title: "110 km/h",
+    audio: "/audio/slowitdown.mp3",
+    art: "/images/trackart/synthwave.png",
+    genre: "Synthwave",
+  },
+  {
+    title: "Crime of Slashin'",
+    audio: "/audio/crimeofslashin.mp3",
+    art: "/images/trackart/synthwave.png",
+    genre: "Synthwave",
   },
   {
     title: "Equine - Main Theme",
@@ -44,46 +100,48 @@ var tracks = [
     genre: "Orchestral",
   },
   {
-    title: "Crime of Slashin'",
-    audio: "/audio/crimeofslashin.mp3",
-    art: null,
-    genre: "Darksynth",
-  },
-  {
-    title: "Angry Peaches",
-    audio: "/audio/angrypeaches.mp3",
-    art: "/images/angrypeaches.png",
-    genre: "Chiptune-Metal",
-  },
-  {
-    title: "Trigger Witch - The Good, the Bad",
-    audio: "/audio/thegoodthebad.mp3",
-    art: "/images/triggerwitch.png",
-    genre: "16-Bit Western",
-  },
-  {
-    title: "Trigger Witch - The Ugly",
-    audio: "/audio/theugly.mp3",
-    art: "/images/triggerwitch.png",
-    genre: "Western Metal",
-  },
-  {
-    title: "Showdown",
-    audio: "/audio/showdown.mp3",
-    art: null,
-    genre: "Synthwave",
-  },
-  {
-    title: "The Sleepy Swamp",
-    audio: "/audio/grottygrotto.mp3",
-    art: "/images/trackart/enchantedforest.png",
+    title: "Equine - Anara",
+    audio: "/audio/anara.mp3",
+    art: "/images/equine.png",
     genre: "Orchestral",
   },
   {
-    title: "Space Pingaz",
-    audio: "/audio/spaceorgy.mp3",
-    art: null,
+    title: "Equine - Cornelius",
+    audio: "/audio/cornelius.mp3",
+    art: "/images/equine.png",
+    genre: "Orchestral",
+  },
+  {
+    title: "Equine - Rocky",
+    audio: "/audio/rocky.mp3",
+    art: "/images/equine.png",
+    genre: "Orchestral",
+  },
+  /*
+  {
+    title: "Equine - Main Menu",
+    audio: "/audio/equinemenu.mp3",
+    art: "/images/equine.png",
+    genre: "Orchestral",
+  },
+  */
+  {
+    title: "Lifeforms",
+    audio: "/audio/lifeforms.mp3",
+    art: "/images/trackart/lifeforms.jpg",
     genre: "Electronic",
+  },
+  {
+    title: "Undersea Jamboree",
+    audio: "/audio/spaceorgy.mp3",
+    art: "/images/trackart/lifeforms.jpg",
+    genre: "Electronic",
+  },
+  {
+    title: "Ancient Mystery",
+    audio: "/audio/ancientmystery.mp3",
+    art: "/images/trackart/ancientmystery.png",
+    genre: "Hybrid Orchestral",
   },
   {
     title: "Stranded - Figment",
@@ -92,34 +150,10 @@ var tracks = [
     genre: "Ambient",
   },
   {
-    title: "Equine - Main Menu",
-    audio: "/audio/equinemenu.mp3",
-    art: "/images/equine.png",
-    genre: "Orchestral",
-  },
-  {
-    title: "Reoriention Week - RE4",
-    audio: "/audio/reo.mp3",
-    art: "/images/reorientationweek.png",
-    genre: "Synthwave",
-  },
-  {
-    title: "Ancient Mystery",
-    audio: "/audio/ancientmystery.mp3",
-    art: null,
-    genre: "Hybrid Orchestral",
-  },
-  {
-    title: "Equine - Anara",
-    audio: "/audio/anara.mp3",
-    art: "/images/equine.png",
-    genre: "Orchestral",
-  },
-  {
-    title: "Trigger Witch - Poltergeist Prince",
-    audio: "/audio/poltergeistprince.mp3",
-    art: "/images/triggerwitch.png",
-    genre: "Synth Metal",
+    title: "Angry Peaches",
+    audio: "/audio/angrypeaches.mp3",
+    art: "/images/angrypeaches.png",
+    genre: "Chiptune-Metal",
   },
 ];
 
