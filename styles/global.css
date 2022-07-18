@@ -343,6 +343,31 @@ input[type="range"]:hover::-moz-range-thumb {
   align-items: flex-start;
 }
 
+.mp-mini {
+  flex-direction: column;
+  align-items: stretch;
+  padding: 15px;
+}
+
+.mp-mini #mp-left {
+  width: auto;
+  flex-grow: 1;
+  padding: 0px;
+}
+
+.mp-mini .track-genre {
+  visibility: hidden;
+}
+
+.mp-mini #mp-right {
+  width: 100%;
+  flex-grow: 1;
+}
+
+.mp-mini #mp-art {
+  width: 100%;
+}
+
 #mp-art {
   width: 100%;
   height: auto;
@@ -417,7 +442,6 @@ input[type="range"]:hover::-moz-range-thumb {
 
 #mp-controls button {
   float: left;
-  vertical-align: middle;
   display: block;
   padding-top: auto;
   padding-left: 0px;
@@ -675,7 +699,6 @@ img.floatleft {
 
 #project-players {
   display: block;
-  font-size: 1.5em;
   width: 50%;
 }
 
@@ -921,7 +944,6 @@ header {
     flex-direction: column;
     align-items: stretch;
   }
-
   #mp-right {
     padding-left: 15px;
     padding-right: 15px;
@@ -935,5 +957,15 @@ header {
     padding-right: 15px;
     width: auto;
     flex-grow: 1;
+  }
+
+  .mp-mini #mp-left {
+    padding-bottom: 15px;
+    width: 100%;
+  }
+
+  .mp-mini #mp-right {
+    padding: 0px;
+    width: 100%;
   }
 }

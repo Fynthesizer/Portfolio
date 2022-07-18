@@ -31,15 +31,15 @@
           <h3>Hey, I'm Finn! I make things on computers.</h3>
           <p>
             Curiosity has led me down many different pathways - including music,
-            programming, interactive design, and visual design. The words which
-            I most often use to describe myself are as follows:
+            programming, and interactive design. The words which I most often
+            use to describe myself are as follows:
           </p>
           <ul id="skills">
             <li>Composer / Producer</li>
-            <li>Programmer</li>
             <li>Sound designer</li>
             <li>Multi-Instrumentalist</li>
-            <li>Graphic designer</li>
+            <li>Programmer</li>
+            <li>Game designer</li>
             <li>Pretty chill guy</li>
           </ul>
           <p>
@@ -99,13 +99,25 @@
             <!--<i class="fa-solid fa-compact-disc"></i>-->
             Music
           </button>
+          <button class="filterBtn" id="filterGames" data-filter=".games">
+            <!--<i class="fa-solid fa-code"></i>-->
+            Games
+          </button>
           <button
             class="filterBtn"
             id="filterSoundtracks"
             data-filter=".soundtrack"
           >
             <!--<i class="fa-solid fa-compact-disc"></i>-->
-            Soundtracks
+            Soundtrack
+          </button>
+          <button
+            class="filterBtn"
+            id="filterSoundDesign"
+            data-filter=".sounddesign"
+          >
+            <!--<i class="fa-solid fa-compact-disc"></i>-->
+            Sound Design
           </button>
           <button
             class="filterBtn"
@@ -117,13 +129,9 @@
           </button>
 
           <button class="filterBtn" id="filterDesign" data-filter=".design">
-            <!--<i class="fa-solid fa-code"></i>-->
-            Design
+            Visual Design
           </button>
-          <button class="filterBtn" id="filterGames" data-filter=".games">
-            <!--<i class="fa-solid fa-code"></i>-->
-            Games
-          </button>
+
           <!--
             <button
             class="filterBtn"
@@ -168,7 +176,7 @@
 
       <div id="demos">
         <h2 class="wavey"><span>Music</span></h2>
-        <div id="music-player">
+        <div id="music-player" data-album-ID="showreel">
           <div id="audio-wrapper">
             <audio id="mp-audio">
               <source />

@@ -26,6 +26,7 @@
       <div id="project-header">
         <h1 id="project-title">Equine</h1>
         <h2 id="project-subtitle">NFT Racehorse Management Game</h2>
+        <!--
         <i>
           <p>
             Equine is a racehorse management game that’s enriched with
@@ -37,14 +38,16 @@
             blockchain; where users can race, breed and trade their horses!
           </p>
         </i>
+        -->
       </div>
       <div id="project-content">
         <div id="project-description">
+          <p>Equine is an upcoming horse racing and management game.</p>
           <p>
-            My main task for Equine involved writing theme music for each of the
-            game's 10 playable jockey characters. The characters each have
-            varying backgrounds and nationalities, which was something I wanted
-            to represent in their theme songs. A challenge I faced was trying to
+            My main task involved writing theme music for each of the game's 10
+            playable jockey characters. The characters each have varying
+            backgrounds and nationalities, which was something I wanted to
+            represent in their theme songs. A challenge I faced was trying to
             represent their different cultural backgrounds in a way that wasn't
             overly clichéd. How I approached this challenge was by trying to
             integrate traditional instruments and musical styles from the
@@ -55,6 +58,7 @@
               ><i class="fas fa-globe"></i>Website</a
             >
           </div>
+
           <div class="video-container">
             <iframe
               class="video"
@@ -67,6 +71,68 @@
           </div>
           <!--<img id="project-img" src="/images/equine_banner.jpg">-->
         </div>
+        <div id="project-players">
+          <div id="music-player" class="mp-mini" data-album-id="equine">
+            <div id="audio-wrapper">
+              <audio id="mp-audio">
+                <source />
+              </audio>
+            </div>
+            <div id="mp-left">
+              <img id="mp-art" />
+              <!--<canvas id="mp-visualiser"></canvas>-->
+            </div>
+            <div id="mp-right">
+              <div id="mp-title"></div>
+
+              <div id="mp-seek">
+                <div id="mp-currenttime">0:00</div>
+                <input
+                  type="range"
+                  oninput="change_pos()"
+                  id="mp-seekbar"
+                  step="any"
+                  min="0"
+                  max="1"
+                  value="0"
+                />
+                <div id="mp-length">10:00</div>
+              </div>
+              <div id="mp-controls">
+                <div id="mp-nav">
+                  <button
+                    onclick="previous()"
+                    id="mp-prev"
+                    class="fas fa-backward"
+                  ></button>
+                  <button
+                    onclick="play_aud()"
+                    id="mp-play"
+                    class="fas fa-play"
+                  ></button>
+                  <button
+                    onclick="next()"
+                    id="mp-next"
+                    class="fas fa-forward"
+                  ></button>
+                </div>
+                <div id="mp-vol">
+                  <span class="fas fa-volume-up"></span>
+                  <input
+                    type="range"
+                    id="mp-volslider"
+                    oninput="change_vol()"
+                    step="any"
+                    min="0"
+                    max="1"
+                    value="1"
+                  />
+                </div>
+              </div>
+              <ul id="mp-tracklist"></ul>
+            </div>
+          </div>
+        </div>
       </div>
       <div id="footer"></div>
     </div>
@@ -78,5 +144,6 @@
     </script>
     <script src="/scripts/parallax.js"></script>
     <script src="/scripts/projectPage.js"></script>
+    <script type="text/javascript" src="/scripts/musicplayer.js"></script>
   </body>
 </html>

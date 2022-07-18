@@ -5,7 +5,7 @@
     "credits": "Programming, Visual Design, Sound Design",
     "thumbnail": "/images/forest.png",
     "id": "forest",
-    "categories": ["audiovisual", "design", "programming"]
+    "categories": ["audiovisual", "design", "sounddesign", "programming"]
   },
   {
     "title": "Kaitiaki Harvest",
@@ -13,7 +13,14 @@
     "credits": "Music, Sound Design, Programming",
     "thumbnail": "/images/kaitiakiharvest.png",
     "id": "kaitiakiharvest",
-    "categories": ["games", "soundtrack", "music", "programming", "gamejam"]
+    "categories": [
+      "games",
+      "soundtrack",
+      "sounddesign",
+      "music",
+      "programming",
+      "gamejam"
+    ]
   },
   {
     "title": "Untitled Marching Cubes Project",
@@ -21,7 +28,13 @@
     "credits": "Programming, Visual Design, Sound Design",
     "thumbnail": "/images/marchingcubes_1.png",
     "id": "marchingcubes",
-    "categories": ["audiovisual", "design", "programming", "games"]
+    "categories": [
+      "audiovisual",
+      "design",
+      "sounddesign",
+      "programming",
+      "games"
+    ]
   },
   {
     "title": "Equine",
@@ -53,7 +66,7 @@
     "credits": "Programming, Visual Design, Sound Design",
     "thumbnail": "/images/ballpit.png",
     "id": "ballpit",
-    "categories": ["audiovisual", "design", "programming"]
+    "categories": ["audiovisual", "design", "sounddesign", "programming"]
   },
   {
     "title": "Trigger Witch",
@@ -69,7 +82,14 @@
     "credits": "Music, Sound Design, Game Design, Programming",
     "thumbnail": "/images/reorientationweek.png",
     "id": "reorientationweek",
-    "categories": ["soundtrack", "music", "electronic", "programming", "games"]
+    "categories": [
+      "soundtrack",
+      "music",
+      "electronic",
+      "sounddesign",
+      "programming",
+      "games"
+    ]
   },
   {
     "title": "Bad Hagrid and the Planet of the Androgynites",
@@ -93,7 +113,14 @@
     "credits": "Music, Sound Design",
     "thumbnail": "/images/flutterby.png",
     "id": "flutterby",
-    "categories": ["music", "soundtrack", "orchestral", "games", "gamejam"]
+    "categories": [
+      "music",
+      "soundtrack",
+      "orchestral",
+      "sounddesign",
+      "games",
+      "gamejam"
+    ]
   },
   {
     "title": "The Otherworldly Adventures of Glib Globson",
@@ -115,7 +142,8 @@
       "rock",
       "electronic",
       "programming",
-      "games"
+      "games",
+      "sounddesign"
     ]
   },
   {
@@ -124,7 +152,14 @@
     "credits": "Music, Sound Design, Game Design, Programming",
     "thumbnail": "/images/stranded.png",
     "id": "stranded",
-    "categories": ["soundtrack", "music", "ambient", "programming", "games"]
+    "categories": [
+      "soundtrack",
+      "music",
+      "ambient",
+      "sounddesign",
+      "programming",
+      "games"
+    ]
   },
   {
     "title": "Drip",
@@ -132,6 +167,6 @@
     "credits": "Programming, Sound Design, Visual Design",
     "thumbnail": "/images/drip.png",
     "id": "drip",
-    "categories": ["audiovisual", "design", "programming"]
+    "categories": ["audiovisual", "design", "sounddesign", "programming"]
   }
 ]
