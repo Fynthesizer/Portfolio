@@ -5,7 +5,8 @@
     "credits": "Programming, Visual Design, Sound Design",
     "thumbnail": "/images/forest.png",
     "id": "forest",
-    "categories": ["audiovisual", "design", "sounddesign", "programming"]
+    "categories": ["audiovisual", "design", "sounddesign", "programming"],
+    "show": true
   },
   {
     "title": "Kaitiaki Harvest",
@@ -20,7 +21,8 @@
       "music",
       "programming",
       "gamejam"
-    ]
+    ],
+    "show": true
   },
   {
     "title": "Untitled Marching Cubes Project",
@@ -34,15 +36,17 @@
       "sounddesign",
       "programming",
       "games"
-    ]
+    ],
+    "show": true
   },
   {
     "title": "Equine",
-    "description": "NFT Racehorse Management Game",
+    "description": "Racehorse Management Game",
     "credits": "Music",
     "thumbnail": "/images/equine.png",
     "id": "equine",
-    "categories": ["orchestral", "music", "soundtrack", "games"]
+    "categories": ["orchestral", "music", "soundtrack", "games"],
+    "show": true
   },
   {
     "title": "Whirlpool",
@@ -50,7 +54,8 @@
     "credits": "Programming, Visual Design",
     "thumbnail": "/images/visualiser.png",
     "id": "visualiser",
-    "categories": ["audiovisual", "design", "programming"]
+    "categories": ["audiovisual", "design", "programming"],
+    "show": true
   },
   {
     "title": "Here Comes Haggy",
@@ -58,7 +63,8 @@
     "credits": "Keys, Vocals, Songwriting",
     "thumbnail": "/images/herecomeshaggy.jpg",
     "id": "herecomeshaggy",
-    "categories": ["badhagrid", "music", "rock"]
+    "categories": ["badhagrid", "music", "rock"],
+    "show": false
   },
   {
     "title": "Ball Pit",
@@ -66,7 +72,8 @@
     "credits": "Programming, Visual Design, Sound Design",
     "thumbnail": "/images/ballpit.png",
     "id": "ballpit",
-    "categories": ["audiovisual", "design", "sounddesign", "programming"]
+    "categories": ["audiovisual", "design", "sounddesign", "programming"],
+    "show": true
   },
   {
     "title": "Trigger Witch",
@@ -74,7 +81,8 @@
     "credits": "Music",
     "thumbnail": "/images/triggerwitch.png",
     "id": "triggerwitch",
-    "categories": ["soundtrack", "music", "rock", "games"]
+    "categories": ["soundtrack", "music", "rock", "games"],
+    "show": true
   },
   {
     "title": "Reorientation Week",
@@ -89,7 +97,8 @@
       "sounddesign",
       "programming",
       "games"
-    ]
+    ],
+    "show": true
   },
   {
     "title": "Bad Hagrid and the Planet of the Androgynites",
@@ -97,7 +106,8 @@
     "credits": "Keys, Songwriting",
     "thumbnail": "/images/planetoftheandrogynites.jpg",
     "id": "planetoftheandrogynites",
-    "categories": ["badhagrid", "music", "rock"]
+    "categories": ["badhagrid", "music", "rock"],
+    "show": true
   },
   {
     "title": "Polyphonic Polygonatron",
@@ -105,7 +115,8 @@
     "credits": "Programming, Music, Visual Design",
     "thumbnail": "/images/polyphonicpolygonatron.png",
     "id": "polyphonicpolygonatron",
-    "categories": ["audiovisual", "design", "music", "programming"]
+    "categories": ["audiovisual", "design", "music", "programming"],
+    "show": true
   },
   {
     "title": "Flutterby",
@@ -120,7 +131,8 @@
       "sounddesign",
       "games",
       "gamejam"
-    ]
+    ],
+    "show": true
   },
   {
     "title": "The Otherworldly Adventures of Glib Globson",
@@ -128,7 +140,8 @@
     "credits": "Music",
     "thumbnail": "/images/glibglobson.png",
     "id": "glibglobson",
-    "categories": ["music", "electronic"]
+    "categories": ["music", "electronic"],
+    "show": true
   },
   {
     "title": "Angry Peaches",
@@ -144,7 +157,8 @@
       "programming",
       "games",
       "sounddesign"
-    ]
+    ],
+    "show": true
   },
   {
     "title": "Stranded",
@@ -159,7 +173,8 @@
       "sounddesign",
       "programming",
       "games"
-    ]
+    ],
+    "show": true
   },
   {
     "title": "Drip",
@@ -167,6 +182,7 @@
     "credits": "Programming, Sound Design, Visual Design",
     "thumbnail": "/images/drip.png",
     "id": "drip",
-    "categories": ["audiovisual", "design", "sounddesign", "programming"]
+    "categories": ["audiovisual", "design", "sounddesign", "programming"],
+    "show": true
   }
 ]
