@@ -1,5 +1,14 @@
 [
   {
+    "title": "Duck Feeding Game",
+    "description": "Duck Management Simulator",
+    "credits": "Programming, Visual Design, Game Design, Sound Design",
+    "thumbnail": "/images/duckfeedinggame.png",
+    "id": "duckfeedinggame",
+    "categories": ["games", "design", "sounddesign", "programming"],
+    "show": true
+  },
+  {
     "title": "Forest",
     "description": "Magical Musical Trees",
     "credits": "Programming, Visual Design, Sound Design",
@@ -25,6 +34,15 @@
     "show": true
   },
   {
+    "title": "Whirlpool",
+    "description": "Music Visualiser",
+    "credits": "Programming, Visual Design",
+    "thumbnail": "/images/visualiser.png",
+    "id": "visualiser",
+    "categories": ["audiovisual", "design", "programming"],
+    "show": true
+  },
+  {
     "title": "Untitled Marching Cubes Project",
     "description": "Procedurally Generated Sandbox",
     "credits": "Programming, Visual Design, Sound Design",
@@ -46,15 +64,6 @@
     "thumbnail": "/images/equine.png",
     "id": "equine",
     "categories": ["orchestral", "music", "soundtrack", "games"],
-    "show": true
-  },
-  {
-    "title": "Whirlpool",
-    "description": "Music Visualiser",
-    "credits": "Programming, Visual Design",
-    "thumbnail": "/images/visualiser.png",
-    "id": "visualiser",
-    "categories": ["audiovisual", "design", "programming"],
     "show": true
   },
   {
