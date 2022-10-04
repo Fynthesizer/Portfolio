@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="New Zealand music composer and producer for games and media."
+    />
+    <title>Finneganeganegan</title>
+    <link rel="stylesheet" href="/styles/global.css" />
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/0d3aed0d5c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body data-project-id="gamebeing">
+    <div id="header"></div>
+
+    <div id="main">
+      <div id="project-header">
+        <h1 id="project-title"></h1>
+        <h2 id="project-subtitle"></h2>
+        <i>
+          <p>
+            GameBeing is an audiovisual experience in which material physicality
+            and spatial expression are being combined through the lens of
+            digital play.
+          </p>
+          <p>
+            Central to the work is a Nintendo GameBoy Advance; which not only
+            represents a traditional interface for technology-centred play, but
+            acts as one of the driving forces which generates the audio and
+            disrupts the visuals in response. Motion is sensed from the audience
+            via a webcam which uses movement to generate visuals through an
+            algorithm built in TouchDesigner. The same movement captured by the
+            webcam also manipulates the sound in direct response to the motion
+            of each audience member.
+          </p>
+          <p>
+            GameBeing seeks to create a hybrid of procedurally-generated story
+            and play with motion-controlled physical and spatial expression from
+            an audience, developing an audiovisual narrative encapsulating both
+            material technology and physical movement within a space –
+            transcending the limits of play typically imposed by the use of
+            traditional video game equipment.
+          </p>
+        </i>
+      </div>
+
+      <div id="project-content">
+        <div id="project-description">
+          <p>
+            GameBeing is a collaboration between myself and my friend Sabrina of
+            Knifedge Visuals. We wanted to create an audiovisual experience
+            which reacts to user motion, using this data to alter the sound and
+            visuals. My main focus was on writing the music whilst Sabrina's was
+            on designing and programming the visuals.
+          </p>
+          <p>
+            I wrote a handful of tracks which react to motion controls in
+            various ways. In some tracks the user is able to control the volume
+            of different parts by raising their hands. In others, the position
+            of their hands is used to control the pitch of a part, allowing them
+            to improvise using their body.
+          </p>
+          <div id="project-links">
+            <a href="https://ada.net.nz/artbase/gamebeing/" target="_blank"
+              ><i class="fas fa-globe"></i>Website</a
+            >
+          </div>
+          <div class="video-container">
+            <video class="video" src="/images/gamebeing.mp4" controls></video>
+          </div>
+        </div>
+      </div>
+      <!--
+      <div class="game-container">
+        <iframe
+          class="game"
+          frameborder="0"
+          src="https://fynthesizer.github.io/Forest/"
+          title="Forest"
+          height: 600px
+        ></iframe>
+        
+      </div>
+      -->
+      <div id="footer"></div>
+    </div>
+
+    <script>
+      $("#header").load("/header.html");
+    </script>
+    <script>
+      $("#footer").load("/footer.html");
+    </script>
+    <script src="/scripts/parallax.js"></script>
+    <script src="/scripts/projectPage.js"></script>
+  </body>
+</html>

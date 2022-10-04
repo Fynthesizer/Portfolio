@@ -25,10 +25,10 @@ html {
   --green: #6fbf78;
   --red: #ce3939;
   --blue: #4c98d9;
-  --teal: #38afaf;
+  --teal: #359b9b;
   --orange: #e09b2e;
   --purple: #de73ad;
-  --yellow: #ebd142;
+  --yellow: #e2c43f;
   --maxW: 1100px;
 }
 
@@ -59,6 +59,34 @@ p a {
 
 p a:hover {
   color: var(--link);
+}
+
+.hover-green:hover {
+  color: var(--green);
+}
+
+.hover-red:hover {
+  color: var(--red);
+}
+
+.hover-blue:hover {
+  color: var(--blue);
+}
+
+.hover-purple:hover {
+  color: var(--purple);
+}
+
+.hover-yellow:hover {
+  color: var(--yellow);
+}
+
+.hover-teal:hover {
+  color: var(--teal);
+}
+
+.hover-orange:hover {
+  color: var(--orange);
 }
 
 .wavey {
@@ -211,48 +239,6 @@ input[type="range"]:hover::-moz-range-thumb {
   width: 20px;
   text-align: center;
   text-decoration: none;
-}
-
-#header .fa-bandcamp:hover,
-#footer .fa-bandcamp:hover,
-#socials .fa-bandcamp:hover {
-  color: var(--teal);
-}
-
-#header .fa-soundcloud:hover,
-#footer .fa-soundcloud:hover,
-#socials .fa-soundcloud:hover {
-  color: var(--orange);
-}
-
-#header .fa-youtube:hover,
-#footer .fa-youtube:hover,
-#socials .fa-youtube:hover {
-  color: var(--red);
-}
-
-#header .fa-github:hover,
-#footer .fa-github:hover,
-#socials .fa-github:hover {
-  color: var(--purple);
-}
-
-#header .fa-twitter:hover,
-#footer .fa-twitter:hover,
-#socials .fa-twitter:hover {
-  color: var(--blue);
-}
-
-#header .fa-instagram:hover,
-#footer .fa-instagram:hover,
-#socials .fa-instagram:hover {
-  color: var(--purple);
-}
-
-#header .fa-envelope:hover,
-#footer .fa-envelope:hover,
-#socials .fa-envelope:hover {
-  color: var(--yellow);
 }
 
 #socials {
@@ -657,6 +643,10 @@ button {
 
 #project-header {
   margin-bottom: 50px;
+}
+
+#project-header p {
+  padding-left: 1rem;
 }
 
 #project-title {

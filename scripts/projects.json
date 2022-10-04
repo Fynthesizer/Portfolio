@@ -1,5 +1,14 @@
 [
   {
+    "title": "GameBeing",
+    "description": "Interactive Audiovisual Installation",
+    "credits": "Music, Programming",
+    "thumbnail": "/images/gamebeing.png",
+    "id": "gamebeing",
+    "categories": ["music", "audiovisual", "programming"],
+    "show": true
+  },
+  {
     "title": "Duck Feeding Game",
     "description": "Duck Management Simulator",
     "credits": "Programming, Visual Design, Game Design, Sound Design",
