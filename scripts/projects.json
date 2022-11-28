@@ -1,5 +1,20 @@
 [
   {
+    "title": "Clout Chaser",
+    "description": "Phone Addiction Simulator",
+    "credits": "Music, Programming",
+    "thumbnail": "/images/cloutchaser.png",
+    "id": "cloutchaser",
+    "categories": [
+      "music",
+      "games",
+      "programming",
+      "sounddesign",
+      "soundtrack"
+    ],
+    "show": true
+  },
+  {
     "title": "GameBeing",
     "description": "Interactive Audiovisual Installation",
     "credits": "Music, Programming",
