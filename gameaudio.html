@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Finn Mitchell-Anyon — New Zealand music composer / producer, sound designer and programmer making all sorts of wacky things."
+    />
+    <title>Finneganeganegan</title>
+    <link rel="stylesheet" href="/styles/global.css" />
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+    <script
+      src="https://kit.fontawesome.com/0d3aed0d5c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/amplitudejs@5.3.2/dist/amplitude.js"
+    ></script>
+  </head>
+
+  <body>
+    <div id="header"></div>
+    <div id="main">
+      <div id="gameaudio-header">
+        <h1>game audio</h1>
+        <p>
+          Kia ora! Here's where you can find some examples of my music
+          composition, sound design, and audio implementation for games. I love
+          making sounds and I love video games and I love making sounds to put
+          in video games.
+        </p>
+        <p>
+          Are you keen to make a game together? Why not flick me an email at
+          <a href="mailto:finn.mitchellanyon@gmail.com"
+            >finn.mitchellanyon@gmail.com</a
+          >
+        </p>
+      </div>
+      <div id="showreel">
+        <h2 class="wavey"><span>showreel</span></h2>
+        <div class="video-container" id="showreel-video">
+          <iframe
+            class="video"
+            src="https://www.youtube.com/embed/JHamHok0yw0"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+
+      <div id="demos">
+        <h2 class="wavey"><span>music</span></h2>
+        <div id="music-player" data-album-ID="showreel">
+          <div id="audio-wrapper">
+            <audio id="mp-audio">
+              <source />
+            </audio>
+          </div>
+          <div id="mp-left">
+            <img id="mp-art" />
+            <!--<canvas id="mp-visualiser"></canvas>-->
+          </div>
+          <div id="mp-right">
+            <div id="mp-title"></div>
+
+            <div id="mp-seek">
+              <div id="mp-currenttime">0:00</div>
+              <input
+                type="range"
+                oninput="change_pos()"
+                id="mp-seekbar"
+                step="any"
+                min="0"
+                max="1"
+                value="0"
+              />
+              <div id="mp-length">10:00</div>
+            </div>
+            <div id="mp-controls">
+              <div id="mp-nav">
+                <button
+                  onclick="previous()"
+                  id="mp-prev"
+                  class="fas fa-backward"
+                ></button>
+                <button
+                  onclick="play_aud()"
+                  id="mp-play"
+                  class="fas fa-play"
+                ></button>
+                <button
+                  onclick="next()"
+                  id="mp-next"
+                  class="fas fa-forward"
+                ></button>
+              </div>
+              <div id="mp-vol">
+                <span class="fas fa-volume-up"></span>
+                <input
+                  type="range"
+                  id="mp-volslider"
+                  oninput="change_vol()"
+                  step="any"
+                  min="0"
+                  max="1"
+                  value="1"
+                />
+              </div>
+            </div>
+            <ul id="mp-tracklist"></ul>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+    <script>
+      $("#header").load("/header.html");
+    </script>
+    <script>
+      $("#footer").load("/footer.html");
+    </script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="scripts/portfolio.js"></script>
+    <script src="scripts/filter.js"></script>
+    <script src="/scripts/parallax.js"></script>
+    <script type="text/javascript" src="scripts/musicplayer.js"></script>
+  </body>
+</html>
