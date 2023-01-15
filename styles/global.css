@@ -123,6 +123,7 @@ h2 {
   border-color: white;
   /*border-bottom-style: solid;*/
   border-width: 1px;
+  font-weight: 100;
 }
 
 h2 span {
@@ -255,7 +256,7 @@ input[type="range"]:hover::-moz-range-thumb {
 #main {
   max-width: var(--maxW);
   margin: auto;
-  padding: 163px 60px 30px 60px;
+  padding: 133px 30px 30px 30px;
   background-color: var(--main);
 }
 
@@ -341,25 +342,30 @@ input[type="range"]:hover::-moz-range-thumb {
   margin-top: 60px;
 }
 
-#redesigns-body {
+.panel {
   background-color: #1e252c;
-  padding: 1.5em;
+  padding: 1em;
+  display: grid;
+  grid-gap: 1em;
 }
 
-.redesign {
+.panel-section {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
+  grid-gap: 1em;
 }
 
-.redesign-video {
+.panel-section-left {
   position: relative;
   padding-bottom: 56.25%;
   height: 0;
 }
 
-.redesign-video iframe {
+.panel-section-right {
+}
+
+.panel-section iframe {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -367,10 +373,11 @@ input[type="range"]:hover::-moz-range-thumb {
   left: 0;
 }
 
-.redesign-description {
+.panel-section img {
+  width: 100%;
 }
 
-.redesign-description h3 {
+.panel-section h3 {
   font-size: 1.5em;
   font-weight: 500;
 }
@@ -1013,16 +1020,16 @@ header {
     width: 100%;
   }
 
-  .redesign {
+  .panel-section {
     display: block;
   }
 
-  .redesign-video {
+  .panel-section-left {
     margin-bottom: 15px;
   }
 
-  .redesign-description p,
-  .redesign-description h3 {
+  .panel-section p,
+  .panel-section h3 {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }

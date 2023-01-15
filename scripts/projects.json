@@ -67,11 +67,11 @@
     "show": true
   },
   {
-    "title": "Untitled Marching Cubes Project",
+    "title": "Voxelarium",
     "description": "Procedurally Generated Sandbox",
     "credits": "Programming, Visual Design, Sound Design",
     "thumbnail": "/images/marchingcubes_1.png",
-    "id": "marchingcubes",
+    "id": "voxelarium",
     "categories": [
       "audiovisual",
       "design",
