@@ -28,11 +28,24 @@
       <div id="project-content">
         <div id="project-description">
           <p>
-            This is a mobile game prototype I've been working on which takes
-            attempts to gamify the mundane activity of feeding ducks. The player
-            aims using the phone's gyroscope, and throws food by swiping up. The
-            challenge lies in attempting to feed as many of the ducks as
-            possible, with only a limited amount of food to go around.
+            This is a mobile game prototype I've been working on which attempts
+            to gamify the mundane activity of feeding ducks. The challenge lies
+            in attempting to feed as many of the ducks as possible, with only a
+            limited amount of food to go around.
+          </p>
+          <p>
+            To throw duck food, the player swipes up from the bottom of the
+            screen. The direction and force of the throw is determined by the
+            direction and speed of their swipe. The player can also look around
+            the pond by dragging across the screen.
+          </p>
+          <p>
+            The ducks' AI was implemented with the help of the
+            <a href="https://en.wikipedia.org/wiki/A*_search_algorithm"
+              >A* pathfinding algorithm</a
+            >. Ducks will wander aimlessly around the lake until they detect
+            that food has landed nearby, after which they all race towards it
+            while cleverly avoiding any obstacles.
           </p>
           <p>
             Fed ducks reward the player with "Duck Bux", a currency which
@@ -54,6 +67,11 @@
               href="https://github.com/Fynthesizer/Duck-Feeding-Game"
               target="_blank"
               ><i class="fab fa-github"></i>GitHub</a
+            >
+            <a
+              href="https://finneganeganegan.itch.io/duck-feeding-game"
+              target="_blank"
+              ><i class="fas fa-gamepad"></i>Play</a
             >
           </div>
           <div class="video-container">
