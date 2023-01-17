@@ -19,23 +19,26 @@ var albums = [
     albumID: "showreel",
     tracks: [
       {
+        title: "The Slumberous Swamp",
+        audio: "/audio/grottygrotto.mp3",
+        art: "/images/trackart/enchantedforest.png",
+        genre: "Orchestral",
+      },
+      {
         title: "The Beginning of a Grand Adventure",
         audio: "/audio/grandadventure.mp3",
         art: "/images/trackart/enchantedforest.png",
         genre: "Orchestral",
       },
+      /*
       {
         title: "Forest Sprites",
         audio: "/audio/enchantedforest.mp3",
         art: "/images/trackart/enchantedforest.png",
         genre: "Orchestral",
       },
-      {
-        title: "The Slumberous Swamp",
-        audio: "/audio/grottygrotto.mp3",
-        art: "/images/trackart/enchantedforest.png",
-        genre: "Orchestral",
-      },
+      */
+
       {
         title: "Trigger Witch - The Good, the Bad",
         audio: "/audio/thegoodthebad.mp3",
@@ -66,14 +69,6 @@ var albums = [
         art: "/images/triggerwitch.png",
         genre: "Synth Metal",
       },
-      /*
-  {
-    title: "Kaitiaki Harvest",
-    audio: "/audio/kaitiakiharvest.mp3",
-    art: "/images/kaitiakiharvest.png",
-    genre: "16-Bit Ambient",
-  },
-  */
       {
         title: "Leaving the City",
         audio: "/audio/leavingthecity.mp3",
@@ -92,12 +87,14 @@ var albums = [
         art: "/images/trackart/synthwave.png",
         genre: "Synthwave",
       },
+      /*
       {
         title: "Crime of Slashin'",
         audio: "/audio/crimeofslashin.mp3",
         art: "/images/trackart/synthwave.png",
         genre: "Synthwave",
       },
+      */
       {
         title: "Equine - Main Theme",
         audio: "/audio/equine.mp3",
@@ -142,18 +139,15 @@ var albums = [
         art: "/images/trackart/lifeforms.jpg",
         genre: "Electronic",
       },
+      /*
       {
         title: "Ancient Mystery",
         audio: "/audio/ancientmystery.mp3",
         art: "/images/trackart/ancientmystery.png",
         genre: "Hybrid Orchestral",
       },
-      {
-        title: "Stranded - Figment",
-        audio: "/audio/figment.mp3",
-        art: "/images/stranded.png",
-        genre: "Ambient",
-      },
+      */
+
       {
         title: "Flutterby",
         audio: "/audio/flutterby.mp3",
@@ -161,11 +155,26 @@ var albums = [
         genre: "Orchestral",
       },
       {
+        title: "Stranded - Figment",
+        audio: "/audio/figment.mp3",
+        art: "/images/stranded.png",
+        genre: "Ambient",
+      },
+      /*
+      {
+        title: "Kaitiaki Harvest",
+        audio: "/audio/kaitiakiharvest.mp3",
+        art: "/images/kaitiakiharvest.png",
+        genre: "16-Bit Ambient",
+      },
+      
+      {
         title: "Angry Peaches",
         audio: "/audio/angrypeaches.mp3",
         art: "/images/angrypeaches.png",
         genre: "Chiptune-Metal",
       },
+      */
     ],
   },
   {
