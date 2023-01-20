@@ -29,7 +29,7 @@ html {
   --orange: #e09b2e;
   --purple: #de73ad;
   --yellow: #e2c43f;
-  --maxW: 1100px;
+  --maxW: 1200px;
 }
 
 ::selection {
@@ -53,7 +53,8 @@ p {
   margin-top: 0;
 }
 
-p a {
+p a,
+li a {
   color: var(--linkInactive);
 }
 
@@ -118,8 +119,8 @@ h1 img {
 h2 {
   font-size: 2.5em;
   text-align: center;
-  margin-top: 60px;
-  margin-bottom: 30px;
+  margin-top: 1em;
+  margin-bottom: 1em;
   border-color: white;
   /*border-bottom-style: solid;*/
   border-width: 1px;
@@ -267,8 +268,6 @@ input[type="range"]:hover::-moz-range-thumb {
 }
 
 #gameaudio-header p {
-  text-align: center;
-  font-size: 1.1em;
   width: 75%;
   margin-left: auto;
   margin-right: auto;
@@ -276,6 +275,10 @@ input[type="range"]:hover::-moz-range-thumb {
 
 .centered {
   text-align: center;
+}
+
+.large-text {
+  font-size: 1.1em;
 }
 
 #gameaudio-header h1 {
@@ -299,6 +302,22 @@ input[type="range"]:hover::-moz-range-thumb {
 #gameaudio-skills-list li {
   min-width: 200px;
   text-align: center;
+  padding-top: 1em;
+}
+
+#gameaudio-otherprojects {
+  columns: 3;
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+}
+
+#gameaudio-otherprojects li {
   padding-top: 1em;
 }
 
@@ -373,6 +392,8 @@ input[type="range"]:hover::-moz-range-thumb {
   padding: 1em;
   display: grid;
   grid-gap: 1em;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 .panel-section {

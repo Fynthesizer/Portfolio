@@ -23,24 +23,26 @@
   <body>
     <div id="header"></div>
     <div id="main">
-      <div id="gameaudio-header">
+      <section id="gameaudio-header">
         <h1>game audio</h1>
-        <p>
+        <p class="centered large-text">
           Kia ora! Here's where you can find some examples of my music
           composition, sound design, and audio implementation for games. I'm
           passionate about exploring the intersection between sound and visuals
           and the ways that music and sound can be made to dynamically react to
           the player's actions.
         </p>
-        <p>You can find my CV <a href="FinnMA_Resume2023.pdf">here</a>.</p>
-        <p>
+        <p class="centered large-text">
+          You can find my CV <a href="FinnMA_Resume2023.pdf">here</a>.
+        </p>
+        <p class="centered large-text">
           Are you keen to work together? Flick me an email at
           <a href="mailto:finn.mitchellanyon@gmail.com"
             >finn.mitchellanyon@gmail.com</a
           >
         </p>
-      </div>
-      <div id="showreel">
+      </section>
+      <section id="showreel">
         <h2 class="wavey"><span>showreel</span></h2>
         <div class="video-container" id="showreel-video">
           <iframe
@@ -51,10 +53,13 @@
             allowfullscreen
           ></iframe>
         </div>
-      </div>
+      </section>
 
-      <div id="gameaudio-projects">
+      <section id="gameaudio-projects">
         <h2 class="wavey"><span>selected projects</span></h2>
+        <p class="centered large-text">
+          Some of my favourite games and interactive experiences I've worked on
+        </p>
         <div class="panel">
           <div class="panel-section">
             <div class="panel-section-left">
@@ -144,10 +149,35 @@
             </div>
           </div>
         </div>
-      </div>
+        <p class="centered large-text">
+          Some other cool things I've made or worked on:
+        </p>
+        <ul id="gameaudio-otherprojects">
+          <li><a href="/works/duckfeedinggame.html">Duck Feeding Game</a></li>
+          <li><a href="/works/stranded.html">Stranded</a></li>
+          <li><a href="/works/angrypeaches.html">Angry Peaches</a></li>
+          <li><a href="/works/equine.html">Equine</a></li>
+          <li><a href="/works/cloutchaser.html">Clout Chaser</a></li>
+          <li><a href="/works/kaitiakiharvest.html">Kaitiaki Harvest</a></li>
+          <li><a href="/works/flutterby.html">Flutterby</a></li>
+          <li><a href="/works/gamebeing.html">GameBeing</a></li>
+          <li><a href="/works/ballpit.html">Ball Pit</a></li>
+          <li><a href="/works/drip.html">Drip</a></li>
+          <li>
+            <a href="/works/polyphonicpolygonatron.html"
+              >Polyphonic Polygonatron</a
+            >
+          </li>
+          <li><a href="/works/whirlpool.html">Whirlpool</a></li>
+        </ul>
+      </section>
 
-      <div id="redesigns">
+      <section id="redesigns">
         <h2 class="wavey"><span>redesigns</span></h2>
+        <p class="centered large-text">
+          Clips from games and other media which I've used to practice my sound
+          design skills
+        </p>
         <div class="panel" id="redesigns-body">
           <div class="panel-section">
             <div class="panel-section-left">
@@ -180,6 +210,31 @@
           <div class="panel-section">
             <div class="panel-section-left">
               <iframe
+                src="https://www.youtube.com/embed/q-ic1MGpQqQ?vq=hd720"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="panel-section-right">
+              <h3>Horizon Zero Dawn</h3>
+              <p>
+                A clip from the open world action-adventure, Horizon Zero Dawn,
+                in which I've recreated the audio for the Focus and for the bow
+                and arrow.
+              </p>
+              <p>
+                I ended up using about 15 layers to create the bow and arrow
+                sounds. Some of these layers include: scrunching a leather
+                jacket, pulling a zipper, flicking a ruler, swinging a broom,
+                and punching a cushion.
+              </p>
+            </div>
+          </div>
+          <div class="panel-section">
+            <div class="panel-section-left">
+              <iframe
                 src="https://www.youtube.com/embed/PxMKpvGPzrs?vq=hd720"
                 title="YouTube video player"
                 frameborder="0"
@@ -193,11 +248,6 @@
                 The trailer for the upcoming sequel to Hyper Light Drifter. I
                 made heavy use of synthesis and audio effects to design the
                 sci-fi weaponry sounds.
-              </p>
-              <p>
-                Some elements, including the footsteps, gore, and explosions,
-                were created using clips sourced from
-                <a href="https://sonniss.com/">Sonniss</a>.
               </p>
             </div>
           </div>
@@ -225,9 +275,9 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div id="demos">
+      <section id="demos">
         <h2 class="wavey"><span>music</span></h2>
         <div id="music-player" data-album-ID="showreel">
           <div id="audio-wrapper">
@@ -289,7 +339,7 @@
             <ul id="mp-tracklist"></ul>
           </div>
         </div>
-      </div>
+      </section>
       <div id="footer"></div>
     </div>
     <script>
