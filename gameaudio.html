@@ -8,6 +8,11 @@
     />
     <title>Finneganeganegan</title>
     <link rel="stylesheet" href="/styles/global.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.statically.io/gh/mdlavin/bootstrap-carousel-standalone/292657fcb31f3c21cc7147816ab66e2191466f67/css/bootstrap.css"
+      crossorigin="anonymous"
+    />
     <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
     <script
       src="https://kit.fontawesome.com/0d3aed0d5c.js"
@@ -38,7 +43,7 @@
         </p>
         -->
         <p class="section-description">
-          Are you keen to work together? Flick me an email at
+          Are you keen to make something together? Flick me an email at
           <a href="mailto:finn.mitchellanyon@gmail.com"
             >finn.mitchellanyon@gmail.com</a
           >
@@ -59,15 +64,17 @@
 
       <section id="wwise-demo">
         <h2 class="section-header"><span>Wwise Implementation Demo</span></h2>
-        <p class="section-description">
-          This is my redesign of Unity's
-          <a
-            href="https://assetstore.unity.com/packages/templates/tutorials/3d-game-kit-115747"
-          >
-            3D Game Kit project</a
-          >. I removed all existing audio from the game and created my own sound
-          effects and music, which I implemented using Wwise and C#.
-        </p>
+        <div class="section-description">
+          <p>
+            This is my redesign of Unity's
+            <a
+              href="https://assetstore.unity.com/packages/templates/tutorials/3d-game-kit-115747"
+            >
+              3D Game Kit project</a
+            >. I removed all existing audio from the game and created my own
+            sound effects and music, which I implemented using Wwise and C#.
+          </p>
+        </div>
         <div class="video-container" id="showreel-video">
           <iframe
             class="video"
@@ -77,13 +84,114 @@
             allowfullscreen
           ></iframe>
         </div>
+        <p>
+          All sound effects that you hear in this demo were recorded /
+          synthesised and edited by me, with the exception of a few ambience
+          recordings, which were sourced from free libraries.
+        </p>
+        <p>
+          I also composed and programmed an adaptive soundtrack to complement
+          the action of the game. For example, the battle music is set up to
+          introduce more instrumental layers depending on how many enemies are
+          pursuing the player, naturally increasing the intensity.
+        </p>
       </section>
 
       <section id="gameaudio-projects">
-        <h2 class="section-header"><span>Projects</span></h2>
+        <h2 class="section-header"><span>Game Projects</span></h2>
         <p class="section-description">
-          Some of my favourite games and interactive experiences I've worked on
+          Games which I've made or contributed to
         </p>
+        <!--
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+          </ol>
+
+
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <iframe
+                src="https://www.youtube.com/embed/AU25_6JXdBs"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+
+              <div class="carousel-caption">
+                <h3>Trigger Witch</h3>
+                <p>Credits: Music</p>
+                <p>
+                  Trigger Witch is a 2D twin-stick shooter adventure game set in
+                  a fantasy world where magic has been made obsolete by
+                  firearms.
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <img
+                src="/images/marchingcubes_screenshot (8).png"
+                alt="Chania"
+              />
+              <div class="carousel-caption">
+                <h3>Voxelarium</h3>
+                <p>
+                  A procedurally generated sandbox which the player is able to
+                  freely explore and reshape.
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <img src="/images/forest_screenshot1.png" alt="Flower" />
+              <div class="carousel-caption">
+                <h3>Flowers</h3>
+                <p>Beautiful flowers in Kolymbari, Crete.</p>
+              </div>
+            </div>
+
+            <div class="item">
+              <img src="/images/forest_screenshot1.png" alt="Flower" />
+              <div class="carousel-caption">
+                <h3>Flowers</h3>
+                <p>Beautiful flowers in Kolymbari, Crete.</p>
+              </div>
+            </div>
+          </div>
+
+
+          <a
+            class="left carousel-control"
+            href="#myCarousel"
+            role="button"
+            data-slide="prev"
+          >
+            <span
+              class="glyphicon glyphicon-chevron-left"
+              aria-hidden="true"
+            ></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="right carousel-control"
+            href="#myCarousel"
+            role="button"
+            data-slide="next"
+          >
+            <span
+              class="glyphicon glyphicon-chevron-right"
+              aria-hidden="true"
+            ></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        -->
         <div class="panel">
           <div class="panel-section">
             <div class="panel-section-left">
@@ -97,6 +205,7 @@
             </div>
             <div class="panel-section-right">
               <h3>Trigger Witch</h3>
+              <p>Credits: Music</p>
               <p>
                 Trigger Witch is a 2D twin-stick shooter adventure game set in a
                 fantasy world where magic has been made obsolete by firearms.
@@ -121,6 +230,9 @@
             <div class="panel-section-right">
               <h3>Reorientation Week</h3>
               <p>
+                Credits: Music, Sound Design, Audio Implementation, Programming
+              </p>
+              <p>
                 Reorientation Week is a first person puzzle platformer based
                 around the manipulating gravity.
               </p>
@@ -144,6 +256,7 @@
             </div>
             <div class="panel-section-right">
               <h3>Voxelarium</h3>
+              <p>Credits: Sound Design, Audio Implementation</p>
               <p>
                 A procedurally generated sandbox which the player is able to
                 freely explore and reshape.
@@ -158,18 +271,21 @@
               <p><a href="./works/voxelarium.html">More info</a></p>
             </div>
           </div>
-
           <div class="panel-section">
             <div class="panel-section-left">
-              <img src="/images/forest_screenshot1.png" />
+              <iframe
+                src="https://www.youtube.com/embed/DhtufhyyfHA"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
             </div>
             <div class="panel-section-right">
-              <h3>Forest</h3>
-              <p>
-                A web-based audiovisual experience I created in Javascript that
-                allows users to create musical soundscapes by planting trees.
-              </p>
-              <p><a href="./works/forest.html">More info</a></p>
+              <h3>Duck Feeding Game</h3>
+              <p>Credits: Sound Design, Audio Implementation, Programming</p>
+              <p>A mobile game I created about feeding ducks.</p>
+              <p><a href="./works/duckfeedinggame.html">More info</a></p>
             </div>
           </div>
         </div>
@@ -177,30 +293,134 @@
           Some other cool things I've made or worked on:
         </p>
         <ul id="gameaudio-otherprojects">
-          <li><a href="/works/duckfeedinggame.html">Duck Feeding Game</a></li>
           <li><a href="/works/stranded.html">Stranded</a></li>
           <li><a href="/works/angrypeaches.html">Angry Peaches</a></li>
           <li><a href="/works/equine.html">Equine</a></li>
           <li><a href="/works/cloutchaser.html">Clout Chaser</a></li>
           <li><a href="/works/kaitiakiharvest.html">Kaitiaki Harvest</a></li>
           <li><a href="/works/flutterby.html">Flutterby</a></li>
-          <li><a href="/works/gamebeing.html">GameBeing</a></li>
-          <li><a href="/works/ballpit.html">Ball Pit</a></li>
-          <li><a href="/works/drip.html">Drip</a></li>
-          <li>
-            <a href="/works/polyphonicpolygonatron.html"
-              >Polyphonic Polygonatron</a
-            >
-          </li>
-          <li><a href="/works/whirlpool.html">Whirlpool</a></li>
         </ul>
+      </section>
+
+      <section id="gameaudio-audiovisual">
+        <h2 class="section-header"><span>Audio Programming</span></h2>
+        <p class="section-description">
+          Interactive experiences exploring the interplay of sound and visuals
+        </p>
+
+        <div class="panel">
+          <div class="panel-section">
+            <div class="panel-section-left">
+              <img src="/images/forest_screenshot1.png" />
+            </div>
+            <div class="panel-section-right">
+              <h3>Forest</h3>
+              <p>
+                A web-based audiovisual experience created in Javascript that
+                allows users to create musical soundscapes by planting trees.
+              </p>
+              <p><a href="./works/forest.html">More info</a></p>
+            </div>
+          </div>
+
+          <div class="panel-section">
+            <div class="panel-section-left">
+              <img src="/images/gamebeing_banner.png" />
+            </div>
+            <div class="panel-section-right">
+              <h3>GameBeing</h3>
+              <p>
+                An installation which generates music and visuals in response to
+                users' motions. Sound is generated by sending MIDI data to a
+                GameBoy Advance. Various parameters of the MIDI data are
+                controlled by data received from an XBox Kinect.
+              </p>
+              <p><a href="./works/gamebeing.html">More info</a></p>
+            </div>
+          </div>
+
+          <div class="panel-section">
+            <div class="panel-section-left">
+              <img src="/images/drip_banner.png" />
+            </div>
+            <div class="panel-section-right">
+              <h3>Drip</h3>
+              <p>
+                A browser-based musical toy made in JavaScript that allows you
+                to create complex musical patterns by placing and arranging
+                blocks.
+              </p>
+              <p><a href="./works/drip.html">More info</a></p>
+            </div>
+          </div>
+
+          <div class="panel-section">
+            <div class="panel-section-left">
+              <img src="/images/ballpit_banner.png" />
+            </div>
+            <div class="panel-section-right">
+              <h3>Ball Pit</h3>
+              <p>
+                A musical toy created in Unity. The user throws bouncy musical
+                balls around in a room. As they collide into the walls and each
+                other, they emit various tones.
+              </p>
+              <p>
+                The experience uses head-related transfer function (HRTF) to
+                simulate realistic 3D sound.
+              </p>
+              <p><a href="./works/ballpit.html">More info</a></p>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section id="redesigns">
         <h2 class="section-header"><span>Redesigns</span></h2>
         <p class="section-description">
-          Clips that I've recreated or redesigned audio for
+          Clips that I've recreated or redesigned sound for to explore new sound
+          design techniques
         </p>
+        <div class="redesign-grid">
+          <div class="redesign">
+            <iframe
+              src="https://www.youtube.com/embed/TDKMcMtxC0o?vq=hd720"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="redesign">
+            <iframe
+              src="https://www.youtube.com/embed/q-ic1MGpQqQ?vq=hd720"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="redesign">
+            <iframe
+              src="https://www.youtube.com/embed/PxMKpvGPzrs?vq=hd720"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="redesign">
+            <iframe
+              src="https://www.youtube.com/embed/WjwNElCiXKY?vq=hd720"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+
+        <!--
         <div class="panel" id="redesigns-body">
           <div class="panel-section">
             <div class="panel-section-left">
@@ -298,6 +518,7 @@
             </div>
           </div>
         </div>
+        -->
       </section>
 
       <section id="demos">
@@ -380,6 +601,10 @@
     <script src="scripts/portfolio.js"></script>
     <script src="scripts/filter.js"></script>
     <script src="/scripts/parallax.js"></script>
+    <script
+      src="https://cdn.statically.io/gh/mdlavin/bootstrap-carousel-standalone/292657fcb31f3c21cc7147816ab66e2191466f67/js/bootstrap.js"
+      crossorigin="anonymous"
+    ></script>
     <script type="text/javascript" src="scripts/musicplayer.js"></script>
   </body>
 </html>
