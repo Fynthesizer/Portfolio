@@ -12,6 +12,7 @@ html {
 :root {
   --background: #1f252c;
   --header: #1b1c21;
+  --mainDark: #1f262e;
   --main: #252d37;
   --link: #6fbf78;
   --linkInactive: #5da265;
@@ -487,7 +488,7 @@ input[type="range"]:hover::-moz-range-thumb {
 }
 
 #music-player {
-  background-color: #1d2227;
+  background-color: var(--mainDark);
   display: flex;
   align-items: flex-start;
 }
@@ -810,6 +811,10 @@ button {
   font-size: 2.5em;
   margin-bottom: 7.5px;
   margin-top: 60px;
+}
+
+#project-summary {
+  font-style: italic;
 }
 
 #project-subtitle {
