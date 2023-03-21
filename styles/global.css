@@ -930,6 +930,7 @@ span {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  transition: 0.2s ease;
 }
 
 .youtube-playlist-item img {
@@ -942,7 +943,7 @@ span {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: black;
   padding: 1em;
   box-sizing: border-box;
   opacity: 0;
@@ -959,7 +960,30 @@ span {
   padding: 0;
 }
 
+.youtube-playlist-item.active .youtube-playlist-item-overlay {
+  background-color: rgba(255, 255, 255, 0.3);
+  opacity: 1;
+}
+
+.youtube-playlist-item.active {
+  cursor: default;
+}
+
+.youtube-playlist-item.active img {
+  filter: blur(2px);
+}
+
+.youtube-playlist-item.active .youtube-playlist-item-overlay p {
+  opacity: 0;
+}
+
 .youtube-playlist-item:hover .youtube-playlist-item-overlay {
+  opacity: 0.8;
+  background: none;
+  background-color: black;
+}
+
+.youtube-playlist-item:hover .youtube-playlist-item-overlay p {
   opacity: 1;
 }
 

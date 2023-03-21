@@ -42,23 +42,36 @@ function loadPlaylist() {
     });
 }
 
-function setVideoId(id) {
-  player.loadVideoById(id);
+function selectVideo(item) {
+  if (item != activeItem) {
+    player.loadVideoById(item.dataset.videoId);
+    setActiveItem(item);
+  }
 }
+
+function setActiveItem(item) {
+  if (activeItem != null) activeItem.classList.remove("active");
+  activeItem = item;
+  activeItem.classList.add("active");
+}
+
+let selectorItems = [],
+  activeItem;
 
 function populatePlaylist() {
   for (let i = 0; i < playlistData.items.length; i++) {
-    let selectorItem = document.createElement("div");
+    selectorItems[i] = document.createElement("div");
+    if (i == 0) setActiveItem(selectorItems[i]);
     let itemImage = document.createElement("img");
     let videoData = playlistData.items[i];
-    selectorItem.classList.add("youtube-playlist-item");
+    selectorItems[i].classList.add("youtube-playlist-item");
     itemImage.src = videoData.snippet.thumbnails.medium.url;
-    selectorItem.addEventListener("click", () => {
-      setVideoId(videoData.snippet.resourceId.videoId);
+    selectorItems[i].addEventListener("click", () => {
+      selectVideo(selectorItems[i]);
     });
-    selectorItem.dataset.videoUrl = videoData.snippet.resourceId.videoId;
-    selectorItem.appendChild(itemImage);
-    selector.appendChild(selectorItem);
+    selectorItems[i].dataset.videoId = videoData.snippet.resourceId.videoId;
+    selectorItems[i].appendChild(itemImage);
+    selector.appendChild(selectorItems[i]);
 
     let itemOverlay = document.createElement("div");
     itemOverlay.classList.add("youtube-playlist-item-overlay");
@@ -71,7 +84,7 @@ function populatePlaylist() {
     }
     overlayText.innerHTML = itemTitle;
     itemOverlay.appendChild(overlayText);
-    selectorItem.appendChild(itemOverlay);
+    selectorItems[i].appendChild(itemOverlay);
   }
 
   var tag = document.createElement("script");
