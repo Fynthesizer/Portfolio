@@ -258,8 +258,9 @@ input[type="range"]:hover::-moz-range-thumb {
 #main {
   max-width: var(--maxW);
   margin: auto;
-  padding: 133px 30px 30px 30px;
+  padding: 133px 1.5em 1.5em 1.5em;
   background-color: var(--main);
+  box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.3);
 }
 
 #bio {
@@ -430,7 +431,7 @@ input[type="range"]:hover::-moz-range-thumb {
 .panel {
   display: grid;
 
-  grid-gap: 2em;
+  grid-gap: 1em;
   margin-top: 2em;
   margin-bottom: 2em;
 }
@@ -953,11 +954,12 @@ span {
 }
 
 .youtube-playlist-item-overlay p {
-  font-size: 1.2em;
+  font-size: 1.25em;
   margin-top: auto;
   margin-bottom: auto;
   width: 100%;
   padding: 0;
+  text-align: center;
 }
 
 .youtube-playlist-item.active .youtube-playlist-item-overlay {
