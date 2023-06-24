@@ -1,5 +1,21 @@
 [
   {
+    "title": "The Garden of Ora",
+    "description": "Farming Odyssey",
+    "credits": "Music, Sound Design, Programming",
+    "thumbnail": "/images/thegardenofora/thumbnail.png",
+    "id": "thegardenofora",
+    "categories": [
+      "music",
+      "games",
+      "programming",
+      "sounddesign",
+      "soundtrack",
+      "gamejam"
+    ],
+    "show": true
+  },
+  {
     "title": "Clout Chaser",
     "description": "Phone Addiction Simulator",
     "credits": "Music, Programming",
@@ -10,6 +26,7 @@
       "games",
       "programming",
       "sounddesign",
+      "gamejam",
       "soundtrack"
     ],
     "show": true

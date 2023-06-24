@@ -88,14 +88,6 @@ p a:hover {
   color: var(--orange);
 }
 
-.section-header {
-  /*
-  background-image: url(/images/sine.png);
-  background-repeat: repeat-x;
-  animation: wave 10s linear infinite;
-  */
-}
-
 @keyframes wave {
   from {
     background-position: 0px 0px;
@@ -677,7 +669,7 @@ button {
   outline: none;
   text-align: center;
   margin: auto;
-  min-width: 5em;
+  min-width: 10em;
   flex-grow: 1;
   transition: background 0.2s, color 0.2s;
   background: none;
@@ -814,10 +806,6 @@ button {
   margin-top: 60px;
 }
 
-#project-summary {
-  font-style: italic;
-}
-
 #project-subtitle {
   text-align: left;
   font-size: 1.5em;
@@ -829,12 +817,20 @@ button {
 #project-content {
   display: flex;
   width: 100%;
+  margin-bottom: 2em;
 }
 
 #project-description {
   margin-top: 0px;
-  margin-right: 15px;
   width: 100%;
+}
+
+#project-summary {
+  margin-top: 0px;
+  margin-bottom: 1em;
+  width: 100%;
+  font-size: 1.05em;
+  font-style: italic;
 }
 
 img.floatright {
@@ -850,8 +846,11 @@ img.floatleft {
 }
 
 #project-players {
-  display: block;
+  display: flex;
+  align-content: right;
+  justify-content: right;
   width: 50%;
+  padding-left: 1em;
 }
 
 #project-img {
@@ -998,6 +997,16 @@ span {
   width: 100%;
   height: 100%;
   position: relative;
+}
+
+.splide__slide img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.splide {
+  background-color: var(--background);
 }
 
 a {
@@ -1200,6 +1209,7 @@ header {
 
   #project-content {
     display: block;
+    justify-content: space-between;
   }
 
   #project-links {
