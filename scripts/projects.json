@@ -15,22 +15,7 @@
     ],
     "show": true
   },
-  {
-    "title": "Clout Chaser",
-    "description": "Phone Addiction Simulator",
-    "credits": "Music, Programming",
-    "thumbnail": "/images/cloutchaser.png",
-    "id": "cloutchaser",
-    "categories": [
-      "music",
-      "games",
-      "programming",
-      "sounddesign",
-      "gamejam",
-      "soundtrack"
-    ],
-    "show": true
-  },
+
   {
     "title": "GameBeing",
     "description": "Interactive Audiovisual Installation",
@@ -132,6 +117,22 @@
     "thumbnail": "/images/triggerwitch.png",
     "id": "triggerwitch",
     "categories": ["soundtrack", "music", "rock", "games"],
+    "show": true
+  },
+  {
+    "title": "Clout Chaser",
+    "description": "Phone Addiction Simulator",
+    "credits": "Music, Programming",
+    "thumbnail": "/images/cloutchaser.png",
+    "id": "cloutchaser",
+    "categories": [
+      "music",
+      "games",
+      "programming",
+      "sounddesign",
+      "gamejam",
+      "soundtrack"
+    ],
     "show": true
   },
   {
