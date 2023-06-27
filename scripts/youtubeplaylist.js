@@ -11,19 +11,13 @@ document.addEventListener(
   false
 );
 
-let playlist, selector, videoContainer, video;
+let carousel, videoContainer, video;
 
 function loadPlaylist() {
   // Make the API request
 
-  playlist = document.getElementsByClassName("youtube-playlist")[0];
-  playlistId = playlist.dataset.playlistId;
-  selector = playlist.getElementsByClassName("youtube-playlist-selector")[0];
-  videoContainer = playlist.getElementsByClassName("youtube-playlist-video")[0];
-
-  video = document.createElement("div");
-
-  videoContainer.appendChild(video);
+  carousel = document.getElementsByClassName("youtube-playlist")[0];
+  playlistId = carousel.dataset.playlistId;
 
   let apiUrl = "https://www.googleapis.com/youtube/v3/playlistItems";
   apiUrl += "?key=" + apiKey;
@@ -36,76 +30,56 @@ function loadPlaylist() {
       return response.json();
     })
     .then(function (data) {
-      console.log(data);
       playlistData = data;
+      console.log(playlistData);
       populatePlaylist();
     });
 }
 
-function selectVideo(item) {
-  if (item != activeItem) {
-    player.loadVideoById(item.dataset.videoId);
-    setActiveItem(item);
-  }
-}
-
-function setActiveItem(item) {
-  if (activeItem != null) activeItem.classList.remove("active");
-  activeItem = item;
-  activeItem.classList.add("active");
-}
-
-let selectorItems = [],
-  activeItem;
+let slides = [];
 
 function populatePlaylist() {
   for (let i = 0; i < playlistData.items.length; i++) {
-    selectorItems[i] = document.createElement("div");
-    if (i == 0) setActiveItem(selectorItems[i]);
-    let itemImage = document.createElement("img");
+    slides[i] = document.createElement("li");
+    let slideContainer = document.createElement("div");
+    slideContainer.classList.add("splide__slide__container");
+    let thumbnail = document.createElement("img");
     let videoData = playlistData.items[i];
-    selectorItems[i].classList.add("youtube-playlist-item");
-    itemImage.src = videoData.snippet.thumbnails.medium.url;
-    selectorItems[i].addEventListener("click", () => {
-      selectVideo(selectorItems[i]);
-    });
-    selectorItems[i].dataset.videoId = videoData.snippet.resourceId.videoId;
-    selectorItems[i].appendChild(itemImage);
-    selector.appendChild(selectorItems[i]);
+    slides[i].classList.add("splide__slide");
+    slides[i].setAttribute(
+      "data-splide-youtube",
+      "https://www.youtube.com/watch?v=" + videoData.snippet.resourceId.videoId
+    );
+    thumbnail.src = videoData.snippet.thumbnails.maxres.url;
+    slideContainer.appendChild(thumbnail);
+    slides[i].appendChild(slideContainer);
 
-    let itemOverlay = document.createElement("div");
-    itemOverlay.classList.add("youtube-playlist-item-overlay");
+    carousel.appendChild(slides[i]);
 
-    let overlayText = document.createElement("p");
+    let titleText = document.createElement("h3");
 
     let itemTitle = videoData.snippet.title;
     if (itemTitle.includes("|")) {
       [, itemTitle] = itemTitle.split("|");
     }
-    overlayText.innerHTML = itemTitle;
-    itemOverlay.appendChild(overlayText);
-    selectorItems[i].appendChild(itemOverlay);
+    titleText.innerHTML = itemTitle;
+    slides[i].appendChild(titleText);
   }
 
-  var tag = document.createElement("script");
-
-  tag.src = "https://www.youtube.com/iframe_api";
-  var firstScriptTag = document.getElementsByTagName("script")[0];
-  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-  var player;
-}
-
-// 3. This function creates an <iframe> (and YouTube player)
-//    after the API code downloads.
-function onYouTubeIframeAPIReady() {
-  console.log(video);
-  player = new YT.Player(video, {
-    videoId: playlistData.items[0].snippet.resourceId.videoId,
-    playerVars: {
-      playsinline: 1,
+  var redesignSplide = new Splide("#redesign-carousel", {
+    type: "loop",
+    fixedWidth: "500px",
+    focus: "center",
+    drag: true,
+    flickMaxPages: "0.5",
+    video: {
+      mute: false,
+      playerOptions: {
+        youtube: { autoplay: false },
+        vimeo: {},
+        htmlVideo: {},
+      },
     },
-    events: {},
-    modestbranding: false,
   });
+  redesignSplide.mount(window.splide.Extensions);
 }

@@ -1,5 +1,14 @@
 [
   {
+    "title": "Drip",
+    "description": "Physics-Based Sequencer",
+    "credits": "Programming, Sound Design, Visual Design",
+    "thumbnail": "/images/drip.png",
+    "id": "drip",
+    "categories": ["audiovisual", "design", "sounddesign", "programming"],
+    "show": true
+  },
+  {
     "title": "The Garden of Ora",
     "description": "Farming Odyssey",
     "credits": "Music, Sound Design, Programming",
@@ -225,15 +234,6 @@
       "programming",
       "games"
     ],
-    "show": true
-  },
-  {
-    "title": "Drip",
-    "description": "Experimental Music Sequencer",
-    "credits": "Programming, Sound Design, Visual Design",
-    "thumbnail": "/images/drip.png",
-    "id": "drip",
-    "categories": ["audiovisual", "design", "sounddesign", "programming"],
     "show": true
   }
 ]
