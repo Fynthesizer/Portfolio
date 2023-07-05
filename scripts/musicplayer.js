@@ -70,6 +70,18 @@ var albums = [
         genre: "Synth Metal",
       },
       {
+        title: "The Garden of Ora - Spring",
+        audio: "/audio/goo_spring.mp3",
+        art: "/images/thegardenofora/thumbnail.png",
+        genre: "Ambient",
+      },
+      {
+        title: "The Garden of Ora - Winter",
+        audio: "/audio/goo_winter.mp3",
+        art: "/images/thegardenofora/thumbnail.png",
+        genre: "Ambient",
+      },
+      {
         title: "Leaving the City",
         audio: "/audio/leavingthecity.mp3",
         art: "/images/trackart/synthwave.png",
@@ -119,6 +131,7 @@ var albums = [
         art: "/images/equine.png",
         genre: "Orchestral",
       },
+
       /*
   {
     title: "Equine - Main Menu",
