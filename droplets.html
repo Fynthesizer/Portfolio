@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Finn Mitchell-Anyon — New Zealand music composer / producer, sound designer and programmer making all sorts of wacky things."
+    />
+    <title>Finneganeganegan</title>
+    <link rel="stylesheet" href="/styles/global.css" />
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+    <script
+      src="https://kit.fontawesome.com/0d3aed0d5c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/amplitudejs@5.3.2/dist/amplitude.js"
+    ></script>
+    <script>
+      if (window.location.pathname === "/droplets") {
+        window.location.href = "/works/droplets";
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="header"></div>
+    <div id="main">
+      <section id="bio">
+        <div id="portrait">
+          <img src="images/portrait_2.jpg" />
+        </div>
+        <div id="bio-text">
+          <h2>Hey, I'm Finn! I make things on computers.</h2>
+          <p>
+            Curiosity has led me down many different pathways - including music,
+            programming, and interactive design. The words which I most often
+            use to describe myself are as follows:
+          </p>
+          <ul id="skills">
+            <li>Composer / Producer</li>
+            <li>Sound designer</li>
+            <li>Multi-Instrumentalist</li>
+            <li>Programmer</li>
+            <li>Game designer</li>
+            <li>Pretty chill guy</li>
+          </ul>
+          <p>
+            I reside in the magical city of Wellington, New Zealand. Here I
+            studied at Victoria Univeristy, and attained the following
+            qualifications:
+          </p>
+          <ul id="qualifications">
+            <li>Bachelor's Degree in Media Design</li>
+            <li>
+              Postgraduate Diploma in Music, specialising in Composition and
+              Sonic Arts (Endorsed with Distinction)
+            </li>
+          </ul>
+          <p>
+            Here you may listen to and observe some of the various things which
+            I have made and contributed to over the years. Please enjoy your
+            stay. :-)
+          </p>
+          <p>
+            Keen to work together? Flick me an electronic mail at
+            <a href="mailto:finn.mitchellanyon@gmail.com"
+              >finn.mitchellanyon@gmail.com</a
+            >
+          </p>
+          <div id="socials">
+            <a
+              href="https://fynth.bandcamp.com/"
+              class="fab fa-bandcamp hover-teal"
+            ></a>
+            <a
+              href="https://soundcloud.com/finn-mitchell-anyon"
+              class="fab fa-soundcloud hover-orange"
+            ></a>
+            <!--
+            <a
+              href="https://www.instagram.com/finneganeganeganeganegan/"
+              class="fab fa-instagram"
+            ></a>
+            -->
+            <a
+              href="https://github.com/Fynthesizer"
+              class="fab fa-github hover-purple"
+            ></a>
+            <a
+              href="https://twitter.com/theFinneganegan"
+              class="fab fa-twitter hover-blue"
+            ></a>
+            <a
+              href="https://www.youtube.com/channel/UCFNnYPo6cD2c7CT74b1eQmA"
+              class="fab fa-youtube hover-red"
+            ></a>
+            <a
+              href="mailto:finn.mitchellanyon@gmail.com"
+              class="far fa-envelope hover-yellow"
+            ></a>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio">
+        <h2 class="section-header"><span>Projects</span></h2>
+        <div id="filterContainer" class="portfolioFilter">
+          <button class="filterBtn active" id="filterAll" data-filter="*">
+            All
+          </button>
+          <button class="filterBtn" id="filterMusic" data-filter=".music">
+            <!--<i class="fa-solid fa-compact-disc"></i>-->
+            Music
+          </button>
+          <button class="filterBtn" id="filterGames" data-filter=".games">
+            <!--<i class="fa-solid fa-code"></i>-->
+            Games
+          </button>
+          <button
+            class="filterBtn"
+            id="filterSoundtracks"
+            data-filter=".soundtrack"
+          >
+            <!--<i class="fa-solid fa-compact-disc"></i>-->
+            Soundtrack
+          </button>
+          <button
+            class="filterBtn"
+            id="filterSoundDesign"
+            data-filter=".sounddesign"
+          >
+            <!--<i class="fa-solid fa-compact-disc"></i>-->
+            Sound Design
+          </button>
+          <button
+            class="filterBtn"
+            id="filterProgramming"
+            data-filter=".programming"
+          >
+            <!--<i class="fa-solid fa-code"></i>-->
+            Programming
+          </button>
+
+          <button class="filterBtn" id="filterDesign" data-filter=".design">
+            Visual Design
+          </button>
+
+          <button class="filterBtn" id="filterGameJams" data-filter=".gamejam">
+            Game Jams
+          </button>
+
+          <!--
+            <button
+            class="filterBtn"
+            id="filterElectronic"
+            onclick="$('#portfolio-grid').isotope({ filter: '.electronic' });"
+          >
+            Electronic
+          </button>
+          <button
+            class="filterBtn"
+            id="filterRock"
+            onclick="$('#portfolio-grid').isotope({ filter: '.rock' });"
+          >
+            Rock
+          </button>
+          <button
+            class="filterBtn"
+            id="filterAmbient"
+            onclick="$('#portfolio-grid').isotope({ filter: '.ambient' });"
+          >
+            Ambient
+          </button>
+          <button
+            class="filterBtn"
+            id="filterOrchestral"
+            onclick="$('#portfolio-grid').isotope({ filter: '.orchestral' });"
+          >
+            Orchestral
+          </button>
+          
+          <button
+            class="filterBtn"
+            id="filterNovelties"
+            onclick="$('#portfolio-grid').isotope({ filter: '.audiovisual' });"
+          >
+            Novelties
+          </button>
+          -->
+        </div>
+        <div id="portfolio-grid"></div>
+      </section>
+
+      <section id="demos">
+        <h2 class="section-header"><span>Music</span></h2>
+        <div id="music-player" data-album-ID="showreel">
+          <div id="audio-wrapper">
+            <audio id="mp-audio">
+              <source />
+            </audio>
+          </div>
+          <div id="mp-left">
+            <img id="mp-art" />
+            <!--<canvas id="mp-visualiser"></canvas>-->
+          </div>
+          <div id="mp-right">
+            <div id="mp-title"></div>
+
+            <div id="mp-seek">
+              <div id="mp-currenttime">0:00</div>
+              <input
+                type="range"
+                oninput="change_pos()"
+                id="mp-seekbar"
+                step="any"
+                min="0"
+                max="1"
+                value="0"
+              />
+              <div id="mp-length">10:00</div>
+            </div>
+            <div id="mp-controls">
+              <div id="mp-nav">
+                <button
+                  onclick="previous()"
+                  id="mp-prev"
+                  class="fas fa-backward"
+                ></button>
+                <button
+                  onclick="play_aud()"
+                  id="mp-play"
+                  class="fas fa-play"
+                ></button>
+                <button
+                  onclick="next()"
+                  id="mp-next"
+                  class="fas fa-forward"
+                ></button>
+              </div>
+              <div id="mp-vol">
+                <span class="fas fa-volume-up"></span>
+                <input
+                  type="range"
+                  id="mp-volslider"
+                  oninput="change_vol()"
+                  step="any"
+                  min="0"
+                  max="1"
+                  value="1"
+                />
+              </div>
+            </div>
+            <ul id="mp-tracklist"></ul>
+          </div>
+        </div>
+      </section>
+
+      <div id="footer"></div>
+    </div>
+    <script>
+      $("#header").load("/header.html");
+    </script>
+    <script>
+      $("#footer").load("/footer.html");
+    </script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="scripts/portfolio.js"></script>
+    <script src="scripts/filter.js"></script>
+    <script src="/scripts/parallax.js"></script>
+    <script type="text/javascript" src="scripts/musicplayer.js"></script>
+  </body>
+</html>

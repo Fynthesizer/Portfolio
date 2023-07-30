@@ -1,10 +1,10 @@
 [
   {
-    "title": "Drip",
+    "title": "Droplets",
     "description": "Physics-Based Sequencer",
     "credits": "Programming, Sound Design, Visual Design",
     "thumbnail": "/images/drip.png",
-    "id": "drip",
+    "id": "droplets",
     "categories": ["audiovisual", "design", "sounddesign", "programming"],
     "show": true
   },
