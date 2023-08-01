@@ -1,5 +1,14 @@
 [
   {
+    "title": "Music and the Mystical Experience",
+    "description": "Music for Psilocybin Therapy",
+    "credits": "Keyboard improvisation",
+    "thumbnail": "/images/musicandthemysticalexperience.jpg",
+    "id": "music-and-the-mystical-experience",
+    "categories": ["music", "ambient"],
+    "show": true
+  },
+  {
     "title": "Droplets",
     "description": "Physics-Based Sequencer",
     "credits": "Programming, Sound Design, Visual Design",
@@ -24,7 +33,15 @@
     ],
     "show": true
   },
-
+  {
+    "title": "Forest",
+    "description": "Magical Musical Trees",
+    "credits": "Programming, Visual Design, Sound Design",
+    "thumbnail": "/images/forest.png",
+    "id": "forest",
+    "categories": ["audiovisual", "design", "sounddesign", "programming"],
+    "show": true
+  },
   {
     "title": "GameBeing",
     "description": "Interactive Audiovisual Installation",
@@ -43,15 +60,7 @@
     "categories": ["games", "design", "sounddesign", "programming"],
     "show": true
   },
-  {
-    "title": "Forest",
-    "description": "Magical Musical Trees",
-    "credits": "Programming, Visual Design, Sound Design",
-    "thumbnail": "/images/forest.png",
-    "id": "forest",
-    "categories": ["audiovisual", "design", "sounddesign", "programming"],
-    "show": true
-  },
+
   {
     "title": "Kaitiaki Harvest",
     "description": "Regenerative Foraging Simulator",

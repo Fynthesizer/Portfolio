@@ -831,8 +831,17 @@ button {
   margin-top: 0px;
   margin-bottom: 1em;
   width: 100%;
-  font-size: 1.05em;
   font-style: italic;
+}
+
+#project-summary::after {
+  content: ""; /* Required to display the pseudo-element */
+  display: block; /* Make the pseudo-element a block element */
+  width: 100%; /* Set the width to 100% to span the full width of the parent div */
+  height: 20px; /* Set the height of the horizontal line */
+  background-image: url(/images/sine2.png);
+  background-size: 25px 18px;
+  background-repeat: repeat-x;
 }
 
 img.floatright {
