@@ -18,6 +18,9 @@
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/amplitudejs@5.3.2/dist/amplitude.js"
     ></script>
+    <script>
+      window.location.href = "/works/droplets";
+    </script>
   </head>
 
   <body>
@@ -146,6 +149,45 @@
           <button class="filterBtn" id="filterGameJams" data-filter=".gamejam">
             Game Jams
           </button>
+
+          <!--
+            <button
+            class="filterBtn"
+            id="filterElectronic"
+            onclick="$('#portfolio-grid').isotope({ filter: '.electronic' });"
+          >
+            Electronic
+          </button>
+          <button
+            class="filterBtn"
+            id="filterRock"
+            onclick="$('#portfolio-grid').isotope({ filter: '.rock' });"
+          >
+            Rock
+          </button>
+          <button
+            class="filterBtn"
+            id="filterAmbient"
+            onclick="$('#portfolio-grid').isotope({ filter: '.ambient' });"
+          >
+            Ambient
+          </button>
+          <button
+            class="filterBtn"
+            id="filterOrchestral"
+            onclick="$('#portfolio-grid').isotope({ filter: '.orchestral' });"
+          >
+            Orchestral
+          </button>
+          
+          <button
+            class="filterBtn"
+            id="filterNovelties"
+            onclick="$('#portfolio-grid').isotope({ filter: '.audiovisual' });"
+          >
+            Novelties
+          </button>
+          -->
         </div>
         <div id="portfolio-grid"></div>
       </section>
@@ -160,6 +202,7 @@
           </div>
           <div id="mp-left">
             <img id="mp-art" />
+            <!--<canvas id="mp-visualiser"></canvas>-->
           </div>
           <div id="mp-right">
             <div id="mp-title"></div>
