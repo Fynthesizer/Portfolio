@@ -50,7 +50,7 @@ function populatePlaylist() {
       "data-splide-youtube",
       "https://www.youtube.com/watch?v=" + videoData.snippet.resourceId.videoId
     );
-    thumbnail.src = videoData.snippet.thumbnails.maxres.url;
+    thumbnail.src = videoData.snippet.thumbnails.high.url;
     slideContainer.appendChild(thumbnail);
     slides[i].appendChild(slideContainer);
 
@@ -66,7 +66,7 @@ function populatePlaylist() {
     slides[i].appendChild(titleText);
   }
 
-  var redesignSplide = new Splide("#redesign-carousel", {
+  var newSplide = new Splide("#youtube-playlist-carousel", {
     type: "loop",
     fixedWidth: "500px",
     focus: "center",
@@ -81,5 +81,5 @@ function populatePlaylist() {
       },
     },
   });
-  redesignSplide.mount(window.splide.Extensions);
+  newSplide.mount(window.splide.Extensions);
 }

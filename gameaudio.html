@@ -297,7 +297,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video@0.8.0/dist/css/spl
           Clips that I've recreated or redesigned sound for to explore new sound
           design techniques
         </p>
-        <div id="redesign-carousel" class="splide">
+        <div id="youtube-playlist-carousel" class="splide">
           <div class="splide__track">
             <ul
               class="splide__list youtube-playlist"
@@ -427,6 +427,23 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video@0.8.0/dist/css/spl
         },
       });
       gamesSplide.mount(window.splide.Extensions);
+
+      var redesignSplide = new Splide("#redesign-carousel", {
+        type: "loop",
+        fixedWidth: "500px",
+        focus: "center",
+        drag: true,
+        flickMaxPages: "0.5",
+        video: {
+          mute: false,
+          playerOptions: {
+            youtube: { autoplay: false },
+            vimeo: {},
+            htmlVideo: {},
+          },
+        },
+      });
+      redesignSplide.mount(window.splide.Extensions);
     </script>
   </body>
 </html>

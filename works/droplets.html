@@ -18,8 +18,26 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+"></script>
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+"
+      rel="stylesheet"
+    />
+    <script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video@0.8.0/dist/js/splide-extension-video.min.js
+"></script>
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video@0.8.0/dist/css/splide-extension-video.min.css
+"
+      rel="stylesheet"
+    />
   </head>
-  <body data-project-id="droplets" style="background-color: rgb(19, 21, 23)">
+  <body data-project-id="droplets">
     <div id="header"></div>
 
     <div id="main">
@@ -59,6 +77,14 @@
             you're keen on getting development updates and/or want to help out
             with testing, fill out the form below. :)
           </p>
+          <div id="youtube-playlist-carousel" class="splide">
+            <div class="splide__track">
+              <ul
+                class="splide__list youtube-playlist"
+                data-playlist-id="PLfMqljHYxGDe7iG6LYB8Oae0-HLvuK9cQ"
+              ></ul>
+            </div>
+          </div>
           <iframe
             class="form"
             src="https://docs.google.com/forms/d/e/1FAIpQLSerfxe6G2lv1kJQjP5Uzb8AtAbV6ToXnMhcJdhD4QuxhpMBPw/viewform?embedded=true"
@@ -103,5 +129,6 @@
     </script>
     <script src="/scripts/parallax.js"></script>
     <script src="/scripts/projectPage.js"></script>
+    <script type="text/javascript" src="/scripts/youtubeplaylist.js"></script>
   </body>
 </html>
