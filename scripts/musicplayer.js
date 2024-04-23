@@ -19,15 +19,33 @@ var albums = [
     albumID: "showreel",
     tracks: [
       {
+        title: "Wildermon - Battle",
+        audio: "/audio/Wildermon_Battle.mp3",
+        art: "/images/trackart/wildermon.png",
+        genre: "Orchestral",
+      },
+      {
+        title: "The Garden of Ora - Spring",
+        audio: "/audio/goo_spring.mp3",
+        art: "/images/thegardenofora/thumbnail.png",
+        genre: "Ambient",
+      },
+      {
+        title: "The Garden of Ora - Winter",
+        audio: "/audio/goo_winter.mp3",
+        art: "/images/thegardenofora/thumbnail.png",
+        genre: "Ambient",
+      },
+      {
         title: "The Slumberous Swamp",
         audio: "/audio/grottygrotto.mp3",
-        art: "/images/trackart/enchantedforest.png",
+        art: null,
         genre: "Orchestral",
       },
       {
         title: "The Beginning of a Grand Adventure",
         audio: "/audio/grandadventure.mp3",
-        art: "/images/trackart/enchantedforest.png",
+        art: null,
         genre: "Orchestral",
       },
       /*
@@ -43,7 +61,7 @@ var albums = [
         title: "Trigger Witch - The Good, the Bad",
         audio: "/audio/thegoodthebad.mp3",
         art: "/images/triggerwitch.png",
-        genre: "16-Bit Orchestral",
+        genre: "16-Bit",
       },
       {
         title: "Trigger Witch - The Ugly",
@@ -55,7 +73,7 @@ var albums = [
         title: "Trigger Witch - Floating in the Clouds",
         audio: "/audio/skypavillion_light.mp3",
         art: "/images/triggerwitch.png",
-        genre: "16-Bit Orchestral",
+        genre: "16-Bit",
       },
       {
         title: "Trigger Witch - Soaring Through the Sky",
@@ -68,18 +86,6 @@ var albums = [
         audio: "/audio/poltergeistprince.mp3",
         art: "/images/triggerwitch.png",
         genre: "Synth Metal",
-      },
-      {
-        title: "The Garden of Ora - Spring",
-        audio: "/audio/goo_spring.mp3",
-        art: "/images/thegardenofora/thumbnail.png",
-        genre: "Ambient",
-      },
-      {
-        title: "The Garden of Ora - Winter",
-        audio: "/audio/goo_winter.mp3",
-        art: "/images/thegardenofora/thumbnail.png",
-        genre: "Ambient",
       },
       {
         title: "Leaving the City",
