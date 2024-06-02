@@ -36,6 +36,15 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video@0.8.0/dist/css/spl
 "
       rel="stylesheet"
     />
+    <style>
+      :root {
+        --background: rgb(19, 21, 23);
+        --header: rgb(18, 19, 20);
+        --mainDark: rgb(19, 21, 23);
+        --main: rgb(19, 21, 23);
+        --link: #6fbf78;
+      }
+    </style>
   </head>
   <body data-project-id="droplets">
     <div id="header"></div>
@@ -49,20 +58,19 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video@0.8.0/dist/css/spl
         <div id="project-description">
           <div id="project-summary">
             <p>
-              Droplets is a physics based music sequencer programmed with
-              Javascript and p5.js.
+              Droplets is a physics-based sequencer, offering a new way to
+              create organic musical patterns.
             </p>
           </div>
           <p>
-            The user is able to place taps and bars by clicking on the screen.
-            Taps produce droplets at regular intervals. The user is able to
-            alter the interval at which each tap produces droplets by turning
-            its handle. The droplets fall down the screen and will bounce off
-            bars, causing the bar to produce a tone when they do so. The
-            frequency and timbre of bars are adjustable by changing their length
-            and width. Making slight changes to the environment can result in
-            completely new musical sequences being generated.
+            Drippers produce droplets at regular musical intervals. You can
+            adjust the interval at which droplets are produced by turning the
+            dripper's handle. As droplets fall down the screen, they hit and
+            bounce off of bars, causing a note to play. Bars can be tuned by
+            adjusting their length. By changing the arrangement of bars and
+            drippers, entirely new musical patterns will arise.
           </p>
+          <!--
           <p>
             🎖️ Droplets was awarded
             <a
@@ -71,31 +79,25 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video@0.8.0/dist/css/spl
             >
             for March 2023.
           </p>
-          <h3>VST Plugin</h3>
-          <p>
-            I'm currently working on developing Droplets as a VST plugin. If
-            you're keen on getting development updates and/or want to help out
-            with testing, fill out the form below. :)
-          </p>
-          <div id="youtube-playlist-carousel" class="splide">
-            <div class="splide__track">
-              <ul
-                class="splide__list youtube-playlist"
-                data-playlist-id="PLfMqljHYxGDe7iG6LYB8Oae0-HLvuK9cQ"
-              ></ul>
-            </div>
+          -->
+          <div style="display: flex; justify-content: center; margin: 3rem">
+            <script src="https://gumroad.com/js/gumroad.js"></script>
+            <a
+              class="gumroad-button"
+              href="https://finneganeganegan.gumroad.com/l/Droplets"
+              >Get Droplets on</a
+            >
           </div>
-          <iframe
-            class="form"
-            src="https://docs.google.com/forms/d/e/1FAIpQLSerfxe6G2lv1kJQjP5Uzb8AtAbV6ToXnMhcJdhD4QuxhpMBPw/viewform?embedded=true"
-            width="100%"
-            height="1900"
-            frameborder="0"
-            marginheight="0"
-            marginwidth="0"
-            >Loading…</iframe
-          >
           <div id="project-links">
+            <a
+              href="https://finneganeganegan.gumroad.com/l/Droplets"
+              target="_blank"
+              ><i class="fas fa-store"></i>Gumroad</a
+            >
+            <a href="/Droplets/Droplets_UserGuide_1.0.pdf" target="_blank"
+              ><i class="fa-solid fa-book"></i> User guide</a
+            >
+            <!--
             <a href="https://fynthesizer.github.io/Drip/" target="_blank"
               ><i class="fas fa-play"></i>Web toy V1</a
             >
@@ -105,16 +107,118 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video@0.8.0/dist/css/spl
             <a href="https://github.com/Fynthesizer/Drip" target="_blank"
               ><i class="fab fa-github"></i>GitHub</a
             >
+            -->
           </div>
           <div class="video-container">
             <iframe
               class="video"
-              src="https://www.youtube.com/embed/GFxw7JnnpYo"
+              src="https://www.youtube.com/embed/sd92-2P2-_Q"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
             ></iframe>
+          </div>
+          <h2>Features</h2>
+          <h3>Quantization</h3>
+          <p>
+            Control how tightly notes are quantized to the musical grid using
+            the 'quantize' parameter. Notes can be quantized either to the
+            nearest 16th or 12th note by changing the 'division' setting.
+          </p>
+          <h3>Tempo affects simulation speed</h3>
+          <p>
+            Changing the tempo (either inside the standalone application or in
+            your DAW) causes the whole physics simulation to speed up or slow
+            down, meaning that the musical pattern will stay constant at any
+            tempo.
+          </p>
+          <h3>Scale selection</h3>
+          <p>
+            You can determine what pitches bars may be tuned to with the scale
+            wheel. Choose from one of the many premade scale presets, or create
+            your own scale by selecting the root note and choosing the scale
+            degrees.
+          </p>
+          <h3>Wind</h3>
+          <p>
+            Turn up the 'wind' setting and droplets will start being blown in
+            random directions, leading to a constantly evolving pattern.
+          </p>
+          <h3>Gravity manipulation</h3>
+          <p>
+            Change the strength and direction of gravity to discover new
+            patterns within the same arrangement.
+          </p>
+          <h3>Probability</h3>
+          <p>
+            Introduce random variation by setting the chance that a dripper will
+            emit a droplet each cycle.
+          </p>
+          <h3>Preset saving</h3>
+          <p>
+            Easily save and share preset files containing both the layout and
+            parameter settings.
+          </p>
+          <h3>Synth engine</h3>
+          <p>
+            Droplets features an in-built synth engine, capable of FM, sampling,
+            additive and subtractive synthesis, and featuring multiple effects
+            and modulation settings, allowing you to design unique sounds
+            entirely inside the program. Save synth presets to easily reuse a
+            sound with a new layout.
+          </p>
+          <h3>MIDI output</h3>
+          <p>
+            Droplets can be used as a MIDI generator to trigger your favourite
+            virtual instrument or external synthesizer.
+          </p>
+          <h3>MIDI learn</h3>
+          <p>
+            Most parameters in Droplets can be controlled using MIDI CC. Simply
+            right click on a parameter, select “Learn MIDI,” and move a
+            knob/slider on your MIDI controller to create a new mapping.
+          </p>
+          <h3>DAW compatibility</h3>
+          <p>
+            Droplets can be run as a standalone application, or as a plugin
+            inside any DAW supporting VST3 or AU plugins, including Ableton
+            Live, Logic, Bitwig, Reaper, FL Studio, Cubase, Studio One, etc.
+          </p>
+          <h3>Versions</h3>
+          <p>
+            Each format comes in both a standard and MIDI-only version. The
+            MIDI-only version does not feature the in-built synth engine, and
+            can only be used to send MIDI to other instruments.
+          </p>
+          <ul>
+            <li><p>Standalone (Mac, Windows)</p></li>
+            <li><p>VST3 (Mac, Windows)</p></li>
+            <li><p>AU (Mac only)</p></li>
+          </ul>
+          <h2>History</h2>
+          <p>
+            Droplets started out as a
+            <a href="https://fynthesizer.github.io/Drip/">university project</a>
+            in 2018. It wasn't until five years later that I decided to revisit
+            the concept and embark on the year-long journey of turning it into
+            an actual plugin.
+          </p>
+          <p>
+            <b>FUN FACT:</b> Originally, Droplets was called Drip. But everyone
+            hated that and bullied me into changing it.
+          </p>
+          <p>
+            Below are some of the videos I posted sharing my progress on the
+            development of the plugin.
+          </p>
+          <div id="youtube-playlist-carousel" class="splide">
+            <div class="splide__track">
+              <ul
+                class="splide__list youtube-playlist"
+                data-playlist-id="PLfMqljHYxGDe7iG6LYB8Oae0-HLvuK9cQ"
+              ></ul>
+            </div>
           </div>
         </div>
       </div>

@@ -40,17 +40,20 @@ let slides = [];
 
 function populatePlaylist() {
   for (let i = 0; i < playlistData.items.length; i++) {
+    let videoData = playlistData.items[i];
+    if (!videoData.snippet) continue;
     slides[i] = document.createElement("li");
     let slideContainer = document.createElement("div");
     slideContainer.classList.add("splide__slide__container");
     let thumbnail = document.createElement("img");
-    let videoData = playlistData.items[i];
     slides[i].classList.add("splide__slide");
     slides[i].setAttribute(
       "data-splide-youtube",
       "https://www.youtube.com/watch?v=" + videoData.snippet.resourceId.videoId
     );
-    thumbnail.src = videoData.snippet.thumbnails.high.url;
+    if (videoData.snippet.thumbnails.high) {
+      thumbnail.src = videoData.snippet.thumbnails.high.url;
+    }
     slideContainer.appendChild(thumbnail);
     slides[i].appendChild(slideContainer);
 

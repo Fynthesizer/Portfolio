@@ -10,9 +10,9 @@
   },
   {
     "title": "Droplets",
-    "description": "Physics-Based Sequencer",
+    "description": "Physics-Based Sequencer Plugin",
     "credits": "Programming, Sound Design, Visual Design",
-    "thumbnail": "/images/drip.png",
+    "thumbnail": "/images/droplets.png",
     "id": "droplets",
     "categories": ["audiovisual", "design", "sounddesign", "programming"],
     "show": true
