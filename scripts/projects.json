@@ -1,5 +1,20 @@
 [
   {
+    "title": "Shape Sender Deluxe",
+    "description": "Physics Puzzle Game",
+    "credits": "Music, Sound Design, Programming",
+    "thumbnail": "/images/shapesenderdeluxe.jpg",
+    "id": "shape-sender-deluxe",
+    "categories": [
+      "music",
+      "games",
+      "programming",
+      "sounddesign",
+      "soundtrack"
+    ],
+    "show": true
+  },
+  {
     "title": "Music and the Mystical Experience",
     "description": "Music for Psilocybin Therapy",
     "credits": "Keyboard improvisation",
