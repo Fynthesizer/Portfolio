@@ -1,5 +1,15 @@
 [
   {
+    "title": "Triarchy",
+    "description": "Co-op Action RPG",
+    "credits": "Sound Design, Audio Implementation",
+    "thumbnail": "/images/triarchy.jpg",
+    "id": "triarchy",
+    "categories": ["sounddesign", "games"],
+    "date": 2026,
+    "show": true
+  },
+  {
     "title": "Shape Sender Deluxe",
     "description": "Physics Puzzle Game",
     "credits": "Music, Sound Design, Programming",
@@ -12,15 +22,17 @@
       "sounddesign",
       "soundtrack"
     ],
+    "date": 2026,
     "show": true
   },
   {
-    "title": "Music and the Mystical Experience",
-    "description": "Music for Psilocybin Therapy",
-    "credits": "Keyboard improvisation",
-    "thumbnail": "/images/musicandthemysticalexperience.jpg",
-    "id": "music-and-the-mystical-experience",
-    "categories": ["music", "ambient"],
+    "title": "Trigger Witch",
+    "description": "2D Open World Shooter",
+    "credits": "Music",
+    "thumbnail": "/images/triggerwitch.png",
+    "id": "triggerwitch",
+    "categories": ["soundtrack", "music", "rock", "games"],
+    "date": 2020,
     "show": true
   },
   {
@@ -30,6 +42,27 @@
     "thumbnail": "/images/droplets.png",
     "id": "droplets",
     "categories": ["audiovisual", "design", "sounddesign", "programming"],
+    "date": 2025,
+    "show": true
+  },
+  {
+    "title": "A Flight Over Aotearoa New Zealand",
+    "description": "Interactive Videobook",
+    "credits": "Music, Sound Design",
+    "thumbnail": "/images/afoanz.jpg",
+    "id": "afoanz",
+    "categories": ["music", "sounddesign", "soundtrack"],
+    "date": 2026,
+    "show": true
+  },
+  {
+    "title": "Music and the Mystical Experience",
+    "description": "Music for Psilocybin Therapy",
+    "credits": "Keyboard improvisation",
+    "thumbnail": "/images/musicandthemysticalexperience.jpg",
+    "id": "music-and-the-mystical-experience",
+    "categories": ["music", "ambient"],
+    "date": 2024,
     "show": true
   },
   {
@@ -46,6 +79,7 @@
       "soundtrack",
       "gamejam"
     ],
+    "date": 2023,
     "show": true
   },
   {
@@ -55,6 +89,7 @@
     "thumbnail": "/images/forest.png",
     "id": "forest",
     "categories": ["audiovisual", "design", "sounddesign", "programming"],
+    "date": 2022,
     "show": true
   },
   {
@@ -64,6 +99,7 @@
     "thumbnail": "/images/gamebeing.png",
     "id": "gamebeing",
     "categories": ["music", "audiovisual", "programming"],
+    "date": 2022,
     "show": true
   },
   {
@@ -73,6 +109,7 @@
     "thumbnail": "/images/duckfeedinggame.png",
     "id": "duckfeedinggame",
     "categories": ["games", "design", "sounddesign", "programming"],
+    "date": 2023,
     "show": true
   },
 
@@ -90,6 +127,7 @@
       "programming",
       "gamejam"
     ],
+    "date": 2022,
     "show": true
   },
   {
@@ -99,6 +137,7 @@
     "thumbnail": "/images/visualiser.png",
     "id": "visualiser",
     "categories": ["audiovisual", "design", "programming"],
+    "date": 2022,
     "show": true
   },
   {
@@ -114,6 +153,7 @@
       "programming",
       "games"
     ],
+    "date": 2022,
     "show": true
   },
   {
@@ -123,6 +163,7 @@
     "thumbnail": "/images/equine.png",
     "id": "equine",
     "categories": ["orchestral", "music", "soundtrack", "games"],
+    "date": 2021,
     "show": true
   },
   {
@@ -141,15 +182,7 @@
     "thumbnail": "/images/ballpit.png",
     "id": "ballpit",
     "categories": ["audiovisual", "design", "sounddesign", "programming"],
-    "show": true
-  },
-  {
-    "title": "Trigger Witch",
-    "description": "2D Open World Shooter",
-    "credits": "Music",
-    "thumbnail": "/images/triggerwitch.png",
-    "id": "triggerwitch",
-    "categories": ["soundtrack", "music", "rock", "games"],
+    "date": 2022,
     "show": true
   },
   {
@@ -166,6 +199,7 @@
       "gamejam",
       "soundtrack"
     ],
+    "date": 2022,
     "show": true
   },
   {
@@ -182,6 +216,7 @@
       "programming",
       "games"
     ],
+    "date": 2019,
     "show": true
   },
   {
@@ -191,6 +226,7 @@
     "thumbnail": "/images/planetoftheandrogynites.jpg",
     "id": "planetoftheandrogynites",
     "categories": ["badhagrid", "music", "rock"],
+    "date": 2020,
     "show": true
   },
   {
@@ -200,6 +236,7 @@
     "thumbnail": "/images/polyphonicpolygonatron.png",
     "id": "polyphonicpolygonatron",
     "categories": ["audiovisual", "design", "music", "programming"],
+    "date": 2018,
     "show": true
   },
   {
@@ -216,6 +253,7 @@
       "games",
       "gamejam"
     ],
+    "date": 2022,
     "show": true
   },
   {
@@ -225,6 +263,7 @@
     "thumbnail": "/images/glibglobson.png",
     "id": "glibglobson",
     "categories": ["music", "electronic"],
+    "date": 2019,
     "show": true
   },
   {
@@ -242,6 +281,7 @@
       "games",
       "sounddesign"
     ],
+    "date": 2019,
     "show": true
   },
   {
@@ -258,6 +298,7 @@
       "programming",
       "games"
     ],
+    "date": 2017,
     "show": true
   }
 ]
